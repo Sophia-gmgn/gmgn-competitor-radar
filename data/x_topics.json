@@ -529,5 +529,64 @@
       "https://x.com/earlTrades/status/2075750168427897031"
     ],
     "_id": "t:46eaacea085c96b5"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "DeBot",
+    "topic": "用户反馈Debot在Robinhood链交易迁移时K线卡顿约10分钟",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/kkji_w/status/2076008226316014038"
+    ],
+    "_id": "t:51b621120210cf1e"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "DeBot",
+    "topic": "Debot界面功能讨论，包括侧边栏吸附和自选布局",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/0xCat_Crypto/status/2075979190982394100",
+      "https://x.com/TINA1021A/status/2075978335721865423"
+    ],
+    "_id": "t:2a0242c0e527e329"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "Axiom",
+    "topic": "Axiom 支持 Robinhood 链交易 memecoin",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/tyboe/status/2075721548120592437",
+      "https://x.com/Quinrc20/status/2075749208624132568",
+      "https://x.com/KorteDH/status/2076026366303031738"
+    ],
+    "_id": "t:28d6b9d7301ab9d6"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "Axiom",
+    "topic": "Axiom Solana 交易量低于 Fomo",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/goatgdv/status/2076037469695279152"
+    ],
+    "_id": "t:93ed8dafb7a94d4d"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "Axiom",
+    "topic": "用户从 Axiom 切换其他交易平台",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/NormieBags/status/2076026725503230065",
+      "https://x.com/goatse_mf/status/2076023645093404843"
+    ],
+    "_id": "t:979f47add3f7e567"
   }
 ]
