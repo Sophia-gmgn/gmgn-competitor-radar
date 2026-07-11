@@ -90,5 +90,134 @@
       "https://x.com/guccibeardd/status/2075578919256805479"
     ],
     "_id": "t:57803035e6588eac"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "GMGN",
+    "topic": "用户讨论GMGN在Robinhood链meme币交易中的使用，包括工具推荐和交易执行",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/bersansol/status/2075833248316268826",
+      "https://x.com/mr_eth786/status/2075830268657840369"
+    ],
+    "_id": "t:f618daf05ee33a68"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "GMGN",
+    "topic": "用户询问和分享GMGN用于rug检查、智能钱包跟踪等分析功能",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/RangerAI_tech/status/2075835548858560597",
+      "https://x.com/lowskillgamba/status/2075833420588949930"
+    ],
+    "_id": "t:5702bab0a100062a"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Axiom",
+    "topic": "Axiom上线Robinhood Chain（HOOD）交易，支持ETH memes",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/AxiomExchange/status/2075704026109190440",
+      "https://x.com/CookingHood/status/2075827082945536280",
+      "https://x.com/fudquant67/status/2075800304855969859"
+    ],
+    "_id": "t:e4d6ac5672ce64a8"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Axiom",
+    "topic": "Axiom用户分享meme交易PNL战绩",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/AutorunAlert/status/2075545695457533984",
+      "https://x.com/AutorunAlert/status/2075679526521122941",
+      "https://x.com/AutorunAlert/status/2075792239473598897"
+    ],
+    "_id": "t:aea66da3c0c19c2c"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Photon",
+    "topic": "用户在Photon上买入meme币后转平台，跟踪记录未更新",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Willysgotsol/status/2075659807856492572"
+    ],
+    "_id": "t:f73a13c081485674"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Photon",
+    "topic": "讨论Photon等交易平台所有者匿名及空投承诺",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/the_cia_hacker/status/2075617164329881629"
+    ],
+    "_id": "t:87341ef0b4f9fbca"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Photon",
+    "topic": "直接向@tradewithPhoton反馈希望扩展到Robinhood",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/retardedandpoor/status/2075589399929061587"
+    ],
+    "_id": "t:4831f401c9db933c"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Photon",
+    "topic": "吐槽Photon用户在2026年的交易场景",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/earlTrades/status/2075750168427897031"
+    ],
+    "_id": "t:44a2ed0f9b6f3701"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Moby",
+    "topic": "Moby交易者排行榜和过去24小时顶级交易者收益展示",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/OffGridKat/status/2075766121886560337",
+      "https://x.com/OffGridKat/status/2075766764110033106"
+    ],
+    "_id": "t:6214875d900bc439"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Moby",
+    "topic": "用户在Moby上交易特定meme币的表现和讨论",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/CaptBlasto269/status/2075816654047789384",
+      "https://x.com/bl1xlo/status/2075788504936960427"
+    ],
+    "_id": "t:6db3b904467745e3"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Moby",
+    "topic": "对Moby平台功能或特定代币的疑问（如是否诈骗）",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/y7_y00ts/status/2075829024916664365"
+    ],
+    "_id": "t:2047d258c1a61372"
   }
 ]
