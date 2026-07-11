@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "competitor": "DeBot",
+    "title": "Based Bot 公告频道更新",
+    "summary": "公告提及 Based Bot 的 📢‣┃announcement 频道。内容未提供具体信息，仅为频道标识，解读为指向该频道的通知入口。",
+    "date": "2026-07-11",
+    "type": "公告",
+    "url": "",
+    "_id": "f:664d2bd4fcc05dd3"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "Axiom 公告频道更新",
+    "summary": "公告提及 Axiom 的 📢┇announcements 频道。内容未提供具体信息，仅为频道标识，解读为指向该频道的通知入口。",
+    "date": "2026-07-11",
+    "type": "公告",
+    "url": "",
+    "_id": "f:9f4b20f3c4d95408"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "测试公告",
+    "summary": "公告内容仅为“test”。属于测试性质的通知，无实际功能或活动信息，解读为系统或频道测试发布。",
+    "date": "2026-07-11",
+    "type": "公告",
+    "url": "",
+    "_id": "f:82301915006568f2"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 官方社区通知",
+    "summary": "公告提及 DeBot Official 的 #社区通知 频道。内容未提供具体细节，仅为频道标识，解读为官方社区通知入口。",
+    "date": "2026-07-11",
+    "type": "公告",
+    "url": "",
+    "_id": "f:accbc33fcf59ed44"
+  },
+  {
+    "competitor": "Banana Gun",
+    "title": "Banana Predict 预测市场终端正式上线",
+    "summary": "Banana Predict 是 Banana Gun 生态新增的预测市场终端，支持钱包追踪、跟单交易、排行榜、社交追踪等功能，并提供 7 月 25000 美元奖励活动。公告于 7 月 7 日发布，标志该产品正式开放使用，用户可通过 predict.bananagun.io 访问。这属于产品功能扩展，旨在为用户提供更便捷的预测市场操作和信息跟踪工具。",
+    "date": "2026-07-07",
+    "type": "功能更新",
+    "url": "https://t.me/bananagunannouncements/445",
+    "_id": "f:03e8f1e69b125d2a"
+  }
+]
