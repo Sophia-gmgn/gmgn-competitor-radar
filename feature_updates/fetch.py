@@ -32,7 +32,7 @@ def build_prompt(label, source_kind, posts):
 规则：
 1. 【每条公告都要保留并解读】——不管是功能更新、活动、规则说明、集成、@所有人通知等，都翻译整理，不要自行判断"重不重要"而丢弃。
 2. 只在下列情况下才跳过某条：① 纯粹是"点击验证你是人类 / 入群"这类机器人验证提示；② 与上一条内容完全重复的置顶转发。除此之外一律保留。
-3. 把明显是同一件事的多条（如预告 + 正式发布）合并成一条，以信息最全的为准。
+3. 【同一件事只输出一条】：如果多条公告在讲同一个产品 / 同一个功能（例如"预告 → 正式上线 → 补充说明"其实是同一件事），必须合并成且**仅合并成一条**，以信息最全的那条为准；**绝对不要输出两条在讲同一件事的条目**。
 4. 【标题 title 和摘要 summary 必须用简体中文书写】，原文是英文也要翻译成中文；只有产品名、币种、专有名词（如 Banana Predict、Polymarket、BSC、Solana、cashback）可保留英文原文。
 5. 每条输出一个对象：
    - competitor: 固定填 "{label}"
@@ -53,8 +53,8 @@ def norm_item(it, label):
     it["summary"] = str(it.get("summary", "")).strip()
     it["url"] = str(it.get("url", "")).strip()
     it["date"] = str(it.get("date") or today_cst())[:10]
-    basis = f"{label}|{it['title'][:50]}|{it['date']}"
-    it["_id"] = "f:" + hashlib.md5(basis.encode("utf-8")).hexdigest()[:16]
+    key = it["url"].rstrip("/") if it["url"] else f"{it['title'][:50]}|{it['date']}"
+    it["_id"] = "f:" + hashlib.md5(f"{label}|{key}".encode("utf-8")).hexdigest()[:16]
     return it
 
 
