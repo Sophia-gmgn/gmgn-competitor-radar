@@ -46,8 +46,14 @@ feature_updates:
   competitors:
     - key: debot
       label: DeBot
-      discord_channel_id: "1525442051876061295"   # 你服务器里 Follow DeBot「社区通知」的频道
+      discord_channel_id: "1525442051876061295"
+    - key: axiom
+      label: Axiom
+      discord_channel_id: "1525481473120010300"
+    - key: basedbot
+      label: BasedBot
+      discord_channel_id: "1525484620983046215"
     - key: bananagun
       label: Banana Gun
-      telegram_channel: bananagunannouncements     # 公开频道，无需 bot（实测可读）
-  hours: 168              # 回看小时数（默认 7 天；功能更新几天才一条，窗口别太短）
+      telegram_channel: bananagunannouncements
+  hours: 168

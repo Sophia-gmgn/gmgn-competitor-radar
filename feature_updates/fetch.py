@@ -1,17 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-竞品功能更新（#2 + #4 + #3）—— 抓取 + 归纳
-==========================================
-读 config 里各竞品的源（公开 TG 频道 / Discord 频道）→ 把公告原文交给 Grok，
-挑出【真正的功能更新】、过滤活动喊单/验证提示、归纳成条目 → 去重写 data/feature_updates.json。
-
-单独运行 = 测试模式：抓一遍 → 打印 → 写 feature_updates_result.json + 合并进底稿。
-  python feature_updates/fetch.py   （或 python -m feature_updates.fetch）
-
-需要：XAI_API_KEY；含 Discord 源时还需 DISCORD_BOT_TOKEN。
-可选：GROK_MODEL、FEATURE_UPDATES_HOURS（默认取 config，168h=7天）。
-"""
+"""竞品功能更新（#2 + #4 + #3）—— 抓取 + 归纳。"""
 import os
 import sys
 import json
@@ -44,14 +33,15 @@ def build_prompt(label, source_kind, posts):
 1. 只保留【功能 / 产品层面的更新】：新功能上线、功能优化、新增链 / 交易对 / 集成、重要产品变更、重要版本发布。
 2. 排除：纯活动 / 抽奖 / 空投喊话、行情喊单、"验证你是人类 / 入群" 这类提示、招聘或纯合作软文、单纯转发别人的东西、重复置顶、纯预告("TOMORROW"之类没有实质内容的)。
 3. 把同一个功能的多条合并成一条。
-4. 每条输出一个对象：
+4. 【标题 title 和摘要 summary 必须用简体中文书写】，即使原文是英文也要翻译成中文；只有产品名、币种、专有名词（如 Banana Predict、Polymarket、BSC、Solana）可保留英文原文。
+5. 每条输出一个对象：
    - competitor: 固定填 "{label}"
-   - title: 一句话说清出了什么新功能
-   - summary: 2-3 句，这个功能是什么 + 对用户的价值（就事论事，别抄营销词）
+   - title: 一句简体中文说清出了什么新功能
+   - summary: 2-3 句简体中文，这个功能是什么 + 对用户的价值（就事论事，别抄营销词）
    - date: 该更新的日期 YYYY-MM-DD（用原文里对应那条的日期）
    - type: "新功能" / "优化" / "集成" / "其它"
    - url: 原文链接（用我在对应原文里给的那条链接；没有就填空字符串）
-5. 没有任何真正的功能更新，就返回空数组 []。
+6. 没有任何真正的功能更新，就返回空数组 []。
 只输出一个 JSON 数组，不要解释文字、不要 markdown 代码块标记。"""
 
 
