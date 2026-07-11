@@ -82,3 +82,32 @@ config.yaml  .env.example  requirements.txt
 - **只抓公开内容**：公开推文 / 公开讨论；不抓私信、受保护账号。
 - **广搜行为需实测**：`x_search` 不限 handle 的广搜覆盖度和费用要以 x-topics-test 的实跑结果为准；据此调 `terms`。
 - 这是**你自己的库**，随便迭代；验证好的模块之后可合并回 `gmgn-x-monitor`。
+
+---
+
+# 功能② 竞品功能更新（#2 + #4 + #3）
+
+监控竞品官方渠道发布的**功能更新**（新功能/优化/集成），归纳后写「竞品功能更新」页。
+
+## 读取源（两种，config 里加一行即可扩展）
+- **公开 TG 广播频道**：读 `t.me/s/<频道名>`，**无需 bot**。认准是“频道(subscribers)”而非“群(members)”或验证门。
+- **Discord 频道**：读**你自己服务器里 Follow 了竞品公告频道**的那个频道（需 `DISCORD_BOT_TOKEN`）。
+  - 做法：你建个自己的 Discord 服务器 → 在竞品的公告频道点「关注/Follow」转发进你的频道 → 建个 bot 拉进你服务器（开 MESSAGE CONTENT INTENT）→ 把**你那个频道的 ID** 填进 config。
+
+当前已配：DeBot（Discord 频道 `1525442051876061295`）、Banana Gun（公开 TG `bananagunannouncements`）。
+
+## 需要的 Secret（在原有基础上加这些）
+| Secret | 用途 |
+|---|---|
+| `DISCORD_BOT_TOKEN` | 读你服务器里 Follow 竞品公告的频道 |
+| `FEATURE_UPDATES_PAGE_ID` | 「竞品功能更新」页的 pageId |
+
+（`XAI_API_KEY`、`ATLASSIAN_*` 与功能①共用，无需重配。）
+
+## 上线步骤
+1. 配 `DISCORD_BOT_TOKEN` + `FEATURE_UPDATES_PAGE_ID`。
+2. **先测**：Actions → **feature-updates-test** → Run。看各竞品读到几条原文、归纳出几条功能更新；下载 `feature-updates-result` 看质量。
+3. **启用**：**feature-updates** 每天北京 10:00 / 22:00 自动跑（写页面 + Slack 自动跳过）。
+
+## 扩展竞品
+在 `config.yaml` 的 `feature_updates.competitors` 加一条，给 `telegram_channel`（公开频道）或 `discord_channel_id`（你 Follow 的频道）。找不到可读源的（Photon/Trojan/Moby 等）先不加。

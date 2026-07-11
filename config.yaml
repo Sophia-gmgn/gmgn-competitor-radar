@@ -35,3 +35,19 @@ x_topics:
 
   hours: 24               # 回看小时数
   per_subject_topics: 6   # 每个主体最多归纳几个话题
+
+
+# ==== 竞品功能更新（#2 + #4 + #3 · Jerry/Nate/Haze）====
+# 每个竞品可配两种源（有一个就行，可都配）：
+#   telegram_channel   : 公开广播频道的用户名（读 t.me/s/<名>，无需 bot）
+#   discord_channel_id : 你自己服务器里“Follow 了竞品公告频道”的那个频道 ID（需 DISCORD_BOT_TOKEN）
+# 加竞品 = 加一条。找不到可读源的竞品（Photon/Trojan/Moby 等）先不放。
+feature_updates:
+  competitors:
+    - key: debot
+      label: DeBot
+      discord_channel_id: "1525442051876061295"   # 你服务器里 Follow DeBot「社区通知」的频道
+    - key: bananagun
+      label: Banana Gun
+      telegram_channel: bananagunannouncements     # 公开频道，无需 bot（实测可读）
+  hours: 168              # 回看小时数（默认 7 天；功能更新几天才一条，窗口别太短）
