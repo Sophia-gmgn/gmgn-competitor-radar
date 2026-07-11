@@ -380,5 +380,42 @@
       "https://x.com/SeitanSurKick/status/2075766764110033106"
     ],
     "_id": "t:5140ea311f2e8e26"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Axiom",
+    "topic": "Axiom 新增 Robinhood 支持，用户讨论其用于 ETH meme 交易的便利性",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/SolanaSwaggy/status/2075903217880228236",
+      "https://x.com/tyboe/status/2075721548120592437",
+      "https://x.com/Quinrc20/status/2075749208624132568"
+    ],
+    "_id": "t:6abbaad78d3d2a3d"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Axiom",
+    "topic": "用户质疑 Dexscreener 付费必要性，提及 Axiom 等平台已内置官方链接",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Zghire_/status/2075918851246526666"
+    ],
+    "_id": "t:ec705c35fac7414c"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "BasedBot",
+    "topic": "用户讨论用BasedBot快速bridge和交易Robinhood链meme币，提到免费bridge和速度快",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/coringtonite/status/2075950982098559135",
+      "https://x.com/LawlietCrypto/status/2075950390756233490",
+      "https://x.com/Fiscaldemon/status/2075931468367331484"
+    ],
+    "_id": "t:7bfaebfaf0b7ad60"
   }
 ]
