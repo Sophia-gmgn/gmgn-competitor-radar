@@ -1,0 +1,58 @@
+name: x-topics
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "30 12 * * *"     # UTC 12:30 = 北京 20:30，每日一次
+
+permissions:
+  contents: write             # 提交 data/x_topics.json 与 state/
+
+concurrency:
+  group: x-topics
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+
+      # 1) 抓取 + 归纳，写进 data/x_topics.json
+      - name: Fetch topics
+        env:
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          GROK_MODEL: "grok-4.3"
+        run: python -m x_topics.fetch
+
+      # 2) 写 Confluence「X 话题日报」页（未配 X_TOPICS_PAGE_ID 会自动跳过）
+      - name: Write Confluence
+        if: ${{ !cancelled() }}
+        env:
+          ATLASSIAN_EMAIL: ${{ secrets.ATLASSIAN_EMAIL }}
+          ATLASSIAN_API_TOKEN: ${{ secrets.ATLASSIAN_API_TOKEN }}
+          X_TOPICS_PAGE_ID: ${{ secrets.X_TOPICS_PAGE_ID }}   # 建好页后在 Secrets 填 pageId
+        run: python -m x_topics.to_confluence
+
+      # 3) 发 Slack 日报（同频道，自己的 header）
+      - name: Post Slack
+        if: ${{ !cancelled() }}
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL: "C0BFFKSLC5D"
+          X_TOPICS_PAGE_URL: ""      # 建好页后填页面网址，日报末尾会带跳转链接
+        run: python -m x_topics.to_slack
+
+      # 4) 把底稿与状态提交回仓库
+      - name: Commit data & state
+        if: ${{ !cancelled() }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/x_topics.json state/ || true
+          git diff --staged --quiet || git commit -m "chore: update x-topics store & state [skip ci]"
+          git push || echo "nothing to push"

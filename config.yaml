@@ -1,0 +1,37 @@
+# =====================================================================
+# gmgn-competitor-radar · 配置
+# =====================================================================
+
+# ==== X 话题日报（#1 · Haze）====
+# 覆盖的主体：GMGN 自己 + 核心竞品。
+# terms = 搜索线索（名称/别名/官方号）。名字太泛的（Axiom/Photon/Trojan/Moby）加了
+#         加密/交易语境词收窄，Grok 也会在 prompt 里被要求“只算加密 meme 交易语境”。
+# self: true 的是我们自己（GMGN），文案上作“自身舆情”处理。
+# —— 跑过一次测试后，按结果调这里的 terms 最有效（噪音多就收窄、漏了就放宽）——
+x_topics:
+  subjects:
+    - key: gmgn
+      label: GMGN
+      terms: "GMGN OR gmgn.ai OR @gmgnai"
+      self: true
+    - key: debot
+      label: DeBot
+      terms: "DeBot OR @Debot_Official"
+    - key: axiom
+      label: Axiom
+      terms: "Axiom (Solana OR meme OR trading OR bot OR crypto) OR @AxiomExchange"
+    - key: basedbot
+      label: BasedBot
+      terms: "BasedBot OR @BasedBot"
+    - key: photon
+      label: Photon
+      terms: "Photon (Solana OR trading OR bot OR meme) OR @tradewithPhoton"
+    - key: trojan
+      label: Trojan
+      terms: "Trojan (Solana OR trading OR bot OR meme) OR @TrojanOnSolana"
+    - key: moby
+      label: Moby
+      terms: "Moby (crypto OR Solana OR trading OR memecoin) OR @mobyagent"
+
+  hours: 24               # 回看小时数
+  per_subject_topics: 6   # 每个主体最多归纳几个话题

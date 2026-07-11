@@ -1,0 +1,6 @@
+.env
+accounts.db
+accounts.db-*
+__pycache__/
+*.pyc
+x_topics_result.json

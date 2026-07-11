@@ -1,0 +1,38 @@
+name: x-topics-test
+
+# 只手动触发：先验证 Grok 广搜的覆盖度 + 费用 + 话题质量，再决定上定时
+on:
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: "回看小时数"
+        required: false
+        default: "24"
+      model:
+        description: "Grok 模型（grok-4.3 或更省的 grok-4-1-fast）"
+        required: false
+        default: "grok-4.3"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Run fetch (test only)
+        env:
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          X_TOPICS_HOURS: ${{ github.event.inputs.hours }}
+          GROK_MODEL: ${{ github.event.inputs.model }}
+        run: python -m x_topics.fetch
+      - uses: actions/upload-artifact@v4
+        with:
+          name: x-topics-result
+          path: x_topics_result.json
+          if-no-files-found: ignore
