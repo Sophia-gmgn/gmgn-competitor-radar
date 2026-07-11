@@ -16,5 +16,14 @@
     "type": "公告",
     "url": "",
     "_id": "f:b60e9f43f7a31590"
+  },
+  {
+    "competitor": "Banana Gun",
+    "title": "Banana Predict 预测市场终端正式上线",
+    "summary": "Banana Predict 已于 2026-07-07 正式发布，集成钱包追踪、跟单交易、交易员排行榜、社交信息追踪等功能，并提供 25000 美元奖励池。该功能扩展了 Banana Gun 生态，支持用户在预测市场中快速发现并复制顶级交易者操作。公告同时包含前一天的预热推文，属于同一产品发布事件，故合并处理。",
+    "date": "2026-07-07",
+    "type": "功能更新",
+    "url": "https://t.me/bananagunannouncements/445",
+    "_id": "f:57005b55e41830f1"
   }
 ]
