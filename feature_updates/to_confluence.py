@@ -21,7 +21,7 @@ from common.confluence import Confluence, esc, panel, status_lozenge, expand
 DATA_FILE = os.environ.get("FEATURE_UPDATES_DATA", "data/feature_updates.json")
 MAX_DAYS = int(os.environ.get("FEATURE_UPDATES_PAGE_DAYS", "30"))
 
-TYPE_COLOUR = {"新功能": "Green", "优化": "Blue", "集成": "Purple", "其它": None}
+TYPE_COLOUR = {"功能更新": "Green", "集成": "Purple", "活动": "Yellow", "公告": "Blue", "其它": None}
 
 
 def render_item(it):

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""竞品功能更新（#2 + #4 + #3）—— 抓取 + 归纳。"""
+"""竞品功能更新（#2 + #4 + #3）—— 抓取 + 翻译解读。"""
 import os
 import sys
 import json
@@ -17,31 +17,31 @@ from common.xai import call_grok, DEFAULT_MODEL
 from feature_updates.sources import read_tg_channel, read_discord_channel
 
 DATA_FILE = os.environ.get("FEATURE_UPDATES_DATA", "data/feature_updates.json")
-TYPE_OK = {"新功能", "优化", "集成", "其它"}
+TYPE_OK = {"功能更新", "活动", "集成", "公告", "其它"}
 
 
 def build_prompt(label, source_kind, posts):
     block = "\n\n".join(
         f"[{i+1}] 日期 {p.get('ts','')[:10]}｜链接 {p.get('url','')}\n{p['text']}"
         for i, p in enumerate(posts))
-    return f"""以下是竞品 {label} 最近的公告原文（来自其官方 {source_kind}）。请从中挑出【真正的产品功能更新】并归纳成条目。
+    return f"""以下是竞品 {label} 官方 {source_kind}最近发布的公告原文。请把【每一条】都翻译成简体中文并做简要解读，逐条整理成条目。
 
 原文（每条以序号分隔，含日期和链接）：
 {block}
 
 规则：
-1. 只保留【功能 / 产品层面的更新】：新功能上线、功能优化、新增链 / 交易对 / 集成、重要产品变更、重要版本发布。
-2. 排除：纯活动 / 抽奖 / 空投喊话、行情喊单、"验证你是人类 / 入群" 这类提示、招聘或纯合作软文、单纯转发别人的东西、重复置顶、纯预告("TOMORROW"之类没有实质内容的)。
-3. 把同一个功能的多条合并成一条。
-4. 【标题 title 和摘要 summary 必须用简体中文书写】，即使原文是英文也要翻译成中文；只有产品名、币种、专有名词（如 Banana Predict、Polymarket、BSC、Solana）可保留英文原文。
+1. 【每条公告都要保留并解读】——不管是功能更新、活动、规则说明、集成、@所有人通知等，都翻译整理，不要自行判断"重不重要"而丢弃。
+2. 只在下列情况下才跳过某条：① 纯粹是"点击验证你是人类 / 入群"这类机器人验证提示；② 与上一条内容完全重复的置顶转发。除此之外一律保留。
+3. 把明显是同一件事的多条（如预告 + 正式发布）合并成一条，以信息最全的为准。
+4. 【标题 title 和摘要 summary 必须用简体中文书写】，原文是英文也要翻译成中文；只有产品名、币种、专有名词（如 Banana Predict、Polymarket、BSC、Solana、cashback）可保留英文原文。
 5. 每条输出一个对象：
    - competitor: 固定填 "{label}"
-   - title: 一句简体中文说清出了什么新功能
-   - summary: 2-3 句简体中文，这个功能是什么 + 对用户的价值（就事论事，别抄营销词）
-   - date: 该更新的日期 YYYY-MM-DD（用原文里对应那条的日期）
-   - type: "新功能" / "优化" / "集成" / "其它"
+   - title: 一句简体中文概括这条公告在说什么
+   - summary: 2-3 句简体中文，把这条公告的内容说清楚 + 简要解读它的意思 / 影响（就事论事，别抄营销词）
+   - date: 该公告的日期 YYYY-MM-DD（用原文里对应那条的日期）
+   - type: 给这条归个类，从这几个里选一个："功能更新"（新功能 / 优化 / 版本发布）/ "集成"（新增链 / 交易对 / 合作接入）/ "活动"（抽奖 / 空投 / 竞赛 / 奖励）/ "公告"（规则说明 / 通知 / 喊话）/ "其它"
    - url: 原文链接（用我在对应原文里给的那条链接；没有就填空字符串）
-6. 没有任何真正的功能更新，就返回空数组 []。
+6. 如果原文全部是验证提示 / 空内容，才返回空数组 []。
 只输出一个 JSON 数组，不要解释文字、不要 markdown 代码块标记。"""
 
 
@@ -104,7 +104,7 @@ def fetch_all(cfg, hours, model, api_key):
             u = res["usage"]
             ti = u.get("input_tokens") or u.get("prompt_tokens") or 0
             to_ = u.get("output_tokens") or u.get("completion_tokens") or 0
-            print(f"   → 归纳出 {len(items)} 条功能更新｜tokens {ti}+{to_}")
+            print(f"   → 整理出 {len(items)} 条｜tokens {ti}+{to_}")
             for it in items:
                 print(f"      [{it['type']}] {it['title'][:60]}")
     return all_items, failed
@@ -137,7 +137,7 @@ def main():
     added = merge_by_id(store, items)
     save_store(DATA_FILE, store)
     print("\n=== 汇总 ===")
-    print(f"本次功能更新 {len(items)} 条；底稿 {before} → {len(store)}（新增 {added}）")
+    print(f"本次整理 {len(items)} 条；底稿 {before} → {len(store)}（新增 {added}）")
     if failed:
         print(f"⚠️ 失败：{failed}")
 
