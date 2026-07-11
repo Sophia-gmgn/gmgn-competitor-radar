@@ -1,0 +1,384 @@
+[
+  {
+    "date": "2026-07-11",
+    "subject": "BasedBot",
+    "topic": "用户询问如何在 Robinhood 链上向 BasedBot 存款，以及使用 BasedBot 桥接 ETH 到 RH 链的操作方法",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/AbubakarManlyk/status/2075830723181719827",
+      "https://x.com/lizardvampire/status/2075810888930525680",
+      "https://x.com/serioti0n/status/2075822595899863490"
+    ],
+    "_id": "t:3395e3de6b09cb50"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "BasedBot",
+    "topic": "将 BasedBot 作为交易终端或桥接工具，与其他 bot 比较使用",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Eroc111111/status/2075765684194455783",
+      "https://x.com/olorpipz/status/2075773261632151879"
+    ],
+    "_id": "t:cee63fb7ead1e991"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Photon",
+    "topic": "用户讨论在Photon买入后转到其他平台，持有时间跟踪问题",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Willysgotsol/status/2075659807856492572"
+    ],
+    "_id": "t:8483fdd93196eda8"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Photon",
+    "topic": "用户提到Photon与其他交易产品所有权不明和空投未兑现",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/the_cia_hacker/status/2075617164329881629"
+    ],
+    "_id": "t:cbd7ffe6e8d2c826"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Photon",
+    "topic": "用户称赞Photon是最佳SOL meme交易平台并请求新功能",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/retardedandpoor/status/2075589399929061587"
+    ],
+    "_id": "t:61b675ae95734f12"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Photon",
+    "topic": "调侃Photon用户在2026年的状态",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/earlTrades/status/2075750168427897031"
+    ],
+    "_id": "t:71a10bc37e7d3cf2"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Moby",
+    "topic": "Moby 平台交易者 24 小时内顶级表现及排行榜奖励",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/OffGridKat/status/2075766121886560337",
+      "https://x.com/SeitanSurKick/status/2075766764110033106"
+    ],
+    "_id": "t:9b559f4406bb3c11"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Moby",
+    "topic": "在 Moby 上持有特定代币进入排行榜获得奖励",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/guccibeardd/status/2075578919256805479"
+    ],
+    "_id": "t:57803035e6588eac"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "GMGN",
+    "topic": "用户讨论GMGN在Robinhood链meme币交易中的使用，包括工具推荐和交易执行",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/bersansol/status/2075833248316268826",
+      "https://x.com/mr_eth786/status/2075830268657840369"
+    ],
+    "_id": "t:f618daf05ee33a68"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "GMGN",
+    "topic": "用户询问和分享GMGN用于rug检查、智能钱包跟踪等分析功能",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/RangerAI_tech/status/2075835548858560597",
+      "https://x.com/lowskillgamba/status/2075833420588949930"
+    ],
+    "_id": "t:5702bab0a100062a"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Axiom",
+    "topic": "Axiom上线Robinhood Chain（HOOD）交易，支持ETH memes",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/AxiomExchange/status/2075704026109190440",
+      "https://x.com/CookingHood/status/2075827082945536280",
+      "https://x.com/fudquant67/status/2075800304855969859"
+    ],
+    "_id": "t:e4d6ac5672ce64a8"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Axiom",
+    "topic": "Axiom用户分享meme交易PNL战绩",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/AutorunAlert/status/2075545695457533984",
+      "https://x.com/AutorunAlert/status/2075679526521122941",
+      "https://x.com/AutorunAlert/status/2075792239473598897"
+    ],
+    "_id": "t:aea66da3c0c19c2c"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Photon",
+    "topic": "用户在Photon上买入meme币后转平台，跟踪记录未更新",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Willysgotsol/status/2075659807856492572"
+    ],
+    "_id": "t:f73a13c081485674"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Photon",
+    "topic": "讨论Photon等交易平台所有者匿名及空投承诺",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/the_cia_hacker/status/2075617164329881629"
+    ],
+    "_id": "t:87341ef0b4f9fbca"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Photon",
+    "topic": "直接向@tradewithPhoton反馈希望扩展到Robinhood",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/retardedandpoor/status/2075589399929061587"
+    ],
+    "_id": "t:4831f401c9db933c"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Photon",
+    "topic": "吐槽Photon用户在2026年的交易场景",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/earlTrades/status/2075750168427897031"
+    ],
+    "_id": "t:44a2ed0f9b6f3701"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Moby",
+    "topic": "Moby交易者排行榜和过去24小时顶级交易者收益展示",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/OffGridKat/status/2075766121886560337",
+      "https://x.com/OffGridKat/status/2075766764110033106"
+    ],
+    "_id": "t:6214875d900bc439"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Moby",
+    "topic": "用户在Moby上交易特定meme币的表现和讨论",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/CaptBlasto269/status/2075816654047789384",
+      "https://x.com/bl1xlo/status/2075788504936960427"
+    ],
+    "_id": "t:6db3b904467745e3"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Moby",
+    "topic": "对Moby平台功能或特定代币的疑问（如是否诈骗）",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/y7_y00ts/status/2075829024916664365"
+    ],
+    "_id": "t:2047d258c1a61372"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "DeBot",
+    "topic": "DeBot 在新链上线时交易跟进速度快于部分钱包和 DEX",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Liwencheng888/status/2075885766031638616"
+    ],
+    "_id": "t:8e6d7b6584223764"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "DeBot",
+    "topic": "DeBot 推送创始人关注动向用于 meme 币交易",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/EinsteinYipie/status/2075866425814827360"
+    ],
+    "_id": "t:6570d33ac1e57179"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "DeBot",
+    "topic": "DeBot 支持 Robinhood 链快速交易和扫链发现币",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/lin_btc/status/2075463711268184167"
+    ],
+    "_id": "t:c0d64c1740734031"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Axiom",
+    "topic": "Axiom 集成 Robinhood 支持 ETH meme 交易",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/gobilcapital_yp/status/2075869716820705541",
+      "https://x.com/AmittCrypto/status/2075867118286028990",
+      "https://x.com/Quinrc20/status/2075749208624132568"
+    ],
+    "_id": "t:58946c836d5c603e"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Axiom",
+    "topic": "用户在 Axiom 上交易 ETH meme 遭遇钱包被 drain",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/Lucima2725/status/2075863162818039981"
+    ],
+    "_id": "t:58fafaf2d3c9779a"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Photon",
+    "topic": "用户反映 Photon 买入后帖子跟踪未更新问题",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Willysgotsol/status/2075659807856492572"
+    ],
+    "_id": "t:d22648b6084ef371"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Photon",
+    "topic": "用户请求 Photon 增加止损限价等功能并扩展到 Robinhood",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/retardedandpoor/status/2075589399929061587"
+    ],
+    "_id": "t:911cb97f4a9e0511"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Photon",
+    "topic": "讨论 Photon 等交易产品所有者匿名问题",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/the_cia_hacker/status/2075617164329881629"
+    ],
+    "_id": "t:be082f21325dbe21"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Photon",
+    "topic": "用户提到 Photon 链接与合约相关疑似诈骗",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/Lottyyyyyyyyyy/status/2075675769712279808"
+    ],
+    "_id": "t:a2f2581f5a1a863d"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Trojan",
+    "topic": "Trojan bot 用于 Solana meme 币交易的速度和功能",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/SolanaMufasa/status/2075807081379361207",
+      "https://x.com/parent_divorced/status/2075747127775654096"
+    ],
+    "_id": "t:8f6eb747aa242384"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Trojan",
+    "topic": "Trojan 交易 bot 相关的诈骗或钓鱼警报",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/Gul_yabani/status/2075856999900709198",
+      "https://x.com/SneakerraiderX/status/2075866177683796134"
+    ],
+    "_id": "t:6a2e675e21836f8b"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Trojan",
+    "topic": "用户询问 Trojan 是否支持 Robinhood 等其他平台",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/AEON_XE/status/2075832976613515759"
+    ],
+    "_id": "t:c0e91769acaace1c"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Moby",
+    "topic": "Moby leaderboard 上 top traders 的盈利表现和空投奖励",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/userSOLANA/status/2075870399686983739",
+      "https://x.com/OffGridKat/status/2075766121886560337",
+      "https://x.com/CryptoExpert101/status/2075829744835145933"
+    ],
+    "_id": "t:dcec5b37071e1bf9"
+  },
+  {
+    "date": "2026-07-11",
+    "subject": "Moby",
+    "topic": "用户在 Moby 上交易 memecoin 的实时盈利和平台使用体验",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/OffGridKat/status/2075766898638123025",
+      "https://x.com/SeitanSurKick/status/2075766764110033106"
+    ],
+    "_id": "t:5140ea311f2e8e26"
+  }
+]
