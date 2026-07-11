@@ -49,7 +49,7 @@ def render_day(day_items):
 
 def render_page(store):
     parts = [panel("info",
-                   f"<p>本页由脚本自动更新（每日一次）。更新于 {esc(now_cst_str())}（UTC+8）。"
+                   f"<p>本页由脚本自动更新（每日 4 次）。更新于 {esc(now_cst_str())}（UTC+8）。"
                    f"<strong>请勿手动编辑</strong>（每次整页重写，手动改动会被覆盖）。</p>")]
     dates = sorted({it.get("date", "") for it in store if it.get("date")}, reverse=True)
     if not dates:
