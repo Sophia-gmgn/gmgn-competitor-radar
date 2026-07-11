@@ -1,0 +1,56 @@
+name: feature-updates
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 2 * * *"
+    - cron: "0 14 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: feature-updates
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+
+      - name: Fetch feature updates
+        env:
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          GROK_MODEL: "grok-4.3"
+        run: python -m feature_updates.fetch
+
+      - name: Write Confluence
+        if: ${{ !cancelled() }}
+        env:
+          ATLASSIAN_EMAIL: ${{ secrets.ATLASSIAN_EMAIL }}
+          ATLASSIAN_API_TOKEN: ${{ secrets.ATLASSIAN_API_TOKEN }}
+          FEATURE_UPDATES_PAGE_ID: ${{ secrets.FEATURE_UPDATES_PAGE_ID }}
+        run: python -m feature_updates.to_confluence
+
+      - name: Post Slack
+        if: ${{ !cancelled() }}
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL: "C0BFFKSLC5D"
+          FEATURE_UPDATES_PAGE_URL: ""
+        run: python -m feature_updates.to_slack
+
+      - name: Commit data & state
+        if: ${{ !cancelled() }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/feature_updates.json state/ || true
+          git diff --staged --quiet || git commit -m "chore: update feature-updates store [skip ci]"
+          git push || echo "nothing to push"

@@ -1,0 +1,38 @@
+name: feature-updates-test
+
+on:
+  workflow_dispatch:
+    inputs:
+      hours:
+        description: "回看小时数"
+        required: false
+        default: "168"
+      model:
+        description: "Grok 模型"
+        required: false
+        default: "grok-4.3"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Run fetch (test only)
+        env:
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          FEATURE_UPDATES_HOURS: ${{ github.event.inputs.hours }}
+          GROK_MODEL: ${{ github.event.inputs.model }}
+        run: python -m feature_updates.fetch
+      - uses: actions/upload-artifact@v4
+        with:
+          name: feature-updates-result
+          path: feature_updates_result.json
+          if-no-files-found: ignore
