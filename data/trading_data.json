@@ -1,6 +1,6 @@
 {
   "date": "2026-07-12",
-  "updated_at": "2026-07-12T11:13:21.052894+00:00",
+  "updated_at": "2026-07-12T12:50:44.769720+00:00",
   "items": [
     {
       "label": "GMGN",
@@ -13,7 +13,7 @@
         "d30": 524319339,
         "name": "GMGN"
       },
-      "vol_d1_prev": 13932612,
+      "vol_d1_prev": 6005842,
       "vol_d1_chg": null
     },
     {
@@ -27,7 +27,7 @@
         "d30": 1109730227,
         "name": "Axiom"
       },
-      "vol_d1_prev": 26570247,
+      "vol_d1_prev": 20469292,
       "vol_d1_chg": null
     },
     {
@@ -41,7 +41,7 @@
         "d30": 112373204,
         "name": "Trojan"
       },
-      "vol_d1_prev": 2694760,
+      "vol_d1_prev": 2348219,
       "vol_d1_chg": null
     },
     {
@@ -55,7 +55,7 @@
         "d30": 39123134,
         "name": "Photon"
       },
-      "vol_d1_prev": 732970,
+      "vol_d1_prev": 594288,
       "vol_d1_chg": null
     },
     {
@@ -69,7 +69,7 @@
         "d30": 19687871,
         "name": "BONKbot"
       },
-      "vol_d1_prev": 684383,
+      "vol_d1_prev": 619713,
       "vol_d1_chg": null
     },
     {
@@ -83,9 +83,45 @@
         "d30": 70413170,
         "name": "Banana Gun"
       },
-      "vol_d1_prev": 103276,
+      "vol_d1_prev": 59891,
       "vol_d1_chg": null
     }
   ],
-  "users": []
+  "users": [
+    {
+      "label": "Trojan",
+      "users_1d": 2820,
+      "users_7d": 13216,
+      "users_14d": 19680,
+      "users_30d": 29717
+    },
+    {
+      "label": "BONKbot",
+      "users_1d": 661,
+      "users_7d": 3015,
+      "users_14d": 4226,
+      "users_30d": 6555
+    },
+    {
+      "label": "Maestro",
+      "users_1d": 405,
+      "users_7d": 2673,
+      "users_14d": 4723,
+      "users_30d": 17260
+    },
+    {
+      "label": "Sol Trading Bot",
+      "users_1d": 211,
+      "users_7d": 1182,
+      "users_14d": 1972,
+      "users_30d": 3102
+    },
+    {
+      "label": "Banana Gun",
+      "users_1d": 46,
+      "users_7d": 237,
+      "users_14d": 419,
+      "users_30d": 652
+    }
+  ]
 }
