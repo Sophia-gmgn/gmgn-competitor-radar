@@ -705,5 +705,100 @@
       "https://x.com/itscoinnoisseur/status/2076144675384111271"
     ],
     "_id": "t:c4d9aef4b2d93390"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "DeBot",
+    "topic": "DeBot与GMGN哪个更好用",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/i4gool/status/2076330823331258695",
+      "https://x.com/BTCpepe0721/status/2076326244464181461"
+    ],
+    "_id": "t:7754e32fe75563f3"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "DeBot",
+    "topic": "DeBot是否支持罗宾汉链及iOS使用",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/BTCpepe0721/status/2076326244464181461"
+    ],
+    "_id": "t:09073e97a98db0dc"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "DeBot",
+    "topic": "用DeBot查看钱包meme交易盈利情况",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Loong998/status/2076322161602805813"
+    ],
+    "_id": "t:7ba8f3d1f93d08e8"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "DeBot",
+    "topic": "DeBot作为老品牌打狗工具的稳定性",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/yqgyx123/status/2076324545997488214",
+      "https://x.com/Btcniumowang/status/2076317183060136246"
+    ],
+    "_id": "t:8d766c044512d0f8"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "Axiom",
+    "topic": "Axiom 快速集成 Robinhood 链 meme 交易",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/enwardhardr/status/2076330925298778430",
+      "https://x.com/StoicJimmy/status/2076305096028127665",
+      "https://x.com/tayapami/status/2076306145975701647"
+    ],
+    "_id": "t:8cc95d943e85bea8"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "Moby",
+    "topic": "Moby App 的 Solana 到 RobinhoodCrypto 快速桥接功能演示",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/mobyagent/status/2076290730008719635",
+      "https://x.com/mobyagent/status/2076322237624246552"
+    ],
+    "_id": "t:ec61eab70174296d"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "Moby",
+    "topic": "Moby 平台上鲸鱼买入活动和聪明钱持有者追踪（如 ANSEM、TROLL 等 meme 币）",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/whalewatchalert/status/2076321687532941336",
+      "https://x.com/mobyagent/status/2076312876780777509",
+      "https://x.com/whalewatchalert/status/2076297542157865436"
+    ],
+    "_id": "t:ba43c773ad55a6dd"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "Moby",
+    "topic": "Moby Pro 解锁的聪明钱持仓详情和高级功能",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/mobyagent/status/2076321849344999807"
+    ],
+    "_id": "t:46dad4772bc9698f"
   }
 ]
