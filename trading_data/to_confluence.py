@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""竞品交易数据（#6 · stan）→ Confluence（交易量 + 活跃用户）。"""
+"""竞品交易数据（#6 · stan）→ Confluence（统一一张表：交易量 + 用户数）。"""
 import os
 import sys
 import json
@@ -8,7 +8,7 @@ import pathlib
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
-from common.util import load_dotenv, enable_truststore, now_cst_str
+from common.util import load_dotenv, enable_truststore, load_config, now_cst_str
 from common.confluence import Confluence, esc, panel, table
 
 DATA_FILE = os.environ.get("TRADING_DATA_FILE", "data/trading_data.json")
@@ -36,71 +36,67 @@ def num(v):
         return str(v)
 
 
-def chg_html(v):
-    if v is None:
-        return '<span style="color:#6B778C">—</span>'
-    if v > 0:
-        return f'<span style="color:#0B875B">▲ {v*100:.1f}%</span>'
-    if v < 0:
-        return f'<span style="color:#DE350B">▼ {abs(v)*100:.1f}%</span>'
-    return '<span style="color:#6B778C">0%</span>'
-
-
-def name_cell(it, rank):
-    label = esc(it["label"])
-    if it.get("self"):
-        return f'{rank}. <strong>⭐ {label}（我们）</strong>'
-    return f'{rank}. {label}'
-
-
 def render_page(snap):
     items = snap.get("items", [])
+    users = snap.get("users", [])
     now = now_cst_str()
 
-    def vkey(it):
-        return (it.get("vol") or {}).get("d30") or 0
-    ranked = sorted(items, key=vkey, reverse=True)
+    roster = (load_config().get("trading_data", {}) or {}).get("roster") or []
+    if not roster:
+        roster = [{"label": it["label"], "vol_slug": it["slug"], "self": it.get("self")}
+                  for it in items]
+        have = {r["label"] for r in roster}
+        for u in users:
+            if u["label"] not in have:
+                roster.append({"label": u["label"]})
 
-    self_rank = next((i + 1 for i, it in enumerate(ranked) if it.get("self")), None)
-    n = len(ranked)
-    rank_txt = f"我们（GMGN）交易量排名 <strong>第 {self_rank} / {n}</strong>" if self_rank else ""
+    vol_by_slug = {it.get("slug"): it for it in items}
+    user_by_label = {u.get("label"): u for u in users}
+
+    rows_data = []
+    for r in roster:
+        label = r.get("label")
+        vol = vol_by_slug.get(r.get("vol_slug")) if r.get("vol_slug") else None
+        v = (vol or {}).get("vol") or {}
+        u = user_by_label.get(label) or {}
+        rows_data.append({
+            "label": label, "self": r.get("self"),
+            "v1": v.get("d1"), "v7": v.get("d7"), "v14": v.get("d14"), "v30": v.get("d30"),
+            "ut": u.get("users_today"), "u7": u.get("users_7d"),
+            "u14": u.get("users_14d"), "u30": u.get("users_30d"),
+            "has_vol": bool(v), "has_user": bool(u),
+        })
+
+    g1 = sorted([x for x in rows_data if x["has_vol"]], key=lambda x: x["v30"] or 0, reverse=True)
+    g2 = sorted([x for x in rows_data if not x["has_vol"] and x["has_user"]],
+                key=lambda x: x["u30"] or 0, reverse=True)
+    g3 = [x for x in rows_data if not x["has_vol"] and not x["has_user"]]
+    ordered = g1 + g2 + g3
+
+    self_rank = next((i + 1 for i, x in enumerate(g1) if x["self"]), None)
+    n_vol = len(g1)
+    rank_txt = f"我们（GMGN）交易量排名 <strong>第 {self_rank} / {n_vol}</strong>" if self_rank else ""
 
     parts = [panel("info",
-                   f"<p>📊 竞品交易数据监控（MEME 交易）· 交易量 <strong>{n}</strong> 家 &nbsp;｜&nbsp; {rank_txt}</p>"
-                   f"<p><sub>数据源 DefiLlama（交易量）+ Dune（用户数）· 每日更新 · 更新于 {esc(now)}（UTC+8）· 请勿手动编辑（每次整页重写）</sub></p>")]
+                   f"<p>📊 竞品交易数据监控（MEME 交易）· 共 <strong>{len(ordered)}</strong> 家 &nbsp;｜&nbsp; {rank_txt}</p>"
+                   f"<p><sub>交易量取自 DefiLlama（全链）· 活跃用户取自 Dune（仅 Solana，按独立钱包去重）· 每日更新 · 更新于 {esc(now)}（UTC+8）· 请勿手动编辑</sub></p>")]
 
-    if not items:
-        parts.append(panel("note", "<p>暂无数据。</p>"))
-        return "".join(parts)
-
-    parts.append("<h2>💵 交易量排行</h2>")
-    headers = ["排名 / 竞品", "24h", "7d", "14d", "30d", "较昨日(24h)"]
+    headers = ["竞品", "交易量 24h", "交易量 7d", "交易量 14d", "交易量 30d",
+               "用户 当天", "用户 7d", "用户 14d", "用户 30d"]
     rows = []
-    for i, it in enumerate(ranked):
-        v = it.get("vol") or {}
+    for i, x in enumerate(ordered):
+        label = esc(x["label"])
+        name = f'<strong>⭐ {label}（我们）</strong>' if x["self"] else label
+        name = f'{i+1}. {name}'
         rows.append([
-            name_cell(it, i + 1),
-            usd(v.get("d1")), usd(v.get("d7")), usd(v.get("d14")), usd(v.get("d30")),
-            chg_html(it.get("vol_d1_chg")),
+            name,
+            usd(x["v1"]), usd(x["v7"]), usd(x["v14"]), usd(x["v30"]),
+            num(x["ut"]), num(x["u7"]), num(x["u14"]), num(x["u30"]),
         ])
     parts.append(table(headers, rows))
-    parts.append('<p><sub>说明：交易量取自 DefiLlama。DeBot / Maestro / Terminal / Moby 暂未纳入交易量（DefiLlama 未收录）。BullX 已排除。</sub></p>')
 
-    users = snap.get("users") or []
-    if users:
-        parts.append("<h2>👥 活跃用户数（Solana）</h2>")
-        parts.append('<p><sub>数据源 Dune（dex_solana.bot_trades）· 按独立钱包地址去重 · 仅覆盖已被标签的 Solana bot。</sub></p>')
-        uheaders = ["竞品", "近 1 天", "近 7 天", "近 14 天", "近 30 天"]
-        urows = []
-        for u in users:
-            urows.append([
-                esc(u.get("label", "")),
-                num(u.get("users_1d")), num(u.get("users_7d")),
-                num(u.get("users_14d")), num(u.get("users_30d")),
-            ])
-        parts.append(table(uheaders, urows))
-        parts.append('<p><sub>Photon / GMGN / Axiom / Bloom 暂无用户数（Dune 官方尚未对其打标签，后续如有覆盖再补）。</sub></p>')
-
+    parts.append('<p><sub>说明：<strong>交易量</strong> = 全链汇总（DefiLlama）；<strong>用户数</strong> = 仅 Solana 链、当天按北京时间 0 点起算、按独立钱包地址去重（Dune），多链竞品（如 Banana Gun / Maestro）的非 Solana 用户未计入，故偏低。<br/>'
+                 'DeBot / BasedBot / Moby 两个数据源暂无收录（“—”）；Photon / GMGN / Axiom 暂无 Solana 用户标签（“—”）；BullX 已排除。后续用 Dune 自建查询逐步补齐。</sub></p>')
     return "".join(parts)
 
 
@@ -114,7 +110,7 @@ def main():
     snap = json.load(open(DATA_FILE, encoding="utf-8"))
     Confluence().update_body(pid, render_page(snap),
                              msg="自动更新 竞品交易数据", keep_title=True)
-    print(f"✓ 已写入 Confluence 页 {pid}（交易量 {len(snap.get('items',[]))} 家 / 用户数 {len(snap.get('users',[]))} 家）")
+    print(f"✓ 已写入 Confluence 页 {pid}")
 
 
 if __name__ == "__main__":

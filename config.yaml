@@ -73,3 +73,15 @@ trading_data:
     "Banana Gun": Banana Gun
     Maestro: Maestro
     "Sol Trading Bot": Sol Trading Bot
+  roster:
+    - { label: GMGN,            self: true, vol_slug: gmgn }
+    - { label: Axiom,           vol_slug: axiom }
+    - { label: Trojan,          vol_slug: trojan,     dune_bot: Trojan }
+    - { label: Banana Gun,      vol_slug: banana-gun, dune_bot: Banana Gun }
+    - { label: Photon,          vol_slug: photon }
+    - { label: BONKbot,         vol_slug: bonkbot,    dune_bot: BonkBot }
+    - { label: Maestro,         dune_bot: Maestro }
+    - { label: Sol Trading Bot, dune_bot: Sol Trading Bot }
+    - { label: DeBot }
+    - { label: BasedBot }
+    - { label: Moby }

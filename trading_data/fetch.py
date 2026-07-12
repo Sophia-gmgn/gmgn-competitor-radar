@@ -111,7 +111,7 @@ def main():
                 label = bot_map.get(raw, raw)
                 users.append({
                     "label": label,
-                    "users_1d": r.get("users_1d"),
+                    "users_today": r.get("users_today"),
                     "users_7d": r.get("users_7d"),
                     "users_14d": r.get("users_14d"),
                     "users_30d": r.get("users_30d"),
