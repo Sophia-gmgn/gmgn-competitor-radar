@@ -1,6 +1,6 @@
 {
   "date": "2026-07-12",
-  "updated_at": "2026-07-12T13:11:42.253612+00:00",
+  "updated_at": "2026-07-12T13:21:25.280157+00:00",
   "items": [
     {
       "label": "GMGN",
@@ -90,38 +90,58 @@
   "users": [
     {
       "label": "Trojan",
-      "users_today": 1505,
-      "users_7d": 13080,
-      "users_14d": 19570,
-      "users_30d": 29624
+      "users_today": 2962,
+      "users_7d": 13299,
+      "users_14d": 19751,
+      "users_30d": 29779,
+      "dvol_1d": 1449851.0874208913,
+      "dvol_7d": 20345429.699776847,
+      "dvol_14d": 47515297.40638516,
+      "dvol_30d": 88879838.80419041
     },
     {
       "label": "BONKbot",
       "users_today": 382,
-      "users_7d": 2961,
+      "users_7d": 2960,
       "users_14d": 4203,
-      "users_30d": 6536
+      "users_30d": 6536,
+      "dvol_1d": 262204.77365864225,
+      "dvol_7d": 5616726.637290355,
+      "dvol_14d": 13058678.769223407,
+      "dvol_30d": 22644990.57215094
     },
     {
       "label": "Maestro",
-      "users_today": 189,
-      "users_7d": 2645,
-      "users_14d": 4699,
-      "users_30d": 17240
+      "users_today": 391,
+      "users_7d": 2681,
+      "users_14d": 4724,
+      "users_30d": 17265,
+      "dvol_1d": 159345.34709079444,
+      "dvol_7d": 5531606.134534024,
+      "dvol_14d": 13000423.329613043,
+      "dvol_30d": 21556321.023827486
     },
     {
       "label": "Sol Trading Bot",
-      "users_today": 107,
-      "users_7d": 1171,
-      "users_14d": 1950,
-      "users_30d": 3079
+      "users_today": 180,
+      "users_7d": 1190,
+      "users_14d": 1968,
+      "users_30d": 3097,
+      "dvol_1d": 91184.39606063829,
+      "dvol_7d": 1450391.0209283347,
+      "dvol_14d": 2954796.0030108117,
+      "dvol_30d": 5096903.945316389
     },
     {
       "label": "Banana Gun",
-      "users_today": 6,
-      "users_7d": 234,
-      "users_14d": 415,
-      "users_30d": 652
+      "users_today": 18,
+      "users_7d": 236,
+      "users_14d": 418,
+      "users_30d": 655,
+      "dvol_1d": 6526.693699651328,
+      "dvol_7d": 63035.63043958421,
+      "dvol_14d": 162096.79410770626,
+      "dvol_30d": 324088.0502049235
     }
   ]
 }
