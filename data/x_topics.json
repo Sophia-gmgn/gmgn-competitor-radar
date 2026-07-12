@@ -588,5 +588,74 @@
       "https://x.com/goatse_mf/status/2076023645093404843"
     ],
     "_id": "t:979f47add3f7e567"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "Axiom",
+    "topic": "用户抱怨 Axiom 支持 Robinhood 链交易后内容变成 bundle",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/sayabroto/status/2076151291903119628"
+    ],
+    "_id": "t:51940228069b41d2"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "Axiom",
+    "topic": "用户表示已切换或正在使用 Axiom 进行交易",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/quantJB/status/2076114566476411141",
+      "https://x.com/healersback/status/2076144701443555612"
+    ],
+    "_id": "t:90e95bcce9874229"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "Axiom",
+    "topic": "用户表示不了解或不使用 Axiom 交易",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/hfransoo/status/2076152449648496873"
+    ],
+    "_id": "t:4c52560f4719a58d"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "BasedBot",
+    "topic": "用户反馈代币突然消失的问题",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/Crypto_borg/status/2076178660013330436",
+      "https://x.com/Crypto_borg/status/2076177355043741831"
+    ],
+    "_id": "t:64ae6f950bcc7060"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "BasedBot",
+    "topic": "桥接和swap速度的正面反馈",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/SaintLee04/status/2076178333017194824"
+    ],
+    "_id": "t:40a4ba08bfb7d60c"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "BasedBot",
+    "topic": "Robinhood链meme交易使用体验和表现",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Fiscaldemon/status/2075931468367331484",
+      "https://x.com/0xblackchip/status/2075990541280362822"
+    ],
+    "_id": "t:80eceecae7ee6b98"
   }
 ]

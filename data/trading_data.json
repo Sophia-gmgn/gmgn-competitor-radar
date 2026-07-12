@@ -1,0 +1,90 @@
+{
+  "date": "2026-07-12",
+  "updated_at": "2026-07-12T05:27:19.469564+00:00",
+  "items": [
+    {
+      "label": "GMGN",
+      "slug": "gmgn",
+      "self": true,
+      "vol": {
+        "d1": 13932612,
+        "d7": 233708713,
+        "d14": 357902764,
+        "d30": 518313497,
+        "name": "GMGN"
+      },
+      "vol_d1_prev": null,
+      "vol_d1_chg": null
+    },
+    {
+      "label": "Axiom",
+      "slug": "axiom",
+      "self": false,
+      "vol": {
+        "d1": 26570247,
+        "d7": 228980986,
+        "d14": 610097557,
+        "d30": 1089260935,
+        "name": "Axiom"
+      },
+      "vol_d1_prev": null,
+      "vol_d1_chg": null
+    },
+    {
+      "label": "Trojan",
+      "slug": "trojan",
+      "self": false,
+      "vol": {
+        "d1": 2694760,
+        "d7": 23413129,
+        "d14": 60823575,
+        "d30": 110024985,
+        "name": "Trojan"
+      },
+      "vol_d1_prev": null,
+      "vol_d1_chg": null
+    },
+    {
+      "label": "Photon",
+      "slug": "photon",
+      "self": false,
+      "vol": {
+        "d1": 732970,
+        "d7": 7925130,
+        "d14": 21438165,
+        "d30": 38528846,
+        "name": "Photon"
+      },
+      "vol_d1_prev": null,
+      "vol_d1_chg": null
+    },
+    {
+      "label": "BONKbot",
+      "slug": "bonkbot",
+      "self": false,
+      "vol": {
+        "d1": 684383,
+        "d7": 4490285,
+        "d14": 11903021,
+        "d30": 19068158,
+        "name": "BONKbot"
+      },
+      "vol_d1_prev": null,
+      "vol_d1_chg": null
+    },
+    {
+      "label": "Banana Gun",
+      "slug": "banana-gun",
+      "self": false,
+      "vol": {
+        "d1": 103276,
+        "d7": 15430980,
+        "d14": 39798799,
+        "d30": 70353279,
+        "name": "Banana Gun"
+      },
+      "vol_d1_prev": null,
+      "vol_d1_chg": null
+    }
+  ]
+}
