@@ -57,3 +57,12 @@ feature_updates:
       label: Banana Gun
       telegram_channel: bananagunannouncements
   hours: 168
+
+trading_data:
+  competitors:
+    - { slug: gmgn,       label: GMGN,        self: true }
+    - { slug: axiom,      label: Axiom }
+    - { slug: trojan,     label: Trojan }
+    - { slug: photon,     label: Photon }
+    - { slug: bonkbot,    label: BONKbot }
+    - { slug: banana-gun, label: Banana Gun }

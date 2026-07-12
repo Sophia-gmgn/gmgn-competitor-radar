@@ -1,0 +1,21 @@
+name: trading-data-test
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Fetch trading data (test only)
+        run: python -m trading_data.fetch
+      - uses: actions/upload-artifact@v4
+        with:
+          name: trading-data-result
+          path: trading_data_result.json
+          if-no-files-found: ignore

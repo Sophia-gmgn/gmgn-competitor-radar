@@ -1,0 +1,42 @@
+name: trading-data
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 10 * * *"   # 每天北京 18:00
+permissions:
+  contents: write
+concurrency:
+  group: trading-data
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Fetch trading data
+        run: python -m trading_data.fetch
+      - name: Write Confluence
+        if: ${{ !cancelled() }}
+        env:
+          ATLASSIAN_EMAIL: ${{ secrets.ATLASSIAN_EMAIL }}
+          ATLASSIAN_API_TOKEN: ${{ secrets.ATLASSIAN_API_TOKEN }}
+          TRADING_DATA_PAGE_ID: ${{ secrets.TRADING_DATA_PAGE_ID }}
+        run: python -m trading_data.to_confluence
+      - name: Post Slack
+        if: ${{ !cancelled() }}
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL: "C0BFFKSLC5D"
+        run: python -m trading_data.to_slack
+      - name: Commit snapshot
+        if: ${{ !cancelled() }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/trading_data.json || true
+          git diff --staged --quiet || git commit -m "chore: trading snapshot [skip ci]"
+          git push || echo "nothing to push"
