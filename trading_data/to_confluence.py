@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""竞品交易数据（#6 · stan）→ Confluence（仅交易量）。"""
+"""竞品交易数据（#6 · stan）→ Confluence（交易量 + 活跃用户）。"""
 import os
 import sys
 import json
@@ -25,6 +25,15 @@ def usd(v):
     if a >= 1e3:
         return f"${v/1e3:.1f}K"
     return f"${v:,.0f}"
+
+
+def num(v):
+    if v is None:
+        return "—"
+    try:
+        return f"{int(v):,}"
+    except Exception:
+        return str(v)
 
 
 def chg_html(v):
@@ -57,8 +66,8 @@ def render_page(snap):
     rank_txt = f"我们（GMGN）交易量排名 <strong>第 {self_rank} / {n}</strong>" if self_rank else ""
 
     parts = [panel("info",
-                   f"<p>📊 竞品交易数据监控（MEME 交易 · 交易量）· 共 <strong>{n}</strong> 家 &nbsp;｜&nbsp; {rank_txt}</p>"
-                   f"<p><sub>数据源 DefiLlama · 每日更新 · 更新于 {esc(now)}（UTC+8）· 请勿手动编辑（每次整页重写）</sub></p>")]
+                   f"<p>📊 竞品交易数据监控（MEME 交易）· 交易量 <strong>{n}</strong> 家 &nbsp;｜&nbsp; {rank_txt}</p>"
+                   f"<p><sub>数据源 DefiLlama（交易量）+ Dune（用户数）· 每日更新 · 更新于 {esc(now)}（UTC+8）· 请勿手动编辑（每次整页重写）</sub></p>")]
 
     if not items:
         parts.append(panel("note", "<p>暂无数据。</p>"))
@@ -75,7 +84,23 @@ def render_page(snap):
             chg_html(it.get("vol_d1_chg")),
         ])
     parts.append(table(headers, rows))
-    parts.append('<p><sub>说明：交易量取自 DefiLlama。DeBot / Maestro / Terminal / Moby 暂未纳入（DefiLlama 未收录，后续用 Dune 补，并补充「用户数」维度）。BullX 已排除。</sub></p>')
+    parts.append('<p><sub>说明：交易量取自 DefiLlama。DeBot / Maestro / Terminal / Moby 暂未纳入交易量（DefiLlama 未收录）。BullX 已排除。</sub></p>')
+
+    users = snap.get("users") or []
+    if users:
+        parts.append("<h2>👥 活跃用户数（Solana）</h2>")
+        parts.append('<p><sub>数据源 Dune（dex_solana.bot_trades）· 按独立钱包地址去重 · 仅覆盖已被标签的 Solana bot。</sub></p>')
+        uheaders = ["竞品", "近 1 天", "近 7 天", "近 14 天", "近 30 天"]
+        urows = []
+        for u in users:
+            urows.append([
+                esc(u.get("label", "")),
+                num(u.get("users_1d")), num(u.get("users_7d")),
+                num(u.get("users_14d")), num(u.get("users_30d")),
+            ])
+        parts.append(table(uheaders, urows))
+        parts.append('<p><sub>Photon / GMGN / Axiom / Bloom 暂无用户数（Dune 官方尚未对其打标签，后续如有覆盖再补）。</sub></p>')
+
     return "".join(parts)
 
 
@@ -89,7 +114,7 @@ def main():
     snap = json.load(open(DATA_FILE, encoding="utf-8"))
     Confluence().update_body(pid, render_page(snap),
                              msg="自动更新 竞品交易数据", keep_title=True)
-    print(f"✓ 已写入 Confluence 页 {pid}（{len(snap.get('items',[]))} 家）")
+    print(f"✓ 已写入 Confluence 页 {pid}（交易量 {len(snap.get('items',[]))} 家 / 用户数 {len(snap.get('users',[]))} 家）")
 
 
 if __name__ == "__main__":

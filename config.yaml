@@ -66,3 +66,10 @@ trading_data:
     - { slug: photon,     label: Photon }
     - { slug: bonkbot,    label: BONKbot }
     - { slug: banana-gun, label: Banana Gun }
+  dune_users_query_id: 7954296
+  dune_bot_map:
+    Trojan: Trojan
+    BonkBot: BONKbot
+    "Banana Gun": Banana Gun
+    Maestro: Maestro
+    "Sol Trading Bot": Sol Trading Bot

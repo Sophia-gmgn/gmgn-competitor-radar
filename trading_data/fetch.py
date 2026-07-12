@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""竞品交易数据（#6 · stan）—— 抓取（DefiLlama，仅交易量）。"""
+"""竞品交易数据（#6 · stan）—— 抓取（DefiLlama 交易量 + Dune 用户数）。"""
 import os
 import sys
 import json
@@ -78,7 +78,7 @@ def main():
         print("config.yaml 里 trading_data.competitors 为空", file=sys.stderr)
         sys.exit(1)
 
-    print("=== 竞品交易数据 · 抓取（DefiLlama，仅交易量）===")
+    print("=== 竞品交易数据 · 抓取 ===")
     print(f"竞品 {len(comps)} 家\n")
     items = fetch_all(cfg)
 
@@ -97,11 +97,40 @@ def main():
             it["vol_d1_chg"] = None
 
     snap = {"date": today, "updated_at": datetime.now(timezone.utc).isoformat(), "items": items}
+
+    # 用户数（Dune dex_solana.bot_trades；失败不影响交易量）
+    qid = cfg.get("dune_users_query_id")
+    bot_map = cfg.get("dune_bot_map") or {}
+    users = []
+    if qid and os.environ.get("DUNE_API_KEY", "").strip():
+        try:
+            from common.dune import get_query_result
+            rows = get_query_result(int(qid))
+            for r in rows:
+                raw = str(r.get("bot", "")).strip()
+                label = bot_map.get(raw, raw)
+                users.append({
+                    "label": label,
+                    "users_1d": r.get("users_1d"),
+                    "users_7d": r.get("users_7d"),
+                    "users_14d": r.get("users_14d"),
+                    "users_30d": r.get("users_30d"),
+                })
+            users.sort(key=lambda x: x.get("users_7d") or 0, reverse=True)
+            print(f"\n用户数（Dune）：{len(users)} 家")
+            for u in users:
+                print(f"  [{u['label']}] 7d活跃={u.get('users_7d')}  30d活跃={u.get('users_30d')}")
+        except Exception as e:
+            print(f"\n⚠️ Dune 用户数抓取失败（不影响交易量）：{e}")
+    else:
+        print("\n（未配置 DUNE_API_KEY 或 query id，跳过用户数）")
+    snap["users"] = users
+
     pathlib.Path("data").mkdir(exist_ok=True)
     json.dump(snap, open(DATA_FILE, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     json.dump(snap, open("trading_data_result.json", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     print(f"\n=== 汇总 ===")
-    print(f"抓到 {len(items)} 家；已存快照 {DATA_FILE}（date={today}）")
+    print(f"交易量 {len(items)} 家 · 用户数 {len(users)} 家；已存 {DATA_FILE}（date={today}）")
 
 
 if __name__ == "__main__":
