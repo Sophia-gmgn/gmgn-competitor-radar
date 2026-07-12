@@ -1,6 +1,6 @@
 {
   "date": "2026-07-12",
-  "updated_at": "2026-07-12T12:50:44.769720+00:00",
+  "updated_at": "2026-07-12T13:11:42.253612+00:00",
   "items": [
     {
       "label": "GMGN",
@@ -90,37 +90,37 @@
   "users": [
     {
       "label": "Trojan",
-      "users_1d": 2820,
-      "users_7d": 13216,
-      "users_14d": 19680,
-      "users_30d": 29717
+      "users_today": 1505,
+      "users_7d": 13080,
+      "users_14d": 19570,
+      "users_30d": 29624
     },
     {
       "label": "BONKbot",
-      "users_1d": 661,
-      "users_7d": 3015,
-      "users_14d": 4226,
-      "users_30d": 6555
+      "users_today": 382,
+      "users_7d": 2961,
+      "users_14d": 4203,
+      "users_30d": 6536
     },
     {
       "label": "Maestro",
-      "users_1d": 405,
-      "users_7d": 2673,
-      "users_14d": 4723,
-      "users_30d": 17260
+      "users_today": 189,
+      "users_7d": 2645,
+      "users_14d": 4699,
+      "users_30d": 17240
     },
     {
       "label": "Sol Trading Bot",
-      "users_1d": 211,
-      "users_7d": 1182,
-      "users_14d": 1972,
-      "users_30d": 3102
+      "users_today": 107,
+      "users_7d": 1171,
+      "users_14d": 1950,
+      "users_30d": 3079
     },
     {
       "label": "Banana Gun",
-      "users_1d": 46,
-      "users_7d": 237,
-      "users_14d": 419,
+      "users_today": 6,
+      "users_7d": 234,
+      "users_14d": 415,
       "users_30d": 652
     }
   ]
