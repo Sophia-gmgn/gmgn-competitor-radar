@@ -657,5 +657,53 @@
       "https://x.com/0xblackchip/status/2075990541280362822"
     ],
     "_id": "t:80eceecae7ee6b98"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "BasedBot",
+    "topic": "用户讨论使用BasedBot在Robinhood链交易meme币时的桥接速度和便利性",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Harrypottus/status/2076243425708425538",
+      "https://x.com/Fiscaldemon/status/2075931468367331484"
+    ],
+    "_id": "t:21d180ea15b92dd2"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "Moby",
+    "topic": "Moby App 新增 BNB Chain 和 Robinhood Crypto 支持，用户讨论跨链交易便利性",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Johnteempire1/status/2076220177327210979",
+      "https://x.com/itscoinnoisseur/status/2076144771127525516"
+    ],
+    "_id": "t:0b89c937651b5e1a"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "Moby",
+    "topic": "Moby 平台用户实现高额盈利，如 $Jotchua 交易 +4681% PnL",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/OffGridKat/status/2076196793826578682",
+      "https://x.com/itscoinnoisseur/status/2076149426800734361"
+    ],
+    "_id": "t:09f1b36ce462fc54"
+  },
+  {
+    "date": "2026-07-12",
+    "subject": "Moby",
+    "topic": "用户公开称赞 Moby 是最佳 meme 交易工具",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/itscoinnoisseur/status/2076171540966638051",
+      "https://x.com/itscoinnoisseur/status/2076144675384111271"
+    ],
+    "_id": "t:c4d9aef4b2d93390"
   }
 ]
