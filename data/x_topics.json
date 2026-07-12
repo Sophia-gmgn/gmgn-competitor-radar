@@ -800,5 +800,119 @@
       "https://x.com/mobyagent/status/2076321849344999807"
     ],
     "_id": "t:46dad4772bc9698f"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "GMGN",
+    "topic": "机器人或用户通过 GMGN 发布 meme 币交易量警报并附交易链接",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/memecoins_scan/status/2076415185678438784",
+      "https://x.com/RobinhoodVolume/status/2076412755528007940",
+      "https://x.com/RobinhoodVolume/status/2076420615255326724"
+    ],
+    "_id": "t:21182d561f9177fe"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "Axiom",
+    "topic": "AxiomExchange 周收入创低、排名下滑至第8",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/MidCurveMortal/status/2076350552422691071"
+    ],
+    "_id": "t:7efd1bab09ee5ae3"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "Axiom",
+    "topic": "AxiomExchange 允许不当用户持有 AXIOM 徽章",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/ButoshiWushi/status/2076389207988129997"
+    ],
+    "_id": "t:9a29117395d1aa6d"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "Axiom",
+    "topic": "交易终端（含 Axiom）Robinhood 集成与元数据管理",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/vladdydotfun/status/2076375841106231799",
+      "https://x.com/ereptyle/status/2076378912074989802"
+    ],
+    "_id": "t:18188ae8d9fe023d"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "BasedBot",
+    "topic": "用户分享使用 BasedBot 在 Robinhood 链交易 meme 的盈利体验",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Fiscaldemon/status/2075931468367331484",
+      "https://x.com/Based_Bebe/status/2076413120814227632"
+    ],
+    "_id": "t:9d7004fdd3d9d19b"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "BasedBot",
+    "topic": "用户询问或确认自己在 BasedBot 上的操作记录",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/rackstm_/status/2076412458143449232"
+    ],
+    "_id": "t:bcede0da5bcdc514"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "Photon",
+    "topic": "用户在随口提到Photon是Solana交易机器人时涉及辱骂内容",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/0xAsta/status/2076330225471005171"
+    ],
+    "_id": "t:886b7c1731cd7d05"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "Photon",
+    "topic": "讨论Solana交易终端如Photon等尚未空投但交易量巨大、潜在价值高",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/memeradarsolana/status/2076024233902358998"
+    ],
+    "_id": "t:a716245bb507196d"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "Photon",
+    "topic": "Photon新增KOL买卖追踪功能，用户查看后对部分PnL感到震惊",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Lysergic42/status/2075792381404725369"
+    ],
+    "_id": "t:dc61e46c8e6bde95"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "Photon",
+    "topic": "用meme视频调侃2026年的Photon用户",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/DrollBySam/status/2075835439223886290"
+    ],
+    "_id": "t:29474f90ad14e87b"
   }
 ]
