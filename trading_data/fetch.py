@@ -115,6 +115,10 @@ def main():
                     "users_7d": r.get("users_7d"),
                     "users_14d": r.get("users_14d"),
                     "users_30d": r.get("users_30d"),
+                    "dvol_1d": r.get("vol_1d"),
+                    "dvol_7d": r.get("vol_7d"),
+                    "dvol_14d": r.get("vol_14d"),
+                    "dvol_30d": r.get("vol_30d"),
                 })
             users.sort(key=lambda x: x.get("users_7d") or 0, reverse=True)
             print(f"\n用户数（Dune）：{len(users)} 家")

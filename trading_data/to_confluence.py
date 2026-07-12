@@ -59,12 +59,20 @@ def render_page(snap):
         vol = vol_by_slug.get(r.get("vol_slug")) if r.get("vol_slug") else None
         v = (vol or {}).get("vol") or {}
         u = user_by_label.get(label) or {}
+
+        has_llama = bool(v)
+        vol_sol = (not has_llama) and (u.get("dvol_30d") is not None)
+        v1  = v.get("d1")  if has_llama else (u.get("dvol_1d")  if vol_sol else None)
+        v7  = v.get("d7")  if has_llama else (u.get("dvol_7d")  if vol_sol else None)
+        v14 = v.get("d14") if has_llama else (u.get("dvol_14d") if vol_sol else None)
+        v30 = v.get("d30") if has_llama else (u.get("dvol_30d") if vol_sol else None)
+
         rows_data.append({
-            "label": label, "self": r.get("self"),
-            "v1": v.get("d1"), "v7": v.get("d7"), "v14": v.get("d14"), "v30": v.get("d30"),
+            "label": label, "self": r.get("self"), "vol_sol": vol_sol,
+            "v1": v1, "v7": v7, "v14": v14, "v30": v30,
             "ut": u.get("users_today"), "u7": u.get("users_7d"),
             "u14": u.get("users_14d"), "u30": u.get("users_30d"),
-            "has_vol": bool(v), "has_user": bool(u),
+            "has_vol": (v30 is not None), "has_user": bool(u),
         })
 
     g1 = sorted([x for x in rows_data if x["has_vol"]], key=lambda x: x["v30"] or 0, reverse=True)
@@ -87,6 +95,8 @@ def render_page(snap):
     for i, x in enumerate(ordered):
         label = esc(x["label"])
         name = f'<strong>⭐ {label}（我们）</strong>' if x["self"] else label
+        if x.get("vol_sol"):
+            name = f'{name} <sup>*</sup>'
         name = f'{i+1}. {name}'
         rows.append([
             name,
@@ -96,7 +106,7 @@ def render_page(snap):
     parts.append(table(headers, rows))
 
     parts.append('<p><sub>说明：<strong>交易量</strong> = 全链汇总（DefiLlama）；<strong>用户数</strong> = 仅 Solana 链、当天按北京时间 0 点起算、按独立钱包地址去重（Dune），多链竞品（如 Banana Gun / Maestro）的非 Solana 用户未计入，故偏低。<br/>'
-                 'DeBot / BasedBot / Moby 两个数据源暂无收录（“—”）；Photon / GMGN / Axiom 暂无 Solana 用户标签（“—”）；BullX 已排除。后续用 Dune 自建查询逐步补齐。</sub></p>')
+                 '带 <sup>*</sup> 的交易量为仅 Solana 口径（Dune，因该竞品未被 DefiLlama 收录，无全链数据）。DeBot / BasedBot / Moby 两个数据源暂无收录（“—”）；Photon / GMGN / Axiom 暂无 Solana 用户标签（“—”）；BullX 已排除。后续用 Dune 自建查询逐步补齐。</sub></p>')
     return "".join(parts)
 
 
