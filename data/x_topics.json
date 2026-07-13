@@ -914,5 +914,27 @@
       "https://x.com/DrollBySam/status/2075835439223886290"
     ],
     "_id": "t:29474f90ad14e87b"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "Photon",
+    "topic": "用户称赞 Photon 是最好的交易工具",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/iamyoungcaesar/status/2076460479250100409"
+    ],
+    "_id": "t:2db776a7d6fa8ba2"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "Photon",
+    "topic": "提及 Photon Solana 交易机器人与辱骂行为",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/0xAsta/status/2076330225471005171"
+    ],
+    "_id": "t:5fe09cbcfae527ea"
   }
 ]
