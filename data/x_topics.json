@@ -1006,5 +1006,67 @@
       "https://x.com/basedbotx/status/2076633309296169304"
     ],
     "_id": "t:6f27878bbe7ba5c7"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Axiom",
+    "topic": "Axiom 集成 Robinhood 链后，用户批评其可能助长 rug pull 并提及过往内幕交易问题",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/machinemiller/status/2076712543473815870",
+      "https://x.com/FakeRosaParkXBT/status/2076695532500578673",
+      "https://x.com/sayabroto/status/2076694333961785546"
+    ],
+    "_id": "t:cc05db6ee3f899e7"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Moby",
+    "topic": "Moby 在 Robinhood Chain 和 BNB Chain 上线，支持智能资金追踪和一键交易",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/mobyagent/status/2076699088687419454",
+      "https://x.com/mattdorta/status/2076706158295855212",
+      "https://x.com/thefih/status/2076713671519354974"
+    ],
+    "_id": "t:70949e6305560657"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Moby",
+    "topic": "用户首次在 Robinhood Chain 用 Moby 交易获得 5000 $MOBY 奖励",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/0xMago/status/2076707627715703116",
+      "https://x.com/ottramentiga/status/2076711049303347436"
+    ],
+    "_id": "t:607ff83bd6eeeb38"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Moby",
+    "topic": "Moby 的 whale watch 和智能资金洞察功能在 Robinhood Chain 上帮助早期发现机会",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/w1llmakeit/status/2076714275729788936",
+      "https://x.com/mattdorta/status/2076706158295855212"
+    ],
+    "_id": "t:7e7bc721d0b2572d"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Moby",
+    "topic": "用户讨论 Moby 在新链上的发现和交易体验优于原生 Robinhood",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/eminent_cryptos/status/2076714058632352108",
+      "https://x.com/thefih/status/2076713671519354974"
+    ],
+    "_id": "t:eb74f8e7800aadc4"
   }
 ]
