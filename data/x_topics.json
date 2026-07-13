@@ -1068,5 +1068,86 @@
       "https://x.com/thefih/status/2076713671519354974"
     ],
     "_id": "t:eb74f8e7800aadc4"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "GMGN",
+    "topic": "GMGN 检测器误将复制合约指纹判为身份证明，导致 AxiomExchange 继承错误标签",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/Pompytup/status/2076781280402845851",
+      "https://x.com/Pompytup/status/2076782187374903654"
+    ],
+    "_id": "t:0081469654d8f0f8"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Axiom",
+    "topic": "Axiom 作为 Noxa 的交易终端",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/gustavizzy/status/2076454741748375975",
+      "https://x.com/wol_fi_/status/2076454726736941549"
+    ],
+    "_id": "t:5c70c8f0bf327498"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Axiom",
+    "topic": "Axiom 与 GMGN 在 meme 币 sniping 速度的比较",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/SuperMiche017/status/2076455449155518840"
+    ],
+    "_id": "t:5e8953c277672e04"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Photon",
+    "topic": "分享 Photon Trading Market 的结构笔记",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/cuchulainnov/status/2076700700914979264"
+    ],
+    "_id": "t:0838bf08ac01a862"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Photon",
+    "topic": "提到 Photon 是 Solana 交易机器人",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/0xAsta/status/2076330225471005171"
+    ],
+    "_id": "t:d8b7b9b9f49b4d7e"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Moby",
+    "topic": "Moby App 新增 BNB Chain 和 Robinhood Crypto 支持，智能资金追踪和跨链桥接功能上线",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Erazor_o/status/2076784011632853398",
+      "https://x.com/mobyagent/status/2076764659844047323",
+      "https://x.com/whalewatchalert/status/2076773676729737578"
+    ],
+    "_id": "t:fc8eb407ff414316"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Moby",
+    "topic": "Robinhood Chain 交易计入 Moby 排行榜，新用户进入前十并获得奖励",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/whalewatchalert/status/2076773676729737578"
+    ],
+    "_id": "t:fc48de6bc86a9602"
   }
 ]
