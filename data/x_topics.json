@@ -936,5 +936,75 @@
       "https://x.com/0xAsta/status/2076330225471005171"
     ],
     "_id": "t:5fe09cbcfae527ea"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "DeBot",
+    "topic": "DeBot 在 GMGN 无法购买新 meme 币时作为替代交易工具使用",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/EdisonZz798/status/2076441493502636336",
+      "https://x.com/nan_yu_a8/status/2076447743510478958"
+    ],
+    "_id": "t:7c83081e71fdcdcf"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "Axiom",
+    "topic": "Axiom 快速支持 Robinhood 链 meme 交易并被用户讨论适配速度",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/durdenalfa/status/2076637608252231741",
+      "https://x.com/ramos4696/status/2076633283253911808",
+      "https://x.com/07adrianramos/status/2076631904301023523"
+    ],
+    "_id": "t:bdb12ccccedd7a09"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "BasedBot",
+    "topic": "用户询问如何设置 BasedBot",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/ProfitMagnet_12/status/2076638478272446836"
+    ],
+    "_id": "t:164e7c6a39e1fa5d"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "BasedBot",
+    "topic": "讨论 BasedBot 支持 SOL 到 ETH 等跨链桥接",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/0xNebulaa_/status/2076630064179867934",
+      "https://x.com/0xNebulaa_/status/2076631276166275349"
+    ],
+    "_id": "t:1995aa14872092a3"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "BasedBot",
+    "topic": "用户分享在 Robinhood 链使用 BasedBot 交易的体验",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/SkallywagC/status/2076630399388692850"
+    ],
+    "_id": "t:7a8670a08e82effa"
+  },
+  {
+    "date": "2026-07-13",
+    "subject": "BasedBot",
+    "topic": "BasedBot 官方账号播报代币或 NFT 购买交易",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/basedbotx/status/2076633309296169304"
+    ],
+    "_id": "t:6f27878bbe7ba5c7"
   }
 ]
