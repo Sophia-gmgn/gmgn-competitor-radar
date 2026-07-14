@@ -115,5 +115,23 @@
     "type": "集成",
     "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
     "_id": "f:57b2a48fb9261f5b"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 正式接入 HyperEVM 生态",
+    "summary": "平台已接入 HyperEVM 并支持 Alt.fun 协议。用户可通过 DeBot 更便捷地探索该生态内的新资产和叙事机会。",
+    "date": "2026-07-14",
+    "type": "集成",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:623f1fc61e02c57b"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 新增自定义通知声音功能",
+    "summary": "用户可为买卖成交、推特监控、钱包动态设置专属提示音。该功能帮助用户通过声音提示及时捕捉交易信号。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:dd26021a1bae31ad"
   }
 ]
