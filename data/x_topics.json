@@ -1149,5 +1149,97 @@
       "https://x.com/whalewatchalert/status/2076773676729737578"
     ],
     "_id": "t:fc48de6bc86a9602"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Axiom",
+    "topic": "Trench 与 AxiomExchange 集成，支持代币直接交易",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/TrenchToday01/status/2076880340178919702"
+    ],
+    "_id": "t:20eac787b3b7bade"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Axiom",
+    "topic": "Axiom 平台诈骗与假账号警告",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/CryptoCyberia/status/2076860168243974302"
+    ],
+    "_id": "t:8473f7795a13e98a"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Axiom",
+    "topic": "Axiom 支持交易后出现捆绑交易问题",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/lilmuf_/status/2076848378655191057",
+      "https://x.com/RG3424/status/2076852825661857977"
+    ],
+    "_id": "t:1222c84f37fa869c"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Photon",
+    "topic": "Solana交易者对Photon交易bot的负面吐槽",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/NyxstX/status/2076809717868028276",
+      "https://x.com/liloozy256/status/2076878657537105949"
+    ],
+    "_id": "t:1b612e975640654e"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Photon",
+    "topic": "分享Photon Trading Market结构笔记",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/cuchulainnov/status/2076700700914979264"
+    ],
+    "_id": "t:cef99e2f6ec55ced"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Moby",
+    "topic": "Moby App 支持 Robinhood Chain 上线，用户可一键转 SOL/Base/BNB 并交易 meme，首单交易奖励 5000 $MOBY",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/mattdorta/status/2076846038804000868",
+      "https://x.com/mobyagent/status/2076699091476623436"
+    ],
+    "_id": "t:4400bb837a13b5ff"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Moby",
+    "topic": "用户反馈 Moby 智能资金追踪和交易工具在 Robinhood Chain 上表现优秀",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/OffGridKat/status/2076881146281902111",
+      "https://x.com/Romiinft/status/2076863347434340781"
+    ],
+    "_id": "t:2d32ad2f809670fe"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Moby",
+    "topic": "Moby 持续更新功能，用户讨论其跨链智能资金追踪和无缝桥接体验",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/mobyagent/status/2076699091476623436"
+    ],
+    "_id": "t:4c03cff5cfb70fe0"
   }
 ]
