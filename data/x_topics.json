@@ -1052,19 +1052,6 @@
   },
   {
     "date": "2026-07-14",
-    "subject": "Jupiter",
-    "topic": "Jupiter Gacha 卡牌抽取功能上线，用户分享抽中高价值宝可梦卡的经历",
-    "heat": "高",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/JUPCommunity/status/2076817125923049777",
-      "https://x.com/FranceCryptos/status/2076932206816383051",
-      "https://x.com/JupiterExchange/status/2076654397237445092"
-    ],
-    "_id": "t:b164ae0e89207a9c"
-  },
-  {
-    "date": "2026-07-14",
     "subject": "GMGN",
     "topic": "用户抱怨 GMGN 提现需要等待 24 小时",
     "heat": "中",
@@ -1177,19 +1164,6 @@
       "https://x.com/DeepFuckinOcean/status/2076717991627010061"
     ],
     "_id": "t:7e03a4689c619fbc"
-  },
-  {
-    "date": "2026-07-14",
-    "subject": "Jupiter",
-    "topic": "Jupiter Gacha抽卡功能使用与分享",
-    "heat": "高",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/TheSolanaPEPE/status/2076813126905757775",
-      "https://x.com/King88sol/status/2076811928190529750",
-      "https://x.com/DerekKlibingat/status/2076793123015995721"
-    ],
-    "_id": "t:eae6f0c8f23a90f4"
   },
   {
     "date": "2026-07-14",
@@ -1307,28 +1281,5 @@
       "https://x.com/Sp1cytrenches/status/2076782037592121737"
     ],
     "_id": "t:b49f91558f81cd39"
-  },
-  {
-    "date": "2026-07-14",
-    "subject": "Jupiter",
-    "topic": "Jupiter 推出 Gacha 宝可梦卡牌交易功能，进入 TCG 市场",
-    "heat": "中",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/degenrsc/status/2076946948859572499",
-      "https://x.com/YoungBossDre1/status/2076945666161492217"
-    ],
-    "_id": "t:9d1ecb6ac756af7a"
-  },
-  {
-    "date": "2026-07-14",
-    "subject": "Jupiter",
-    "topic": "讨论 Jupiter 已扩展为包含 DEX、Perps、Gacha 等多产品的平台",
-    "heat": "低",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/sssionggg/status/2076944204849352943"
-    ],
-    "_id": "t:2efe093d05606bda"
   }
 ]
