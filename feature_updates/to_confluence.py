@@ -60,8 +60,8 @@ def _webjs_block(comp, wj_items):
     # 概述：取前几条标题里的关键词做一句话概括
     kw = "、".join(
         _short_kw(it.get("title", "")) for it in wj_items[:4] if it.get("title"))
-    overview = (f'<p>📢 <strong>{esc(comp)} 官网弹窗更新了 {n} 项</strong>'
-                f'（涵盖 {esc(kw)} 等）</p>')
+    overview = (f'<p>🆕 <strong>{esc(comp)} 官网弹窗共 {n} 项功能更新</strong></p>'
+                f'<p>涵盖 {esc(kw)} 等，点击下方展开查看全部详情 👇</p>')
     # 折叠里的详情：每条 标题 + 一句摘要，无原文链接
     rows = []
     for it in wj_items:
@@ -71,15 +71,16 @@ def _webjs_block(comp, wj_items):
         summary = esc(it.get("summary", ""))
         rows.append(f'<p>{tag} <strong>{title}</strong></p><p>{summary}</p>')
     detail = "".join(rows)
-    return panel("info", overview) + expand(f"展开查看 {n} 项更新详情", detail)
+    return panel("tip", overview) + expand(f"📋 展开查看全部 {n} 项更新详情", detail)
 
 
 def _short_kw(title):
     """从标题里抽一个短关键词（去掉竞品名和'正式上线'等）。"""
     import re
-    t = re.sub(r"(DeBot|Debot|正式上线|上线|功能|支持|新增|全新)", "", title)
-    t = t.strip("　 ·").strip()
-    return t[:8] if t else title[:8]
+    t = re.sub(r"(DeBot|Debot|正式上线|上线|功能|支持|新增|全新|系统)", "", title)
+    t = t.strip("　 ·！!。").strip()
+    t = re.split(r"[，,、（(]", t)[0].strip()
+    return t[:12] if t else title[:12]
 
 
 def render_page(store):
