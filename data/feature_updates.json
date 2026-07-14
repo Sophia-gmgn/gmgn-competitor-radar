@@ -97,5 +97,14 @@
     "type": "功能更新",
     "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
     "_id": "f:c9ad0f482a9af137"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 自动交易正式上线",
+    "summary": "DeBot 自动交易功能正式上线，支持迁移自动买入、自动卖出以及跟单钱包卖出操作。该功能提升了交易自动化程度，用户可更便捷地管理交易流程。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:55314fd2b0012f08"
   }
 ]
