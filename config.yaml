@@ -14,25 +14,60 @@ x_topics:
       label: GMGN
       terms: "GMGN OR gmgn.ai OR @gmgnai"
       self: true
+      tier: core
     - key: debot
       label: DeBot
       terms: "DeBot OR @Debot_Official"
+      tier: core
     - key: axiom
       label: Axiom
       terms: "Axiom (Solana OR meme OR trading OR bot OR crypto) OR @AxiomExchange"
+      tier: core
     - key: basedbot
       label: BasedBot
       terms: "BasedBot OR @BasedBot"
+      tier: core
     - key: photon
       label: Photon
       terms: "Photon (Solana OR trading OR bot OR meme) OR @tradewithPhoton"
+      tier: core
     - key: trojan
       label: Trojan
       terms: "Trojan (Solana OR trading OR bot OR meme) OR @TrojanOnSolana"
-    - key: moby
-      label: Moby
-      terms: "Moby (crypto OR Solana OR trading OR memecoin) OR @mobyagent"
+      tier: core
+    - key: terminal
+      label: Terminal
+      terms: "Terminal (Solana OR memecoin OR trading OR Padre) OR @TradingTerminal OR Padre.gg"
+      tier: core
+    - key: pumpfun
+      label: Pump.fun
+      terms: "Pump.fun OR pumpfun OR @Pumpfun"
+      tier: core
+    - key: fomo
+      label: FOMO
+      terms: "FOMO (Solana OR memecoin OR trading OR fomo.family) OR @fomo"
+      tier: core
 
+    - key: bonkbot
+      label: BONKbot
+      terms: "BONKbot OR Bonk Bot OR Telemetry OR @bonkbot_io"
+      tier: minor
+    - key: bananagun
+      label: Banana Gun
+      terms: "Banana Gun OR BananaGun OR Banana Pro OR @BananaGun"
+      tier: minor
+    - key: maestro
+      label: Maestro
+      terms: "Maestro (Solana OR trading OR bot OR meme) OR Maestro Bots OR @MaestroBots"
+      tier: minor
+    - key: bloom
+      label: Bloom
+      terms: "Bloom (Solana OR trading OR bot OR meme) OR Bloom Bot OR @BloomTrading"
+      tier: minor
+    - key: jupiter
+      label: Jupiter
+      terms: "Jupiter (Solana OR memecoin OR aggregator) OR JUP OR @JupiterExchange"
+      tier: minor
   hours: 24               # 回看小时数
   per_subject_topics: 6   # 每个主体最多归纳几个话题
 
