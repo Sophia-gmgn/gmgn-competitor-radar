@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""竞品功能更新 → Confluence（按竞品分组 + 卡片式）。"""
+"""
+竞品功能更新（#2 + #4 + #3）→ Confluence
+=========================================
+读 data/feature_updates.json，按【竞品分组】渲染成好看的更新页：
+顶部概览条 + 每家一个区块；功能更新/集成用绿色卡片突出，活动/公告用朴素文字弱化。
+按固定 pageId 覆盖写、保留页面标题。
+
+需要：ATLASSIAN_EMAIL / ATLASSIAN_API_TOKEN / FEATURE_UPDATES_PAGE_ID
+（未配 pageId 时安静跳过。）
+"""
 import os
 import sys
 import pathlib
@@ -8,13 +17,13 @@ import pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
 from common.util import load_dotenv, enable_truststore, load_store, now_cst_str
-from common.confluence import Confluence, esc, panel, status_lozenge
+from common.confluence import Confluence, esc, panel, status_lozenge, expand
 
 DATA_FILE = os.environ.get("FEATURE_UPDATES_DATA", "data/feature_updates.json")
 MAX_ITEMS_PER_COMP = int(os.environ.get("FEATURE_UPDATES_MAX_PER_COMP", "40"))
 
 TYPE_COLOUR = {"功能更新": "Green", "集成": "Purple", "活动": "Yellow", "公告": "Blue", "其它": None}
-IMPORTANT = {"功能更新", "集成"}
+IMPORTANT = {"功能更新", "集成"}          # 这两类用绿色卡片突出
 TYPE_EMOJI = {"功能更新": "🆕", "集成": "🔗", "活动": "🎁", "公告": "📢", "其它": "📝"}
 
 
@@ -30,18 +39,54 @@ def render_item(it):
     date = esc(it.get("date", ""))
     src = _src_link(it)
     if typ in IMPORTANT:
+        # 重点：绿色卡片
         inner = (f'<p>{tag} &nbsp;<sub>{date}</sub></p>'
                  f'<p><strong>{title}</strong></p>'
                  f'<p>{summary}{src}</p>')
         return panel("tip", inner)
+    # 次要：朴素文字，弱化
     return (f'<p>{tag} &nbsp;<strong>{title}</strong> &nbsp;<sub>{date}</sub></p>'
             f'<p>{summary}{src}</p>')
+
+
+def _is_webjs(it):
+    u = str(it.get("url", ""))
+    return u.endswith(".js") or "/assets/" in u
+
+
+def _webjs_block(comp, wj_items):
+    """把 web_js 来源的公告打包成：概述 panel + 折叠详情（简洁、无链接）。"""
+    n = len(wj_items)
+    # 概述：取前几条标题里的关键词做一句话概括
+    kw = "、".join(
+        _short_kw(it.get("title", "")) for it in wj_items[:4] if it.get("title"))
+    overview = (f'<p>📢 <strong>{esc(comp)} 官网弹窗更新了 {n} 项</strong>'
+                f'（涵盖 {esc(kw)} 等）</p>')
+    # 折叠里的详情：每条 标题 + 一句摘要，无原文链接
+    rows = []
+    for it in wj_items:
+        typ = it.get("type", "其它")
+        tag = status_lozenge(typ, TYPE_COLOUR.get(typ))
+        title = esc(it.get("title", ""))
+        summary = esc(it.get("summary", ""))
+        rows.append(f'<p>{tag} <strong>{title}</strong></p><p>{summary}</p>')
+    detail = "".join(rows)
+    return panel("info", overview) + expand(f"展开查看 {n} 项更新详情", detail)
+
+
+def _short_kw(title):
+    """从标题里抽一个短关键词（去掉竞品名和'正式上线'等）。"""
+    import re
+    t = re.sub(r"(DeBot|Debot|正式上线|上线|功能|支持|新增|全新)", "", title)
+    t = t.strip("　 ·").strip()
+    return t[:8] if t else title[:8]
 
 
 def render_page(store):
     now = now_cst_str()
     total = len(store)
 
+    # 按竞品分组
     comps = {}
     for it in store:
         comps.setdefault(it.get("competitor", "?"), []).append(it)
@@ -51,6 +96,7 @@ def render_page(store):
 
     ordered = sorted(comps.items(), key=lambda kv: recent(kv[1]), reverse=True)
 
+    # 顶部概览条
     if ordered:
         counts = " &nbsp;·&nbsp; ".join(f"<strong>{esc(c)}</strong> {len(items)}"
                                         for c, items in ordered)
@@ -64,12 +110,23 @@ def render_page(store):
         parts.append(panel("note", "<p>暂无功能更新（等首次抓取写入）。</p>"))
         return "".join(parts)
 
+    # 每家一个区块
     for comp, items in ordered:
         items = sorted(items, key=lambda x: x.get("date", ""), reverse=True)[:MAX_ITEMS_PER_COMP]
-        n_imp = sum(1 for x in items if x.get("type") in IMPORTANT)
-        badge = f'　<sub>{len(items)} 条' + (f'，{n_imp} 条功能更新' if n_imp else '') + '</sub>'
+        # 分离 web_js 公告（打包折叠）和其它来源（逐条展示）
+        wj_items = [x for x in items if _is_webjs(x)]
+        other_items = [x for x in items if not _is_webjs(x)]
+
+        n_imp = sum(1 for x in other_items if x.get("type") in IMPORTANT)
+        total_comp = len(items)
+        badge = f'　<sub>{total_comp} 条' + (f'，{n_imp} 条功能更新' if n_imp else '') + '</sub>'
         parts.append(f'<h2>🔹 {esc(comp)}{badge}</h2>')
-        for it in items:
+
+        # 先放 web_js 打包块（概述+折叠）
+        if wj_items:
+            parts.append(_webjs_block(comp, wj_items))
+        # 再逐条放其它来源
+        for it in other_items:
             parts.append(render_item(it))
     return "".join(parts)
 
@@ -79,7 +136,8 @@ def main():
     enable_truststore()
     pid = os.environ.get("FEATURE_UPDATES_PAGE_ID", "").strip()
     if not pid:
-        print("未设置 FEATURE_UPDATES_PAGE_ID —— 跳过写 Confluence。")
+        print("未设置 FEATURE_UPDATES_PAGE_ID —— 跳过写 Confluence"
+              "（把「竞品功能更新」页的 pageId 填进来即可）。")
         return
     store = load_store(DATA_FILE)
     Confluence().update_body(pid, render_page(store),
