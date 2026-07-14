@@ -25,5 +25,86 @@
     "type": "功能更新",
     "url": "https://t.me/bananagunannouncements/445",
     "_id": "f:57005b55e41830f1"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 自动交易正式上线",
+    "summary": "支持迁移自动买入、自动卖出及跟单钱包卖出功能。用户可将原有自动交易设置迁移至新系统，实现更稳定的链上自动化操作。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:55314fd2b0012f08"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 支持自定义头像与 Flap 分红领取",
+    "summary": "新增自定义头像功能，便于盯盘识别；同时上线 Flap 分红一键领取入口，简化用户资产领取流程。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:e2951f1cfe5237dd"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 全新布局与多视窗管理系统上线",
+    "summary": "引入吸附模式与多视窗自由悬浮功能，用户可根据需求灵活组织交易界面，提升链上操作效率。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:fda397146d0a2e0d"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 接入 HyperEVM 生态并支持 Alt.fun 协议",
+    "summary": "正式集成 HyperEVM 链及 Alt.fun 协议，为用户提供探索新资产与新叙事的入口，属于生态集成类更新。",
+    "date": "2026-07-14",
+    "type": "集成",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:0a9ba5e899c641a0"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 合约交易功能正式上线",
+    "summary": "提供一站式链上合约交易入口，支持 BTC、ETH、美股、黄金、石油等多类资产交易，拓宽用户交易选择范围。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:6476bb01a609ffbe"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 账户新增 Passkey 验证",
+    "summary": "基于设备指纹或面容认证实现 Passkey 验证，覆盖登录与提现等关键操作，提升账户安全等级。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:a5ee4ed3e0355a38"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 支持自定义通知声音",
+    "summary": "用户可为买卖成交、推特监控、钱包动态设置专属提示音，通过声音提醒及时捕捉交易机会。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:14b5836f2f506ccb"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 新增 Pump 返现与租赁回收功能",
+    "summary": "支持一键领取 Pump 返现及回收租赁资产，帮助用户找回被遗忘的链上资产，提高资金利用率。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:0c9f0a48497d83ad"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 扫链背景色支持自定义",
+    "summary": "用户可自定义代币协议及推特作者的扫链背景色，打造个性化扫链界面，提升使用体验。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:c9ad0f482a9af137"
   }
 ]
