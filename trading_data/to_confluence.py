@@ -72,22 +72,27 @@ def _rows_for_tier(roster, tier, items_by_label, users_by_label):
         has_vol = bool(v) and (v.get("d30") is not None)
         out.append({
             "label": label, "self": r.get("self"), "note": r.get("note"),
-            "sol_only": r.get("sol_only"), "via": it.get("via"),
+            "sol_only": r.get("sol_only"), "via": it.get("via"), "not_bot": r.get("not_bot"),
             "v1": v.get("d1"), "v7": v.get("d7"), "v14": v.get("d14"), "v30": v.get("d30"),
             "ut": u.get("users_today"), "u7": u.get("users_7d"),
             "u14": u.get("users_14d"), "u30": u.get("users_30d"),
             "has_vol": has_vol, "has_user": bool(u),
         })
-    withvol = sorted([x for x in out if x["has_vol"]], key=lambda x: x["v30"] or 0, reverse=True)
+    real = sorted([x for x in out if x["has_vol"] and not x.get("not_bot")], key=lambda x: x["v30"] or 0, reverse=True)
+    nonbot = sorted([x for x in out if x["has_vol"] and x.get("not_bot")], key=lambda x: x["v30"] or 0, reverse=True)
     novol = [x for x in out if not x["has_vol"]]
-    return withvol + novol
+    return real + nonbot + novol
 
 
 def _vol_table(rows):
-    vmax = max([x["v30"] for x in rows if x["has_vol"]], default=0)
+    vmax = max([x["v30"] for x in rows if x["has_vol"] and not x.get("not_bot")], default=0)
     headers = ["#", "竞品", "数据覆盖", "24h", "7d", "14d", "30d", "30天占比"]
     body = []
+    rank = 0
     for i, x in enumerate(rows):
+        is_bot = x["has_vol"] and not x.get("not_bot")
+        if is_bot:
+            rank += 1
         label = esc(x["label"])
         name = f'<strong>⭐ {label}（我们）</strong>' if x["self"] else f"<strong>{label}</strong>"
         if x.get("sol_only"):
@@ -95,10 +100,10 @@ def _vol_table(rows):
         if x.get("note"):
             name += f' <sub>（{esc(x["note"])}）</sub>'
         body.append([
-            str(i + 1) if x["has_vol"] else "–",
+            str(rank) if is_bot else "—",
             name, _coverage(x),
             usd(x["v1"]), usd(x["v7"]), usd(x["v14"]), usd(x["v30"]),
-            _bar(x["v30"], vmax),
+            _bar(x["v30"], vmax) if is_bot else "—",
         ])
     return table(headers, body)
 
@@ -130,10 +135,11 @@ def render_page(snap):
     core_rows = _rows_for_tier(roster, "core", items_by_label, users_by_label)
     minor_rows = _rows_for_tier(roster, "minor", items_by_label, users_by_label)
 
-    core_vol = [x for x in core_rows if x["has_vol"]]
-    self_rank = next((i + 1 for i, x in enumerate(core_vol) if x["self"]), None)
-    rank_txt = (f' &nbsp;｜&nbsp; 我们（GMGN）核心层交易量排名 '
-                f'<strong>第 {self_rank} / {len(core_vol)}</strong>') if self_rank else ""
+    all_bots = sorted([x for x in (core_rows + minor_rows) if x["has_vol"] and not x.get("not_bot")],
+                      key=lambda x: x["v30"] or 0, reverse=True)
+    self_rank = next((i + 1 for i, x in enumerate(all_bots) if x["self"]), None)
+    rank_txt = (f' &nbsp;｜&nbsp; 我们（GMGN）交易量排名 '
+                f'<strong>第 {self_rank} / {len(all_bots)}</strong>（全部竞品交易 bot，剔除发币平台 / 聚合器）') if self_rank else ""
 
     parts = []
     parts.append(panel("info",
@@ -151,7 +157,7 @@ def render_page(snap):
         parts.append("<h2>👥 活跃用户数（Dune · 仅 Solana 口径）</h2>")
         parts.append(utab)
 
-    parts.append(panel("note",
+    parts.append(
         "<p><sub><strong>数据说明</strong><br/>"
         "· <strong>交易量</strong>：DefiLlama 全链汇总。"
         "<strong>已收录</strong> = 有全链数据；"
@@ -160,7 +166,8 @@ def render_page(snap):
         "<strong>暂无数据</strong> = 公开数据源尚未收录，待实际下单反查（Based Bot / DeBot）。<br/>"
         "· <strong>活跃用户</strong>：Dune，仅 Solana 链、按独立钱包地址去重；多链竞品的非 Solana 用户未计入，故偏低。<br/>"
         "· <strong>30天占比</strong>：该竞品 30 天交易量相对本层最大值的比例，仅作直观对比。<br/>"
-        "· Moby、BullX 已移出监控。</sub></p>"))
+        "· Pump.fun（发币平台）、Jupiter（DEX 聚合器）口径与交易 bot 不同，仅列数值、不参与排名与占比。<br/>"
+        "· Moby、BullX 已移出监控。</sub></p>")
     return "".join(parts)
 
 
