@@ -11,7 +11,7 @@ import hashlib
 import re
 import sys
 import html
-from datetime import datetime
+from datetime import datetime, timezone
 
 import httpx
 
@@ -173,26 +173,85 @@ def read_discord_channel(token, channel_id, cutoff_dt, client=None):
 # 适用于「公告写死在前端代码里、没有独立接口」的竞品（如 DeBot）。
 # 抓首页→定位当前主 JS（文件名带 hash 会变，所以每次动态解析）→下载→按规则提取公告。
 # 每个站点的提取规则不同，用 WEB_JS_RULES 配置。
+# mode="single_js"：公告在单一主JS里（DeBot）
+# mode="nextjs_chunks"：Next.js 应用，公告在某个 chunk 里（BasedBot）
 WEB_JS_RULES = {
-    # DeBot：公告是 title:{zh:"..."} ... desc:{zh:"..."} 结构
     "debot": {
+        "mode": "single_js",
         "base": "https://debot.ai",
         "js_pattern": r'src="(/assets/[^"]*index-[^"]*\.js)"',
         "title_pattern": r'title:\{zh:"([^"]{2,80})"',
         "desc_pattern": r'desc:\{zh:"([^"]{0,200})"',
     },
+    "basedbot": {
+        "mode": "nextjs_chunks",
+        "base": "https://basedbot.app",
+        "marker": "changelogEntries",
+        "block_pattern": r'changelogEntries:\[(\{title:"[^"]*",description:"[^"]*"\}(?:,\{title:"[^"]*",description:"[^"]*"\})*)\]',
+        "entry_pattern": r'\{title:"([^"]*)",description:"([^"]*)"\}',
+    },
 }
 
 
-def _webjs_today():
-    from datetime import datetime, timezone
-    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+def _webjs_single(rule, site_key, client):
+    base = rule["base"]
+    r = client.get(base + "/", headers={"User-Agent": TG_UA}, timeout=30, follow_redirects=True)
+    m = re.search(rule["js_pattern"], r.text)
+    if not m:
+        print(f"[web_js:{site_key}] 未在首页找到主 JS", file=sys.stderr)
+        return []
+    js_url = base + m.group(1)
+    jr = client.get(js_url, headers={"User-Agent": TG_UA}, timeout=30, follow_redirects=True)
+    js = jr.text
+    items = []
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    for tm in re.finditer(rule["title_pattern"], js):
+        title = tm.group(1).strip()
+        tail = js[tm.end():tm.end() + 600]
+        dm = re.search(rule["desc_pattern"], tail)
+        desc = (dm.group(1).strip() if dm else "")
+        text = f"{title}\n{desc}" if desc else title
+        mid = f"webjs:{site_key}:" + hashlib.md5(title.encode("utf-8")).hexdigest()[:12]
+        items.append({"text": text, "url": js_url, "ts": today, "msg_id": mid})
+    return items
+
+
+def _webjs_nextjs(rule, site_key, client):
+    base = rule["base"]
+    r = client.get(base + "/", headers={"User-Agent": TG_UA}, timeout=30, follow_redirects=True)
+    chunks = sorted(set(re.findall(r'/_next/static/chunks/[^"]*\.js', r.text)))
+    if not chunks:
+        print(f"[web_js:{site_key}] 首页未找到 Next.js chunk", file=sys.stderr)
+        return []
+    marker = rule["marker"]
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    items = []
+    for c in chunks:
+        try:
+            cr = client.get(base + c, headers={"User-Agent": TG_UA}, timeout=15, follow_redirects=True)
+        except Exception:
+            continue
+        js = cr.text
+        if marker not in js:
+            continue
+        for bm in re.finditer(rule["block_pattern"], js):
+            entries = re.findall(rule["entry_pattern"], bm.group(1))
+            if entries and re.search(r'[\u4e00-\u9fa5]', entries[0][0] + entries[0][1]):
+                for title, desc in entries:
+                    title, desc = title.strip(), desc.strip()
+                    text = f"{title}\n{desc}" if desc else title
+                    mid = f"webjs:{site_key}:" + hashlib.md5(title.encode("utf-8")).hexdigest()[:12]
+                    items.append({"text": text, "url": base + c, "ts": today, "msg_id": mid})
+                break
+        if items:
+            break
+    if not items:
+        print(f"[web_js:{site_key}] 遍历 {len(chunks)} 个 chunk 未提取到公告", file=sys.stderr)
+    return items
 
 
 def read_web_js(site_key, cutoff_dt=None, client=None):
-    """按 WEB_JS_RULES[site_key] 抓竞品网站前端 JS，提取公告。
-    返回 [{text, url, ts, msg_id}]（与 TG/Discord 源同格式）。
-    cutoff_dt 不适用（前端公告无可靠时间戳），保留参数以统一接口。"""
+    """按 WEB_JS_RULES[site_key] 抓竞品网站前端 JS，提取公告。"""
     rule = WEB_JS_RULES.get(site_key)
     if not rule:
         print(f"[web_js:{site_key}] 未配置提取规则", file=sys.stderr)
@@ -200,35 +259,13 @@ def read_web_js(site_key, cutoff_dt=None, client=None):
     owns = client is None
     client = client or httpx.Client()
     try:
-        base = rule["base"]
-        try:
-            r = client.get(base + "/", headers={"User-Agent": TG_UA},
-                           timeout=30, follow_redirects=True)
-        except Exception as e:
-            print(f"[web_js:{site_key}] 首页请求异常：{e}", file=sys.stderr)
-            return []
-        m = re.search(rule["js_pattern"], r.text)
-        if not m:
-            print(f"[web_js:{site_key}] 未在首页找到主 JS", file=sys.stderr)
-            return []
-        js_url = base + m.group(1)
-        try:
-            jr = client.get(js_url, headers={"User-Agent": TG_UA},
-                            timeout=30, follow_redirects=True)
-        except Exception as e:
-            print(f"[web_js:{site_key}] JS 下载异常：{e}", file=sys.stderr)
-            return []
-        js = jr.text
-        items = []
-        for tm in re.finditer(rule["title_pattern"], js):
-            title = tm.group(1).strip()
-            tail = js[tm.end():tm.end() + 600]
-            dm = re.search(rule["desc_pattern"], tail)
-            desc = (dm.group(1).strip() if dm else "")
-            text = f"{title}\n{desc}" if desc else title
-            mid = f"webjs:{site_key}:" + hashlib.md5(title.encode("utf-8")).hexdigest()[:12]
-            items.append({"text": text, "url": js_url, "ts": _webjs_today(), "msg_id": mid})
-        return items
+        mode = rule.get("mode", "single_js")
+        if mode == "nextjs_chunks":
+            return _webjs_nextjs(rule, site_key, client)
+        return _webjs_single(rule, site_key, client)
+    except Exception as e:
+        print(f"[web_js:{site_key}] 提取异常：{e}", file=sys.stderr)
+        return []
     finally:
         if owns:
             client.close()

@@ -89,6 +89,7 @@ feature_updates:
     - key: basedbot
       label: BasedBot
       discord_channel_id: "1525484620983046215"
+      web_js: basedbot
     - key: bananagun
       label: Banana Gun
       telegram_channel: bananagunannouncements
