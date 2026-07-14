@@ -25,5 +25,14 @@
     "type": "功能更新",
     "url": "https://t.me/bananagunannouncements/445",
     "_id": "f:57005b55e41830f1"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 自动交易功能正式上线",
+    "summary": "支持迁移自动买入、自动卖出及跟单钱包卖出功能。用户可设置自动化交易策略，提升交易执行效率和便利性。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:228dd2f43d1b5cf3"
   }
 ]
