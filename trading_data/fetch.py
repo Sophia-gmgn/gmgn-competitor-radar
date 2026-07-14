@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""竞品交易数据（#6 · stan）—— 抓取（DefiLlama 交易量 + Dune 用户数）。"""
+"""竞品交易数据（#6 · stan）—— 抓取（DefiLlama 交易量 + Dune 用户数）。
+
+每家怎么取（见 config.yaml 的 roster）：
+  vol_slug              -> DefiLlama /summary/dexs（全链交易量）
+  fees_slug + fee_rate  -> DefiLlama /summary/fees 的手续费 ÷ 费率，估算交易量（如 Maestro=1%）
+  两者都无              -> 暂无公开数据源，不抓取（页面按 roster 留空「暂无」）
+"""
 import os
 import sys
 import json
@@ -24,6 +30,7 @@ def _sum_last_n(chart, n):
 
 
 def _fetch_volume(client, slug):
+    """DefiLlama dexs 全链交易量。"""
     url = f"{LLAMA}/summary/dexs/{slug}?excludeTotalDataChartBreakdown=true"
     try:
         r = client.get(url, timeout=40)
@@ -35,29 +42,64 @@ def _fetch_volume(client, slug):
         chart = d.get("totalDataChart") or []
         return {"d1": d.get("total24h"), "d7": d.get("total7d"),
                 "d14": _sum_last_n(chart, 14), "d30": d.get("total30d"),
-                "name": d.get("name")}
+                "name": d.get("name"), "chains": d.get("chains") or [], "via": "dexs"}
+    except Exception:
+        return None
+
+
+def _fetch_fees_volume(client, slug, fee_rate):
+    """无 dexs 数据的竞品：用手续费 ÷ 费率 估算交易量（如 Maestro，费率 1%）。"""
+    rate = fee_rate or 0.01
+    url = f"{LLAMA}/summary/fees/{slug}?excludeTotalDataChartBreakdown=true"
+    try:
+        r = client.get(url, timeout=40)
+        if r.status_code != 200:
+            return None
+        d = r.json()
+        if not isinstance(d, dict) or d.get("total24h") is None:
+            return None
+        chart = d.get("totalDataChart") or []
+
+        def vol(x):
+            return (x / rate) if isinstance(x, (int, float)) else None
+
+        return {"d1": vol(d.get("total24h")), "d7": vol(d.get("total7d")),
+                "d14": vol(_sum_last_n(chart, 14)), "d30": vol(d.get("total30d")),
+                "name": d.get("name"), "chains": d.get("chains") or [], "via": "fees"}
     except Exception:
         return None
 
 
 def fetch_all(cfg):
-    comps = cfg.get("competitors", []) or []
+    roster = cfg.get("roster", []) or []
     out = []
     with httpx.Client(headers={"User-Agent": "gmgn-radar/1.0"}) as client:
-        for c in comps:
-            slug = str(c.get("slug") or "").strip()
-            label = c.get("label") or slug
+        for c in roster:
+            label = c.get("label") or ""
             is_self = bool(c.get("self"))
-            if not slug:
-                continue
-            vol = _fetch_volume(client, slug)
+            tier = c.get("tier") or "minor"
+            sol_only = bool(c.get("sol_only"))
+            vol_slug = str(c.get("vol_slug") or "").strip()
+            fees_slug = str(c.get("fees_slug") or "").strip()
+
+            vol, slug = None, None
+            if vol_slug:
+                vol, slug = _fetch_volume(client, vol_slug), vol_slug
+            elif fees_slug:
+                vol, slug = _fetch_fees_volume(client, fees_slug, c.get("fee_rate")), fees_slug
+
             if not vol:
-                print(f"  [{label}] ❌ 无交易量数据（slug={slug}）")
-                continue
-            out.append({"label": label, "slug": slug, "self": is_self, "vol": vol})
-            v30 = vol.get("d30") or 0
+                if vol_slug or fees_slug:
+                    print(f"  [{label}] 无交易量数据（slug={vol_slug or fees_slug}）")
+                continue  # 无数据源（Based Bot / DeBot）不抓，页面按 roster 留空
+
+            out.append({"label": label, "slug": slug, "self": is_self,
+                        "tier": tier, "sol_only": sol_only,
+                        "via": vol.get("via"), "vol": vol})
             v1 = vol.get("d1") or 0
-            print(f"  [{label}] 24h=${v1:,.0f}  30d=${v30:,.0f}")
+            v30 = vol.get("d30") or 0
+            tag = "（估算·手续费）" if vol.get("via") == "fees" else ("（仅Solana）" if sol_only else "")
+            print(f"  [{label}] 24h=${v1:,.0f}  30d=${v30:,.0f} {tag}")
     return out
 
 
@@ -73,13 +115,14 @@ def main():
     load_dotenv()
     enable_truststore()
     cfg = load_config().get("trading_data", {}) or {}
-    comps = cfg.get("competitors", []) or []
-    if not comps:
-        print("config.yaml 里 trading_data.competitors 为空", file=sys.stderr)
+    roster = cfg.get("roster", []) or []
+    if not roster:
+        print("config.yaml 里 trading_data.roster 为空", file=sys.stderr)
         sys.exit(1)
 
+    n_src = sum(1 for c in roster if c.get("vol_slug") or c.get("fees_slug"))
     print("=== 竞品交易数据 · 抓取 ===")
-    print(f"竞品 {len(comps)} 家\n")
+    print(f"名单 {len(roster)} 家（有数据源 {n_src} 家）\n")
     items = fetch_all(cfg)
 
     prev = _load_prev(DATA_FILE)
@@ -98,7 +141,6 @@ def main():
 
     snap = {"date": today, "updated_at": datetime.now(timezone.utc).isoformat(), "items": items}
 
-    # 用户数（Dune dex_solana.bot_trades；失败不影响交易量）
     qid = cfg.get("dune_users_query_id")
     bot_map = cfg.get("dune_bot_map") or {}
     users = []
@@ -111,21 +153,17 @@ def main():
                 label = bot_map.get(raw, raw)
                 users.append({
                     "label": label,
-                    "users_today": r.get("users_today"),
-                    "users_7d": r.get("users_7d"),
-                    "users_14d": r.get("users_14d"),
-                    "users_30d": r.get("users_30d"),
-                    "dvol_1d": r.get("vol_1d"),
-                    "dvol_7d": r.get("vol_7d"),
-                    "dvol_14d": r.get("vol_14d"),
-                    "dvol_30d": r.get("vol_30d"),
+                    "users_today": r.get("users_today"), "users_7d": r.get("users_7d"),
+                    "users_14d": r.get("users_14d"), "users_30d": r.get("users_30d"),
+                    "dvol_1d": r.get("vol_1d"), "dvol_7d": r.get("vol_7d"),
+                    "dvol_14d": r.get("vol_14d"), "dvol_30d": r.get("vol_30d"),
                 })
             users.sort(key=lambda x: x.get("users_7d") or 0, reverse=True)
             print(f"\n用户数（Dune）：{len(users)} 家")
             for u in users:
                 print(f"  [{u['label']}] 7d活跃={u.get('users_7d')}  30d活跃={u.get('users_30d')}")
         except Exception as e:
-            print(f"\n⚠️ Dune 用户数抓取失败（不影响交易量）：{e}")
+            print(f"\n Dune 用户数抓取失败（不影响交易量）：{e}")
     else:
         print("\n（未配置 DUNE_API_KEY 或 query id，跳过用户数）")
     snap["users"] = users

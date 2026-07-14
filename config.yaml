@@ -94,13 +94,7 @@ feature_updates:
   hours: 168
 
 trading_data:
-  competitors:
-    - { slug: gmgn,       label: GMGN,        self: true }
-    - { slug: axiom,      label: Axiom }
-    - { slug: trojan,     label: Trojan }
-    - { slug: photon,     label: Photon }
-    - { slug: bonkbot,    label: BONKbot }
-    - { slug: banana-gun, label: Banana Gun }
+  # 用户数（Dune；仅 Solana，按独立钱包去重）
   dune_users_query_id: 7954296
   dune_bot_map:
     Trojan: Trojan
@@ -108,15 +102,22 @@ trading_data:
     "Banana Gun": Banana Gun
     Maestro: Maestro
     "Sol Trading Bot": Sol Trading Bot
+  # roster = 展示名单（唯一真源）：tier 核心/次要；vol_slug=DefiLlama dexs；
+  #   fees_slug+fee_rate=手续费估算交易量；sol_only=仅Solana口径；两者都无=暂无源留空
   roster:
-    - { label: GMGN,            self: true, vol_slug: gmgn }
-    - { label: Axiom,           vol_slug: axiom }
-    - { label: Trojan,          vol_slug: trojan,     dune_bot: Trojan }
-    - { label: Banana Gun,      vol_slug: banana-gun, dune_bot: Banana Gun }
-    - { label: Photon,          vol_slug: photon }
-    - { label: BONKbot,         vol_slug: bonkbot,    dune_bot: BonkBot }
-    - { label: Maestro,         dune_bot: Maestro }
-    - { label: Sol Trading Bot, dune_bot: Sol Trading Bot }
-    - { label: DeBot }
-    - { label: BasedBot }
-    - { label: Moby }
+    # ——— 核心竞品（重点监控）———
+    - { label: GMGN,      tier: core, self: true, vol_slug: gmgn }
+    - { label: Axiom,     tier: core, vol_slug: axiom }
+    - { label: Terminal,  tier: core, vol_slug: terminal }
+    - { label: Pump.fun,  tier: core, vol_slug: pump.fun, note: "发币平台" }
+    - { label: Trojan,    tier: core, vol_slug: trojan,  dune_bot: Trojan }
+    - { label: Photon,    tier: core, vol_slug: photon }
+    - { label: FOMO,      tier: core, vol_slug: fomo-wallet, sol_only: true }
+    - { label: Based Bot, tier: core }
+    - { label: DeBot,     tier: core }
+    # ——— 次要竞品（泛关注）———
+    - { label: Banana Gun, tier: minor, vol_slug: banana-gun, dune_bot: Banana Gun }
+    - { label: BONKbot,    tier: minor, vol_slug: bonkbot,    dune_bot: BonkBot }
+    - { label: Maestro,    tier: minor, fees_slug: maestro, fee_rate: 0.01, dune_bot: Maestro }
+    - { label: Bloom,      tier: minor, vol_slug: bloom-trading-bot }
+    - { label: Jupiter,    tier: minor, vol_slug: jupiter, note: "DEX 聚合器" }
