@@ -46,7 +46,7 @@ def _bar(v, vmax, width=10):
         return "—"
     filled = min(width, max(1, round(width * (v / vmax))))
     pct = v / vmax * 100
-    return f'{chr(9609)*filled}{chr(183)*(width-filled)} <sub>{pct:.0f}%</sub>'
+    return f'{chr(9608)*filled}{chr(9617)*(width-filled)} <sub>{pct:.0f}%</sub>'
 
 
 def _coverage(row):
@@ -105,7 +105,7 @@ def _vol_table(rows):
             usd(x["v1"]), usd(x["v7"]), usd(x["v14"]), usd(x["v30"]),
             _bar(x["v30"], vmax) if is_bot else "—",
         ])
-    return table(headers, body)
+    return table(headers, body).replace('data-layout="default"', 'data-layout="full-width"')
 
 
 def _users_table(rows):
