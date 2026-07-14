@@ -184,6 +184,11 @@ WEB_JS_RULES = {
 }
 
 
+def _webjs_today():
+    from datetime import datetime, timezone
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+
 def read_web_js(site_key, cutoff_dt=None, client=None):
     """按 WEB_JS_RULES[site_key] 抓竞品网站前端 JS，提取公告。
     返回 [{text, url, ts, msg_id}]（与 TG/Discord 源同格式）。
@@ -222,7 +227,7 @@ def read_web_js(site_key, cutoff_dt=None, client=None):
             desc = (dm.group(1).strip() if dm else "")
             text = f"{title}\n{desc}" if desc else title
             mid = f"webjs:{site_key}:" + hashlib.md5(title.encode("utf-8")).hexdigest()[:12]
-            items.append({"text": text, "url": js_url, "ts": None, "msg_id": mid})
+            items.append({"text": text, "url": js_url, "ts": _webjs_today(), "msg_id": mid})
         return items
     finally:
         if owns:

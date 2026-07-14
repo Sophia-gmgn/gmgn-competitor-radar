@@ -33,7 +33,7 @@ TYPE_OK = {"功能更新", "活动", "集成", "公告", "其它"}
 
 def build_prompt(label, source_kind, posts):
     block = "\n\n".join(
-        f"[{i+1}] 日期 {p.get('ts','')[:10]}｜链接 {p.get('url','')}\n{p['text']}"
+        f"[{i+1}] 日期 {(p.get('ts') or '')[:10]}｜链接 {p.get('url','')}\n{p['text']}"
         for i, p in enumerate(posts))
     return f"""以下是竞品 {label} 官方 {source_kind}最近发布的公告原文。请把【每一条】都翻译成简体中文并做简要解读，逐条整理成条目。
 
