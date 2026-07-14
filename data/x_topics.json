@@ -70,29 +70,6 @@
   },
   {
     "date": "2026-07-11",
-    "subject": "Moby",
-    "topic": "Moby 平台交易者 24 小时内顶级表现及排行榜奖励",
-    "heat": "中",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/OffGridKat/status/2075766121886560337",
-      "https://x.com/SeitanSurKick/status/2075766764110033106"
-    ],
-    "_id": "t:9b559f4406bb3c11"
-  },
-  {
-    "date": "2026-07-11",
-    "subject": "Moby",
-    "topic": "在 Moby 上持有特定代币进入排行榜获得奖励",
-    "heat": "低",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/guccibeardd/status/2075578919256805479"
-    ],
-    "_id": "t:57803035e6588eac"
-  },
-  {
-    "date": "2026-07-11",
     "subject": "GMGN",
     "topic": "用户讨论GMGN在Robinhood链meme币交易中的使用，包括工具推荐和交易执行",
     "heat": "中",
@@ -184,41 +161,6 @@
       "https://x.com/earlTrades/status/2075750168427897031"
     ],
     "_id": "t:44a2ed0f9b6f3701"
-  },
-  {
-    "date": "2026-07-11",
-    "subject": "Moby",
-    "topic": "Moby交易者排行榜和过去24小时顶级交易者收益展示",
-    "heat": "高",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/OffGridKat/status/2075766121886560337",
-      "https://x.com/OffGridKat/status/2075766764110033106"
-    ],
-    "_id": "t:6214875d900bc439"
-  },
-  {
-    "date": "2026-07-11",
-    "subject": "Moby",
-    "topic": "用户在Moby上交易特定meme币的表现和讨论",
-    "heat": "中",
-    "sentiment": "中性",
-    "examples": [
-      "https://x.com/CaptBlasto269/status/2075816654047789384",
-      "https://x.com/bl1xlo/status/2075788504936960427"
-    ],
-    "_id": "t:6db3b904467745e3"
-  },
-  {
-    "date": "2026-07-11",
-    "subject": "Moby",
-    "topic": "对Moby平台功能或特定代币的疑问（如是否诈骗）",
-    "heat": "低",
-    "sentiment": "负面",
-    "examples": [
-      "https://x.com/y7_y00ts/status/2075829024916664365"
-    ],
-    "_id": "t:2047d258c1a61372"
   },
   {
     "date": "2026-07-11",
@@ -355,31 +297,6 @@
       "https://x.com/AEON_XE/status/2075832976613515759"
     ],
     "_id": "t:c0e91769acaace1c"
-  },
-  {
-    "date": "2026-07-11",
-    "subject": "Moby",
-    "topic": "Moby leaderboard 上 top traders 的盈利表现和空投奖励",
-    "heat": "高",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/userSOLANA/status/2075870399686983739",
-      "https://x.com/OffGridKat/status/2075766121886560337",
-      "https://x.com/CryptoExpert101/status/2075829744835145933"
-    ],
-    "_id": "t:dcec5b37071e1bf9"
-  },
-  {
-    "date": "2026-07-11",
-    "subject": "Moby",
-    "topic": "用户在 Moby 上交易 memecoin 的实时盈利和平台使用体验",
-    "heat": "中",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/OffGridKat/status/2075766898638123025",
-      "https://x.com/SeitanSurKick/status/2075766764110033106"
-    ],
-    "_id": "t:5140ea311f2e8e26"
   },
   {
     "date": "2026-07-11",
@@ -672,42 +589,6 @@
   },
   {
     "date": "2026-07-12",
-    "subject": "Moby",
-    "topic": "Moby App 新增 BNB Chain 和 Robinhood Crypto 支持，用户讨论跨链交易便利性",
-    "heat": "中",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/Johnteempire1/status/2076220177327210979",
-      "https://x.com/itscoinnoisseur/status/2076144771127525516"
-    ],
-    "_id": "t:0b89c937651b5e1a"
-  },
-  {
-    "date": "2026-07-12",
-    "subject": "Moby",
-    "topic": "Moby 平台用户实现高额盈利，如 $Jotchua 交易 +4681% PnL",
-    "heat": "中",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/OffGridKat/status/2076196793826578682",
-      "https://x.com/itscoinnoisseur/status/2076149426800734361"
-    ],
-    "_id": "t:09f1b36ce462fc54"
-  },
-  {
-    "date": "2026-07-12",
-    "subject": "Moby",
-    "topic": "用户公开称赞 Moby 是最佳 meme 交易工具",
-    "heat": "低",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/itscoinnoisseur/status/2076171540966638051",
-      "https://x.com/itscoinnoisseur/status/2076144675384111271"
-    ],
-    "_id": "t:c4d9aef4b2d93390"
-  },
-  {
-    "date": "2026-07-12",
     "subject": "DeBot",
     "topic": "DeBot与GMGN哪个更好用",
     "heat": "中",
@@ -764,42 +645,6 @@
       "https://x.com/tayapami/status/2076306145975701647"
     ],
     "_id": "t:8cc95d943e85bea8"
-  },
-  {
-    "date": "2026-07-12",
-    "subject": "Moby",
-    "topic": "Moby App 的 Solana 到 RobinhoodCrypto 快速桥接功能演示",
-    "heat": "中",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/mobyagent/status/2076290730008719635",
-      "https://x.com/mobyagent/status/2076322237624246552"
-    ],
-    "_id": "t:ec61eab70174296d"
-  },
-  {
-    "date": "2026-07-12",
-    "subject": "Moby",
-    "topic": "Moby 平台上鲸鱼买入活动和聪明钱持有者追踪（如 ANSEM、TROLL 等 meme 币）",
-    "heat": "中",
-    "sentiment": "中性",
-    "examples": [
-      "https://x.com/whalewatchalert/status/2076321687532941336",
-      "https://x.com/mobyagent/status/2076312876780777509",
-      "https://x.com/whalewatchalert/status/2076297542157865436"
-    ],
-    "_id": "t:ba43c773ad55a6dd"
-  },
-  {
-    "date": "2026-07-12",
-    "subject": "Moby",
-    "topic": "Moby Pro 解锁的聪明钱持仓详情和高级功能",
-    "heat": "低",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/mobyagent/status/2076321849344999807"
-    ],
-    "_id": "t:46dad4772bc9698f"
   },
   {
     "date": "2026-07-13",
@@ -1022,55 +867,6 @@
   },
   {
     "date": "2026-07-14",
-    "subject": "Moby",
-    "topic": "Moby 在 Robinhood Chain 和 BNB Chain 上线，支持智能资金追踪和一键交易",
-    "heat": "高",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/mobyagent/status/2076699088687419454",
-      "https://x.com/mattdorta/status/2076706158295855212",
-      "https://x.com/thefih/status/2076713671519354974"
-    ],
-    "_id": "t:70949e6305560657"
-  },
-  {
-    "date": "2026-07-14",
-    "subject": "Moby",
-    "topic": "用户首次在 Robinhood Chain 用 Moby 交易获得 5000 $MOBY 奖励",
-    "heat": "中",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/0xMago/status/2076707627715703116",
-      "https://x.com/ottramentiga/status/2076711049303347436"
-    ],
-    "_id": "t:607ff83bd6eeeb38"
-  },
-  {
-    "date": "2026-07-14",
-    "subject": "Moby",
-    "topic": "Moby 的 whale watch 和智能资金洞察功能在 Robinhood Chain 上帮助早期发现机会",
-    "heat": "中",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/w1llmakeit/status/2076714275729788936",
-      "https://x.com/mattdorta/status/2076706158295855212"
-    ],
-    "_id": "t:7e7bc721d0b2572d"
-  },
-  {
-    "date": "2026-07-14",
-    "subject": "Moby",
-    "topic": "用户讨论 Moby 在新链上的发现和交易体验优于原生 Robinhood",
-    "heat": "中",
-    "sentiment": "中性",
-    "examples": [
-      "https://x.com/eminent_cryptos/status/2076714058632352108",
-      "https://x.com/thefih/status/2076713671519354974"
-    ],
-    "_id": "t:eb74f8e7800aadc4"
-  },
-  {
-    "date": "2026-07-14",
     "subject": "GMGN",
     "topic": "GMGN 检测器误将复制合约指纹判为身份证明，导致 AxiomExchange 继承错误标签",
     "heat": "低",
@@ -1128,30 +924,6 @@
   },
   {
     "date": "2026-07-14",
-    "subject": "Moby",
-    "topic": "Moby App 新增 BNB Chain 和 Robinhood Crypto 支持，智能资金追踪和跨链桥接功能上线",
-    "heat": "中",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/Erazor_o/status/2076784011632853398",
-      "https://x.com/mobyagent/status/2076764659844047323",
-      "https://x.com/whalewatchalert/status/2076773676729737578"
-    ],
-    "_id": "t:fc8eb407ff414316"
-  },
-  {
-    "date": "2026-07-14",
-    "subject": "Moby",
-    "topic": "Robinhood Chain 交易计入 Moby 排行榜，新用户进入前十并获得奖励",
-    "heat": "低",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/whalewatchalert/status/2076773676729737578"
-    ],
-    "_id": "t:fc48de6bc86a9602"
-  },
-  {
-    "date": "2026-07-14",
     "subject": "Axiom",
     "topic": "Trench 与 AxiomExchange 集成，支持代币直接交易",
     "heat": "中",
@@ -1206,41 +978,6 @@
       "https://x.com/cuchulainnov/status/2076700700914979264"
     ],
     "_id": "t:cef99e2f6ec55ced"
-  },
-  {
-    "date": "2026-07-14",
-    "subject": "Moby",
-    "topic": "Moby App 支持 Robinhood Chain 上线，用户可一键转 SOL/Base/BNB 并交易 meme，首单交易奖励 5000 $MOBY",
-    "heat": "中",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/mattdorta/status/2076846038804000868",
-      "https://x.com/mobyagent/status/2076699091476623436"
-    ],
-    "_id": "t:4400bb837a13b5ff"
-  },
-  {
-    "date": "2026-07-14",
-    "subject": "Moby",
-    "topic": "用户反馈 Moby 智能资金追踪和交易工具在 Robinhood Chain 上表现优秀",
-    "heat": "中",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/OffGridKat/status/2076881146281902111",
-      "https://x.com/Romiinft/status/2076863347434340781"
-    ],
-    "_id": "t:2d32ad2f809670fe"
-  },
-  {
-    "date": "2026-07-14",
-    "subject": "Moby",
-    "topic": "Moby 持续更新功能，用户讨论其跨链智能资金追踪和无缝桥接体验",
-    "heat": "低",
-    "sentiment": "正面",
-    "examples": [
-      "https://x.com/mobyagent/status/2076699091476623436"
-    ],
-    "_id": "t:4c03cff5cfb70fe0"
   },
   {
     "date": "2026-07-14",
