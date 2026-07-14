@@ -82,6 +82,7 @@ feature_updates:
     - key: debot
       label: DeBot
       discord_channel_id: "1525442051876061295"
+      web_js: debot
     - key: axiom
       label: Axiom
       discord_channel_id: "1525481473120010300"
