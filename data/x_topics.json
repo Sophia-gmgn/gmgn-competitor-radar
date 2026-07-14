@@ -1236,5 +1236,99 @@
       "https://x.com/EternalEila/status/2076935520010317917"
     ],
     "_id": "t:93a4ac302f3db0d7"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Axiom",
+    "topic": "用户指出 Axiom 钱包被用于 meme 币诈骗中的代币分配和狙击",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/CryptoScamHuntO/status/2076935857425043690",
+      "https://x.com/CryptoScamHuntO/status/2076925839828992168"
+    ],
+    "_id": "t:b88ef3770cf70436"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Axiom",
+    "topic": "平台集成 Axiom，支持直接交易新发 meme 币",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/TrenchToday01/status/2076880340178919702",
+      "https://x.com/irene_cc06/status/2076902264233697778"
+    ],
+    "_id": "t:78a9b56f884b8de7"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Pump.fun",
+    "topic": "建议恢复 Pump.fun 旧版 KOTH 功能以激发新 meme 币热度",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/slingoorio/status/2076945365601779987"
+    ],
+    "_id": "t:a40bf2509ce59004"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Pump.fun",
+    "topic": "称赞 Pump.fun 应用 UX 流畅且社交化",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/nichxbt/status/2076754839498051970",
+      "https://x.com/SKYlll3R/status/2076760303270834352"
+    ],
+    "_id": "t:02d9c02622417c86"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Banana Gun",
+    "topic": "用户讨论 Banana Gun 作为 TG 交易机器人的可靠性和实际盈利表现",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/BlunpkimJesus69/status/2076501439744983147",
+      "https://x.com/Elizacreatez/status/2076624608074105198",
+      "https://x.com/yri911/status/2076779914645098899"
+    ],
+    "_id": "t:ed3d0db5546d5dc7"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Banana Gun",
+    "topic": "用户分析 Banana Gun 在 Robinhood 上的收入增长及 Solana 扩展建议",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Sp1cytrenches/status/2076782037592121737"
+    ],
+    "_id": "t:b49f91558f81cd39"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Jupiter",
+    "topic": "Jupiter 推出 Gacha 宝可梦卡牌交易功能，进入 TCG 市场",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/degenrsc/status/2076946948859572499",
+      "https://x.com/YoungBossDre1/status/2076945666161492217"
+    ],
+    "_id": "t:9d1ecb6ac756af7a"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Jupiter",
+    "topic": "讨论 Jupiter 已扩展为包含 DEX、Perps、Gacha 等多产品的平台",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/sssionggg/status/2076944204849352943"
+    ],
+    "_id": "t:2efe093d05606bda"
   }
 ]
