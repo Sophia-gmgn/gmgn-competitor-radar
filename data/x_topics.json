@@ -1412,5 +1412,119 @@
       "https://x.com/DerDRIB/status/2076981506619097332"
     ],
     "_id": "t:2dc14d59500fcfd8"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "DeBot",
+    "topic": "请求添加推特关注监控功能",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/orange_neonnode/status/2077050761138319596"
+    ],
+    "_id": "t:1ecf37828f50ee9e"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "DeBot",
+    "topic": "与GMGN对比AI交易工具优势",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/SenshiNeo7/status/2076523218165477830"
+    ],
+    "_id": "t:52a6f31ce932a6c1"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "BasedBot",
+    "topic": "用户报告基于机器人登录和钱包连接故障",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/BreakingBadBall/status/2077062260082811312",
+      "https://x.com/0xgameboi/status/2077061862303174704",
+      "https://x.com/0xsneakky/status/2077062235361263906"
+    ],
+    "_id": "t:753e8815eb5740be"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "BasedBot",
+    "topic": "用户称赞基于机器人优于 Maestro 用于 meme 交易",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/iwuchukwuchide1/status/2077061534744735909"
+    ],
+    "_id": "t:d90abf2bc8517987"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "Photon",
+    "topic": "Photon 被列为 Solana 代币交易的主要终端之一",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/TitanExchnage/status/2077058035915071549",
+      "https://x.com/TitanExchnage/status/2076953069091160509"
+    ],
+    "_id": "t:104455effd6f5377"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "Photon",
+    "topic": "用户回忆 Photon 之前使用 Bonkbot 等交易机器人进行 Solana  meme 交易的经历",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Greattwhitee/status/2076975453059883237"
+    ],
+    "_id": "t:c8f93198b49a0e4a"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "Photon",
+    "topic": "用户对包括 Photon 在内的 Solana 交易平台表达不满和吐槽",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/NyxstX/status/2076809717868028276"
+    ],
+    "_id": "t:ee50594c42d48f1d"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "Photon",
+    "topic": "分享 Photon 交易市场结构的相关笔记",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/cuchulainnov/status/2076700700914979264"
+    ],
+    "_id": "t:97883ca8604b0f80"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "Pump.fun",
+    "topic": "Pump.fun 的应用界面流畅度和社交发现功能",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/nichxbt/status/2076754839498051970"
+    ],
+    "_id": "t:1759b64ab335de49"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "Pump.fun",
+    "topic": "Pump.fun 平台用户盈利情况和产品更新稳定性",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/seshimaro/status/2076653028283646116",
+      "https://x.com/quiver_fi/status/2076754267839279361"
+    ],
+    "_id": "t:9fbbd10821c00599"
   }
 ]
