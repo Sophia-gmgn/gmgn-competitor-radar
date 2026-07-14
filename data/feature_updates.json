@@ -133,5 +133,32 @@
     "type": "功能更新",
     "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
     "_id": "f:dd26021a1bae31ad"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 自动交易功能正式上线",
+    "summary": "支持迁移自动买入、自动卖出和跟单钱包卖出三项功能。用户可将原有自动交易设置迁移至新系统，实现更便捷的自动化交易操作。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:30926d46ba3cbeca"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 正式接入 HyperEVM 生态并支持 Alt.fun 协议",
+    "summary": "DeBot 接入 HyperEVM 生态，支持 Alt.fun 协议。用户可更高效地探索该生态上的新资产和新机会。",
+    "date": "2026-07-14",
+    "type": "集成",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:af3f31f907a4e512"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 合约交易功能正式上线",
+    "summary": "提供一站式链上合约交易入口，支持 BTC、ETH 及美股、黄金、石油等多类资产。帮助用户开启更多交易机会。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:6476bb01a609ffbe"
   }
 ]
