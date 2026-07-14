@@ -86,7 +86,7 @@ def _rows_for_tier(roster, tier, items_by_label, users_by_label):
 
 def _vol_table(rows):
     vmax = max([x["v30"] for x in rows if x["has_vol"] and not x.get("not_bot")], default=0)
-    headers = ["#", "竞品", "数据覆盖", "24h", "7d", "14d", "30d", "30天占比"]
+    headers = ["#", "竞品", "数据覆盖", "24h", "7d", "14d", "30d"]
     body = []
     rank = 0
     for i, x in enumerate(rows):
@@ -103,9 +103,8 @@ def _vol_table(rows):
             str(rank) if is_bot else "—",
             name, _coverage(x),
             usd(x["v1"]), usd(x["v7"]), usd(x["v14"]), usd(x["v30"]),
-            _bar(x["v30"], vmax) if is_bot else "—",
         ])
-    return table(headers, body).replace('data-layout="default"', 'data-layout="full-width"')
+    return table(headers, body)
 
 
 def _users_table(rows):
@@ -165,7 +164,6 @@ def render_page(snap):
         "<strong>全链·估算</strong> = DefiLlama 无交易量，改用手续费 ÷ 费率估算（如 Maestro，按 1%）；"
         "<strong>暂无数据</strong> = 公开数据源尚未收录，待实际下单反查（Based Bot / DeBot）。<br/>"
         "· <strong>活跃用户</strong>：Dune，仅 Solana 链、按独立钱包地址去重；多链竞品的非 Solana 用户未计入，故偏低。<br/>"
-        "· <strong>30天占比</strong>：该竞品 30 天交易量相对本层最大值的比例，仅作直观对比。<br/>"
         "· Pump.fun（发币平台）、Jupiter（DEX 聚合器）口径与交易 bot 不同，仅列数值、不参与排名与占比。<br/>"
         "· Moby、BullX 已移出监控。</sub></p>")
     return "".join(parts)
