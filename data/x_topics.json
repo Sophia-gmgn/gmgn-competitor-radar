@@ -1241,5 +1241,111 @@
       "https://x.com/mobyagent/status/2076699091476623436"
     ],
     "_id": "t:4c03cff5cfb70fe0"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "GMGN",
+    "topic": "用户反馈GMGN提现需要等待24小时",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/L3XTASY/status/2076834966210580752"
+    ],
+    "_id": "t:c121c164b4aa741e"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "GMGN",
+    "topic": "用户使用GMGN检查代币安全性和持有者数据",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/KaiBGR/status/2076902007449780467",
+      "https://x.com/0xCobra_/status/2076933828430438511",
+      "https://x.com/ChefBennet/status/2076934412877414479"
+    ],
+    "_id": "t:9313a29bf5be11b0"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "DeBot",
+    "topic": "DeBot在Robinhood链交易中的使用体验及与SOL/BSC的对比",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/ametomuchi123/status/2076815307419889973"
+    ],
+    "_id": "t:364427bfaf78f569"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "DeBot",
+    "topic": "希望DeBot增加GMGN式的持仓K线和捆绑率显示功能",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/IEInnovating/status/2076754589492338712"
+    ],
+    "_id": "t:d93028f0d61a9d00"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "DeBot",
+    "topic": "Robinhood Sequencer延迟问题及可用性讨论",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/0xCat_Crypto/status/2076733529489363351"
+    ],
+    "_id": "t:8cab19812f088043"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Axiom",
+    "topic": "用户抱怨 Axiom 平台提现 Solana 代币困难或被视为骗局",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/mypocketsmells/status/2076816716093325804",
+      "https://x.com/brazkihood/status/2076811173748420662",
+      "https://x.com/NyxstX/status/2076809717868028276"
+    ],
+    "_id": "t:ee4bd70fa07ca12e"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Axiom",
+    "topic": "Axiom App 宕机或无法使用",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/HEIGHTS4LIFE/status/2076783515560022154"
+    ],
+    "_id": "t:d38f211de169208c"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Pump.fun",
+    "topic": "用户讨论 Pump.fun 平台在 meme 币发射中的娱乐性和用户体验优势",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/nichxbt/status/2076754839498051970",
+      "https://x.com/SKYlll3R/status/2076760303270834352"
+    ],
+    "_id": "t:a5a541f0758580ef"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Jupiter",
+    "topic": "Jupiter Gacha 卡牌抽取功能上线，用户分享抽中高价值宝可梦卡的经历",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/JUPCommunity/status/2076817125923049777",
+      "https://x.com/FranceCryptos/status/2076932206816383051",
+      "https://x.com/JupiterExchange/status/2076654397237445092"
+    ],
+    "_id": "t:b164ae0e89207a9c"
   }
 ]
