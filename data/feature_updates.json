@@ -106,5 +106,41 @@
     "type": "功能更新",
     "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
     "_id": "f:c9ad0f482a9af137"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 全新布局与视窗管理系统上线",
+    "summary": "引入吸附模式和多视窗自由悬浮功能，构建链上交易工作台。该更新允许用户根据需求灵活组织界面，提升多任务处理能力。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:556f0ec49da9c376"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 合约交易正式上线",
+    "summary": "提供一站式链上合约交易入口，支持 BTC、ETH 及美股、黄金、石油等资产。该功能扩展了交易品种范围，为用户开辟更多交易选择。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:db6c4b9e1449ef9c"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 账户安全升级新增 Passkey 验证",
+    "summary": "引入基于设备认证的 Passkey 验证，支持指纹或面容一键操作登录与提现。提升账户安全性的同时简化关键流程验证步骤。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:66fcd1cd3874a848"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 自定义通知声音功能上线",
+    "summary": "支持为买卖成交、推特监控、钱包动态设置专属提示音。用户可通过声音提示及时捕捉交易信号，增强操作响应速度。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:632f02c30487f7bd"
   }
 ]
