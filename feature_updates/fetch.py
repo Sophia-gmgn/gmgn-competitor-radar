@@ -64,8 +64,13 @@ def norm_item(it, label):
     it["summary"] = str(it.get("summary", "")).strip()
     it["url"] = str(it.get("url", "")).strip()
     it["date"] = str(it.get("date") or today_cst())[:10]
-    # 去重键：优先用原文链接（跨次稳定，不随 Grok 措辞变化）；没有链接再退回 标题+日期
-    key = it["url"].rstrip("/") if it["url"] else f"{it['title'][:50]}|{it['date']}"
+    # 去重键：普通公告用原文链接（每条独立）；web_js 提取的公告共享同一 JS 文件 url，
+    # 改用标题区分（否则多条撞成一条）
+    url = it["url"]
+    if url and not (url.endswith(".js") or "/assets/" in url):
+        key = url.rstrip("/")
+    else:
+        key = f"title:{it['title'][:60]}"
     it["_id"] = "f:" + hashlib.md5(f"{label}|{key}".encode("utf-8")).hexdigest()[:16]
     return it
 
