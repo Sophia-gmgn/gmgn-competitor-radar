@@ -45,7 +45,7 @@ x_topics:
       tier: core
     - key: fomo
       label: FOMO
-      terms: "FOMO (Solana OR memecoin OR trading OR fomo.family) OR @fomo"
+      terms: "(FOMO OR @fomo) (Solana OR memecoin OR trading OR bot OR fomo.family OR app) OR fomo.family"
       tier: core
 
     - key: bonkbot
@@ -66,7 +66,7 @@ x_topics:
       tier: minor
     - key: jupiter
       label: Jupiter
-      terms: "Jupiter (Solana OR memecoin OR aggregator) OR JUP OR @JupiterExchange"
+      terms: "(Jupiter OR JUP) (Solana OR memecoin OR DEX OR aggregator OR swap OR perps) OR @JupiterExchange OR jup.ag"
       tier: minor
   hours: 24               # 回看小时数
   per_subject_topics: 6   # 每个主体最多归纳几个话题
