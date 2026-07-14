@@ -970,28 +970,6 @@
   },
   {
     "date": "2026-07-14",
-    "subject": "Photon",
-    "topic": "分享Photon Trading Market结构笔记",
-    "heat": "低",
-    "sentiment": "中性",
-    "examples": [
-      "https://x.com/cuchulainnov/status/2076700700914979264"
-    ],
-    "_id": "t:cef99e2f6ec55ced"
-  },
-  {
-    "date": "2026-07-14",
-    "subject": "GMGN",
-    "topic": "用户反馈GMGN提现需要等待24小时",
-    "heat": "低",
-    "sentiment": "负面",
-    "examples": [
-      "https://x.com/L3XTASY/status/2076834966210580752"
-    ],
-    "_id": "t:c121c164b4aa741e"
-  },
-  {
-    "date": "2026-07-14",
     "subject": "GMGN",
     "topic": "用户使用GMGN检查代币安全性和持有者数据",
     "heat": "低",
@@ -1143,17 +1121,6 @@
       "https://x.com/CryptoScamHuntO/status/2076925839828992168"
     ],
     "_id": "t:5c0e9d05f1aaf4b5"
-  },
-  {
-    "date": "2026-07-14",
-    "subject": "Axiom",
-    "topic": "Trench 平台与 AxiomExchange 集成，支持直接交易",
-    "heat": "低",
-    "sentiment": "中性",
-    "examples": [
-      "https://x.com/TrenchToday01/status/2076880340178919702"
-    ],
-    "_id": "t:e00fb5b9e4aa2b32"
   },
   {
     "date": "2026-07-14",
