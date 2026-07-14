@@ -1,6 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""竞品功能更新（#2 + #4 + #3）—— 抓取 + 翻译解读。"""
+"""
+竞品功能更新（#2 + #4 + #3）—— 抓取 + 归纳
+==========================================
+读 config 里各竞品的源（公开 TG 频道 / Discord 频道）→ 把公告原文交给 Grok，
+挑出【真正的功能更新】、过滤活动喊单/验证提示、归纳成条目 → 去重写 data/feature_updates.json。
+
+单独运行 = 测试模式：抓一遍 → 打印 → 写 feature_updates_result.json + 合并进底稿。
+  python feature_updates/fetch.py   （或 python -m feature_updates.fetch）
+
+需要：XAI_API_KEY；含 Discord 源时还需 DISCORD_BOT_TOKEN。
+可选：GROK_MODEL、FEATURE_UPDATES_HOURS（默认取 config，168h=7天）。
+"""
 import os
 import sys
 import json
@@ -53,6 +64,7 @@ def norm_item(it, label):
     it["summary"] = str(it.get("summary", "")).strip()
     it["url"] = str(it.get("url", "")).strip()
     it["date"] = str(it.get("date") or today_cst())[:10]
+    # 去重键：优先用原文链接（跨次稳定，不随 Grok 措辞变化）；没有链接再退回 标题+日期
     key = it["url"].rstrip("/") if it["url"] else f"{it['title'][:50]}|{it['date']}"
     it["_id"] = "f:" + hashlib.md5(f"{label}|{key}".encode("utf-8")).hexdigest()[:16]
     return it
@@ -112,7 +124,7 @@ def fetch_all(cfg, hours, model, api_key):
             u = res["usage"]
             ti = u.get("input_tokens") or u.get("prompt_tokens") or 0
             to_ = u.get("output_tokens") or u.get("completion_tokens") or 0
-            print(f"   → 整理出 {len(items)} 条｜tokens {ti}+{to_}")
+            print(f"   → 归纳出 {len(items)} 条功能更新｜tokens {ti}+{to_}")
             for it in items:
                 print(f"      [{it['type']}] {it['title'][:60]}")
     return all_items, failed
@@ -145,7 +157,7 @@ def main():
     added = merge_by_id(store, items)
     save_store(DATA_FILE, store)
     print("\n=== 汇总 ===")
-    print(f"本次整理 {len(items)} 条；底稿 {before} → {len(store)}（新增 {added}）")
+    print(f"本次功能更新 {len(items)} 条；底稿 {before} → {len(store)}（新增 {added}）")
     if failed:
         print(f"⚠️ 失败：{failed}")
 

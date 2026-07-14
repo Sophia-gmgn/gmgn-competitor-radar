@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import hashlib
 """
 功能② 读取源
 ============
@@ -8,7 +9,6 @@
   服务器里 Follow 了竞品公告频道的那个频道」。
 """
 import re
-import hashlib
 import sys
 import html
 from datetime import datetime
@@ -146,6 +146,9 @@ def read_discord_channel(token, channel_id, cutoff_dt, client=None):
         msgs = r.json()
         out = []
         for m in msgs:
+            # 只要真消息（0=普通，19=回复）；过滤系统消息（如 12=关注确认 CHANNEL_FOLLOW_ADD 等）
+            if m.get("type") not in (0, 19):
+                continue
             ts = m.get("timestamp")
             if not ts:
                 continue
@@ -167,7 +170,11 @@ def read_discord_channel(token, channel_id, cutoff_dt, client=None):
 
 
 # ---------------- 网站前端 JS 公告（写死在前端的弹窗/公告）----------------
+# 适用于「公告写死在前端代码里、没有独立接口」的竞品（如 DeBot）。
+# 抓首页→定位当前主 JS（文件名带 hash 会变，所以每次动态解析）→下载→按规则提取公告。
+# 每个站点的提取规则不同，用 WEB_JS_RULES 配置。
 WEB_JS_RULES = {
+    # DeBot：公告是 title:{zh:"..."} ... desc:{zh:"..."} 结构
     "debot": {
         "base": "https://debot.ai",
         "js_pattern": r'src="(/assets/[^"]*index-[^"]*\.js)"',
@@ -178,7 +185,9 @@ WEB_JS_RULES = {
 
 
 def read_web_js(site_key, cutoff_dt=None, client=None):
-    """抓竞品网站前端 JS 提取公告，返回 [{text,url,ts,msg_id}]。"""
+    """按 WEB_JS_RULES[site_key] 抓竞品网站前端 JS，提取公告。
+    返回 [{text, url, ts, msg_id}]（与 TG/Discord 源同格式）。
+    cutoff_dt 不适用（前端公告无可靠时间戳），保留参数以统一接口。"""
     rule = WEB_JS_RULES.get(site_key)
     if not rule:
         print(f"[web_js:{site_key}] 未配置提取规则", file=sys.stderr)
