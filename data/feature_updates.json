@@ -106,5 +106,14 @@
     "type": "功能更新",
     "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
     "_id": "f:55314fd2b0012f08"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "DeBot 正式接入 HyperEVM 生态及 Alt.fun 协议",
+    "summary": "平台现已支持 HyperEVM 生态探索及 Alt.fun 协议交易。这为用户提供了更多新资产和新叙事机会，属于生态集成类更新。",
+    "date": "2026-07-14",
+    "type": "集成",
+    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
+    "_id": "f:57b2a48fb9261f5b"
   }
 ]
