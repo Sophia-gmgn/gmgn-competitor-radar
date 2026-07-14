@@ -1347,5 +1347,190 @@
       "https://x.com/JupiterExchange/status/2076654397237445092"
     ],
     "_id": "t:b164ae0e89207a9c"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "GMGN",
+    "topic": "用户抱怨 GMGN 提现需要等待 24 小时",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/L3XTASY/status/2076834966210580752"
+    ],
+    "_id": "t:1818640d4e6f9248"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "GMGN",
+    "topic": "用户分享用 GMGN 检查 token 数据、聪明钱和 rug 风险的交易体验",
+    "heat": "高",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/nagato985/status/2076937024976912794",
+      "https://x.com/KaiBGR/status/2076902007449780467",
+      "https://x.com/S1lentBid/status/2076939714070749504"
+    ],
+    "_id": "t:caa829cea094ecc3"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "GMGN",
+    "topic": "GMGN 被用于分析和交易特定 meme 币如 TRUMP COIN",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/ChefBennet/status/2076934412877414479"
+    ],
+    "_id": "t:6b4cd266c9348938"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "DeBot",
+    "topic": "DeBot 官方更新高级监控功能，移除钉钉通知改用 Telegram",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Debot_Official/status/2076919499933286422",
+      "https://x.com/sadcafa46017/status/2076920779674202186"
+    ],
+    "_id": "t:2b8f6fd00cf1405f"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Axiom",
+    "topic": "Axiom 钱包被用于 meme 币 sniping 和 rug pull 骗局",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/CryptoScamHuntO/status/2076935857425043690",
+      "https://x.com/CryptoScamHuntO/status/2076925839828992168"
+    ],
+    "_id": "t:5c0e9d05f1aaf4b5"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Axiom",
+    "topic": "Trench 平台与 AxiomExchange 集成，支持直接交易",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/TrenchToday01/status/2076880340178919702"
+    ],
+    "_id": "t:e00fb5b9e4aa2b32"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Photon",
+    "topic": "用户在咒骂Photon等Solana交易工具和加密市场",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/NyxstX/status/2076809717868028276"
+    ],
+    "_id": "t:8af3bac9d80240eb"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Photon",
+    "topic": "分享Photon交易市场结构的个人笔记",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/cuchulainnov/status/2076700700914979264"
+    ],
+    "_id": "t:3da72a012bfb6404"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Pump.fun",
+    "topic": "Pump.fun app 的 UX 设计和社交发现功能",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/nichxbt/status/2076754839498051970",
+      "https://x.com/SKYlll3R/status/2076760303270834352"
+    ],
+    "_id": "t:537c2e8934241d25"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Pump.fun",
+    "topic": "PUMP 代币在市场疲软时的表现",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Eterna_Markets/status/2076789589319025055"
+    ],
+    "_id": "t:3ab180006dc79f1f"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Pump.fun",
+    "topic": "Pump.fun 导致 meme 币质量下滑和 slop 现象",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/DeepFuckinOcean/status/2076717991627010061"
+    ],
+    "_id": "t:7e03a4689c619fbc"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Jupiter",
+    "topic": "Jupiter Gacha抽卡功能使用与分享",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/TheSolanaPEPE/status/2076813126905757775",
+      "https://x.com/King88sol/status/2076811928190529750",
+      "https://x.com/DerekKlibingat/status/2076793123015995721"
+    ],
+    "_id": "t:eae6f0c8f23a90f4"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Jupiter",
+    "topic": "Jupiter钱包多会话同步与持久化体验",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/icefrog_sol/status/2076817878406603202",
+      "https://x.com/alekogiann/status/2076935639384174623"
+    ],
+    "_id": "t:d5eb0cd483674887"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Jupiter",
+    "topic": "Jupiter代币验证申请与状态",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/TheSolanaPEPE/status/2076813126905757775"
+    ],
+    "_id": "t:f4059a5870c45d97"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Jupiter",
+    "topic": "Jupiter与Collector_Crypt合作及相关活动",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/DerekKlibingat/status/2076793123015995721"
+    ],
+    "_id": "t:8fffebcd10ef78ff"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Jupiter",
+    "topic": "Jupiter在Solana生态的产品进展与评价",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/stealthbullish/status/2076935134486372834",
+      "https://x.com/EternalEila/status/2076935520010317917"
+    ],
+    "_id": "t:93a4ac302f3db0d7"
   }
 ]
