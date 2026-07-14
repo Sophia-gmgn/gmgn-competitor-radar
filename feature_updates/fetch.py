@@ -14,7 +14,7 @@ import httpx
 from common.util import (load_dotenv, enable_truststore, load_config,
                          load_store, save_store, merge_by_id, today_cst)
 from common.xai import call_grok, DEFAULT_MODEL
-from feature_updates.sources import read_tg_channel, read_discord_channel
+from feature_updates.sources import read_tg_channel, read_discord_channel, read_web_js
 
 DATA_FILE = os.environ.get("FEATURE_UPDATES_DATA", "data/feature_updates.json")
 TYPE_OK = {"功能更新", "活动", "集成", "公告", "其它"}
@@ -87,6 +87,14 @@ def fetch_all(cfg, hours, model, api_key):
                     if got:
                         kinds.append("Discord 公告频道")
                     print(f"  [{label}] Discord {dcid}: {len(got)} 条原文")
+
+            wjs = str(c.get("web_js") or "").strip()
+            if wjs:
+                got = read_web_js(wjs, cutoff, client=client)
+                posts += got
+                if got:
+                    kinds.append("官网内置公告")
+                print(f"  [{label}] 网站JS {wjs}: {len(got)} 条原文")
 
             if not posts:
                 print(f"  [{label}] 近 {hours}h 无原文，跳过归纳")

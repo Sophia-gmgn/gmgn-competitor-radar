@@ -8,6 +8,7 @@
   服务器里 Follow 了竞品公告频道的那个频道」。
 """
 import re
+import hashlib
 import sys
 import html
 from datetime import datetime
@@ -160,6 +161,60 @@ def read_discord_channel(token, channel_id, cutoff_dt, client=None):
             out.append({"text": text, "url": _discord_msg_url(m),
                         "ts": ts, "msg_id": str(m.get("id", ""))})
         return out
+    finally:
+        if owns:
+            client.close()
+
+
+# ---------------- 网站前端 JS 公告（写死在前端的弹窗/公告）----------------
+WEB_JS_RULES = {
+    "debot": {
+        "base": "https://debot.ai",
+        "js_pattern": r'src="(/assets/[^"]*index-[^"]*\.js)"',
+        "title_pattern": r'title:\{zh:"([^"]{2,80})"',
+        "desc_pattern": r'desc:\{zh:"([^"]{0,200})"',
+    },
+}
+
+
+def read_web_js(site_key, cutoff_dt=None, client=None):
+    """抓竞品网站前端 JS 提取公告，返回 [{text,url,ts,msg_id}]。"""
+    rule = WEB_JS_RULES.get(site_key)
+    if not rule:
+        print(f"[web_js:{site_key}] 未配置提取规则", file=sys.stderr)
+        return []
+    owns = client is None
+    client = client or httpx.Client()
+    try:
+        base = rule["base"]
+        try:
+            r = client.get(base + "/", headers={"User-Agent": TG_UA},
+                           timeout=30, follow_redirects=True)
+        except Exception as e:
+            print(f"[web_js:{site_key}] 首页请求异常：{e}", file=sys.stderr)
+            return []
+        m = re.search(rule["js_pattern"], r.text)
+        if not m:
+            print(f"[web_js:{site_key}] 未在首页找到主 JS", file=sys.stderr)
+            return []
+        js_url = base + m.group(1)
+        try:
+            jr = client.get(js_url, headers={"User-Agent": TG_UA},
+                            timeout=30, follow_redirects=True)
+        except Exception as e:
+            print(f"[web_js:{site_key}] JS 下载异常：{e}", file=sys.stderr)
+            return []
+        js = jr.text
+        items = []
+        for tm in re.finditer(rule["title_pattern"], js):
+            title = tm.group(1).strip()
+            tail = js[tm.end():tm.end() + 600]
+            dm = re.search(rule["desc_pattern"], tail)
+            desc = (dm.group(1).strip() if dm else "")
+            text = f"{title}\n{desc}" if desc else title
+            mid = f"webjs:{site_key}:" + hashlib.md5(title.encode("utf-8")).hexdigest()[:12]
+            items.append({"text": text, "url": js_url, "ts": None, "msg_id": mid})
+        return items
     finally:
         if owns:
             client.close()
