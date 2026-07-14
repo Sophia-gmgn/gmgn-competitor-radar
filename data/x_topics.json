@@ -1330,5 +1330,87 @@
       "https://x.com/Valerie_Onchain/status/2076734949982429362"
     ],
     "_id": "t:df842249bb9e85e3"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "FOMO",
+    "topic": "FOMO app 作为交易平台的优势和用户体验",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/milesAKAmillz/status/2076714884058792330",
+      "https://x.com/GMB_XBT/status/2076816911229239367"
+    ],
+    "_id": "t:f747cc2bb0e4b0b7"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "FOMO",
+    "topic": "在 FOMO app 上交易 Robinhood 链 meme 币的方法",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/0X0_Some_0ne/status/2076602040273268974"
+    ],
+    "_id": "t:cf0dc21ae3b155d6"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Banana Gun",
+    "topic": "Banana Gun 上线 Bags Robinhood 币交易功能",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/BagsApp/status/2076767038702256436",
+      "https://x.com/bananagun/status/2076723043947446285"
+    ],
+    "_id": "t:e9b0c02321d1a1e0"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Banana Gun",
+    "topic": "用户讨论 Banana Gun 作为 TG sniper bot 的可靠性",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/OG_TAngent/status/2076530192269664363",
+      "https://x.com/Elizacreatez/status/2076624608074105198"
+    ],
+    "_id": "t:5e36f46fcc202700"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Jupiter",
+    "topic": "Jupiter 新版用户界面更新和个人主页背景定制",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/ABCat07340480/status/2076980074394288187",
+      "https://x.com/soy_muse/status/2076980404368949260",
+      "https://x.com/malewiczz/status/2076979321818784138"
+    ],
+    "_id": "t:46b773a53da17cc2"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Jupiter",
+    "topic": "Jupiter 支持闲置 USDC 赚取 APY 的升级功能",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/zaniaweb/status/2076979542598570100"
+    ],
+    "_id": "t:3790d61ff156d974"
+  },
+  {
+    "date": "2026-07-14",
+    "subject": "Jupiter",
+    "topic": "Jupiter 转向赌博相关功能的争议",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/DerDRIB/status/2076981506619097332"
+    ],
+    "_id": "t:2dc14d59500fcfd8"
   }
 ]
