@@ -1,6 +1,6 @@
 {
   "date": "2026-07-14",
-  "updated_at": "2026-07-14T10:02:14.212537+00:00",
+  "updated_at": "2026-07-14T10:39:27.364355+00:00",
   "items": [
     {
       "label": "GMGN",
@@ -26,7 +26,7 @@
         "via": "dexs"
       },
       "vol_d1_prev": 13218970,
-      "vol_d1_chg": 0.0
+      "vol_d1_chg": null
     },
     {
       "label": "Axiom",
@@ -48,7 +48,7 @@
         "via": "dexs"
       },
       "vol_d1_prev": 22666751,
-      "vol_d1_chg": 0.0
+      "vol_d1_chg": null
     },
     {
       "label": "Terminal",
@@ -71,7 +71,7 @@
         ],
         "via": "dexs"
       },
-      "vol_d1_prev": null,
+      "vol_d1_prev": 3883326,
       "vol_d1_chg": null
     },
     {
@@ -92,7 +92,7 @@
         ],
         "via": "dexs"
       },
-      "vol_d1_prev": null,
+      "vol_d1_prev": 41826857,
       "vol_d1_chg": null
     },
     {
@@ -114,7 +114,7 @@
         "via": "dexs"
       },
       "vol_d1_prev": 1711634,
-      "vol_d1_chg": 0.0
+      "vol_d1_chg": null
     },
     {
       "label": "Photon",
@@ -135,7 +135,7 @@
         "via": "dexs"
       },
       "vol_d1_prev": 499508,
-      "vol_d1_chg": 0.0
+      "vol_d1_chg": null
     },
     {
       "label": "FOMO",
@@ -155,7 +155,7 @@
         ],
         "via": "dexs"
       },
-      "vol_d1_prev": null,
+      "vol_d1_prev": 7043576,
       "vol_d1_chg": null
     },
     {
@@ -183,7 +183,7 @@
         "via": "dexs"
       },
       "vol_d1_prev": 65157,
-      "vol_d1_chg": 0.0
+      "vol_d1_chg": null
     },
     {
       "label": "BONKbot",
@@ -204,7 +204,7 @@
         "via": "dexs"
       },
       "vol_d1_prev": 427890,
-      "vol_d1_chg": 0.0
+      "vol_d1_chg": null
     },
     {
       "label": "Maestro",
@@ -231,7 +231,7 @@
         ],
         "via": "fees"
       },
-      "vol_d1_prev": null,
+      "vol_d1_prev": 708000.0,
       "vol_d1_chg": null
     },
     {
@@ -254,7 +254,7 @@
         ],
         "via": "dexs"
       },
-      "vol_d1_prev": null,
+      "vol_d1_prev": 238927,
       "vol_d1_chg": null
     },
     {
@@ -275,7 +275,7 @@
         ],
         "via": "dexs"
       },
-      "vol_d1_prev": null,
+      "vol_d1_prev": 178085,
       "vol_d1_chg": null
     }
   ],
