@@ -17,6 +17,7 @@ import sys
 import json
 import hashlib
 import re
+import html
 import pathlib
 from datetime import datetime, timezone, timedelta
 
@@ -27,6 +28,7 @@ from common.util import (load_dotenv, enable_truststore, load_config,
                          load_store, save_store, merge_by_id, today_cst)
 from common.xai import call_grok, x_search_tool, DEFAULT_MODEL
 from feature_updates.sources import read_tg_channel, read_discord_channel, read_web_js
+from common.confluence import Confluence
 
 DATA_FILE = os.environ.get("FEATURE_UPDATES_DATA", "data/feature_updates.json")
 TYPE_OK = {"功能更新", "活动", "集成", "公告", "其它"}
@@ -161,12 +163,111 @@ def dedup_similar(store, threshold=0.86):
             keep["date"] = max(keep.get("date", ""), drop.get("date", ""))
             if not keep.get("url"):
                 keep["url"] = drop.get("url", "")
+            if not keep.get("priority"):
+                keep["priority"] = drop.get("priority", "")
             to_remove.add(id(drop))
             if keep is it:
                 kept[kept.index(dup)] = it
     if to_remove:
         store[:] = [it for it in store if id(it) not in to_remove]
     return len(to_remove)
+
+
+# ---------------- 竞品名归一（把三源竞品名统一：axiom→Axiom，跨源去重才生效）----------------
+def _norm_name(s):
+    s = (s or "").lower().strip()
+    s = re.sub(r"（[^）]*）|\([^)]*\)", "", s)
+    s = re.sub(r"[\s\u3000._\-]", "", s)
+    return s
+
+
+def canonicalize(store, directory):
+    m = {_norm_name(d.get("label", "")): str(d.get("label", "")).strip() for d in (directory or [])}
+    for it in store:
+        c = m.get(_norm_name(it.get("competitor", "")))
+        if c:
+            it["competitor"] = c
+
+
+# ---------------- ③ 同事社群页（已判级的表）解析 ----------------
+def _strip_tags(s):
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", s or ""))).strip()
+
+
+def _row_date(cell):
+    m = re.search(r'datetime="(\d{4}-\d{2}-\d{2})', cell)
+    if m:
+        return m.group(1)
+    t = _strip_tags(cell)
+    m = re.search(r'(\d{1,2})/(\d{1,2})/(\d{4})', t)
+    if m:
+        mo, d, y = m.groups()
+        return f"{y}-{int(mo):02d}-{int(d):02d}"
+    m = re.search(r'(\d{4})-(\d{1,2})-(\d{1,2})', t)
+    if m:
+        y, mo, d = m.groups()
+        return f"{y}-{int(mo):02d}-{int(d):02d}"
+    return ""
+
+
+def _row_status(cell):
+    m = re.search(r'name="title">\s*([^<]+?)\s*<', cell)
+    if m:
+        return m.group(1).strip()
+    t = _strip_tags(cell)
+    for p in ("高", "中", "低"):
+        if p in t:
+            return p
+    return ""
+
+
+def _first_url(cell):
+    m = re.search(r'href="([^"]+)"', cell)
+    return m.group(1) if m else ""
+
+
+def _guess_type(t):
+    if re.search(r"接入|集成|新增.{0,6}(链|协议)|支持.{0,6}(链|协议)|integrat", t, re.I):
+        return "集成"
+    return "功能更新"
+
+
+def read_community_page(pid):
+    """读同事的社群监控页（一张已判级的表）→ 直接产出 items（不再过 Grok）。"""
+    try:
+        data = Confluence().get_page(pid)
+    except Exception as e:
+        print(f"  [社群页 {pid}] 读取失败：{e}", file=sys.stderr)
+        return []
+    body = (((data.get("body") or {}).get("storage") or {}).get("value")) or ""
+    items = []
+    for tbl in re.findall(r"<table.*?</table>", body, re.S):
+        if "动态" not in tbl and "竞品" not in tbl:        # 只认那张数据表
+            continue
+        for tr in re.findall(r"<tr.*?</tr>", tbl, re.S):
+            if "<th" in tr:                                # 跳过表头
+                continue
+            cells = re.findall(r"<td.*?</td>", tr, re.S)
+            if len(cells) < 5:
+                continue
+            comp = _strip_tags(cells[1])
+            dyn = _strip_tags(cells[3]) if len(cells) > 3 else ""
+            judge = _strip_tags(cells[4]) if len(cells) > 4 else ""
+            if not comp or not dyn:
+                continue
+            title = re.sub(r"^〔[^〕]*〕", "", dyn).strip()[:90] or dyn[:90]
+            items.append({
+                "competitor": comp,
+                "title": title,
+                "summary": judge or dyn,
+                "date": _row_date(cells[0]),
+                "type": _guess_type(dyn + " " + judge),
+                "priority": _row_status(cells[5]) if len(cells) > 5 else "",
+                "url": _first_url(cells[6]) if len(cells) > 6 else "",
+                "source": "community",
+            })
+    print(f"  [社群页 {pid}] 解析出 {len(items)} 条")
+    return items
 
 
 def fetch_all(cfg, hours, model, api_key):
@@ -228,6 +329,12 @@ def fetch_all(cfg, hours, model, api_key):
                                 tools=[x_search_tool(from_date, to_date, allowed_handles=[xacc])],
                                 model=model)
                 _emit(all_items, label, f"X @{xacc}", res, failed)
+
+    # ③ 同事社群页（已判级的表）→ 直接并入，不再过 Grok
+    cpid = str(cfg.get("community_page") or "").strip()
+    if cpid:
+        for it in read_community_page(cpid):
+            all_items.append(norm_item(it, it.get("competitor")))
     return all_items, failed
 
 
@@ -256,6 +363,7 @@ def main():
     store = load_store(DATA_FILE)
     before = len(store)
     added = merge_by_id(store, items)
+    canonicalize(store, cfg.get("directory", []))     # 统一竞品名（axiom→Axiom），跨源去重前
     removed = dedup_similar(store)
     save_store(DATA_FILE, store)
     print("\n=== 汇总 ===")

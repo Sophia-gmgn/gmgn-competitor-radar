@@ -91,12 +91,12 @@ feature_updates:
       discord_channel_id: "1525481473120010300"
     - key: basedbot
       label: Based Bot
-      # x_account:                       # 待核：从官网确认真号后填，勿填 scam 号
+      x_account: BasedBot                # 已确认
       discord_channel_id: "1525484620983046215"
       web_js: basedbot
     - key: bananagun
       label: Banana Gun
-      # x_account:                       # 待核
+      x_account: BananaGun                # 已确认
       telegram_channel: bananagunannouncements
     # —— 新增：仅监控官方 X ——
     - key: pumpfun
@@ -116,20 +116,23 @@ feature_updates:
       x_account: JupiterExchange         # 已核实
     - key: photon
       label: Photon
-      # x_account:                       # 待核
+      x_account: tradewithPhoton                # 已确认
     - key: bonkbot
       label: BONKbot
-      # x_account:                       # 待核
+      x_account: bonkbot_io                # 已确认
     - key: maestro
       label: Maestro
-      # x_account:                       # 待核
+      x_account: MaestroBots                # 已确认
     - key: bloom
       label: Bloom
-      # x_account:                       # 待核
+      x_account: BloomTrading                # 已确认
   hours: 168
 
   # 集合页是否显示「核心/次要总表」：false=不显示（数据仍保留在下方 directory，需要时改 true 即可）
   show_directory: false
+
+  # 第三源：同事的社群监控页（已判级的表）——脚本会读它、解析并入看板（跨源自动去重）
+  community_page: "2307817515"
 
   # ——— 集合页底部「竞品监控清单」渲染用（核心/次要总表）———
   # 纯展示数据：官方X / 官网 / 社群入口 + ②接入状态。（待核）= 待从官网核实，空=待补。

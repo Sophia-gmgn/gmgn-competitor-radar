@@ -12,6 +12,7 @@
 """
 import os
 import sys
+import re
 import pathlib
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
@@ -24,28 +25,62 @@ MAX_ITEMS_PER_COMP = int(os.environ.get("FEATURE_UPDATES_MAX_PER_COMP", "40"))
 
 TYPE_COLOUR = {"功能更新": "Green", "集成": "Purple", "活动": "Yellow", "公告": "Blue", "其它": None}
 IMPORTANT = {"功能更新", "集成"}          # 这两类用绿色卡片突出
-TYPE_EMOJI = {"功能更新": "🆕", "集成": "🔗", "活动": "🎁", "公告": "📢", "其它": "📝"}
+PRIO_COLOUR = {"高": "Red", "中": "Yellow", "低": "Grey"}
 
 
 def _src_link(it):
-    return f' &nbsp;·&nbsp; <a href="{esc(it.get("url"))}">🔗 原文</a>' if it.get("url") else ""
+    return f' &nbsp;·&nbsp; <a href="{esc(it.get("url"))}">原文</a>' if it.get("url") else ""
 
 
-def render_item(it):
+def _norm_name(s):
+    s = (s or "").lower().strip()
+    s = re.sub(r"（[^）]*）|\([^)]*\)", "", s)          # 去括号注释
+    s = re.sub(r"[\s\u3000._\-]", "", s)
+    return s
+
+
+def _build_tier_map(directory):
+    """从 config 的 directory 建 归一名→(展示名, 档位) 映射：统一各源竞品名 + 判核心/次要。"""
+    m = {}
+    for d in directory or []:
+        m[_norm_name(d.get("label", ""))] = (str(d.get("label", "")).strip(), d.get("tier", "minor"))
+    return m
+
+
+def _canon_tier(competitor, tier_map):
+    return tier_map.get(_norm_name(competitor), (str(competitor or "?"), "minor"))
+
+
+def _rel_label(d, today):
+    from datetime import date
+    try:
+        y, mo, da = map(int, d.split("-"))
+        ty, tmo, tda = map(int, today.split("-"))
+        diff = (date(ty, tmo, tda) - date(y, mo, da)).days
+    except Exception:
+        return ""
+    return {0: "今天", 1: "昨天", 2: "前天"}.get(diff, "")
+
+
+def _prio_lozenge(p):
+    p = (p or "").strip()
+    return " " + status_lozenge(p + "优", PRIO_COLOUR[p]) if p in PRIO_COLOUR else ""
+
+
+def _item_card(it, show_comp=True):
     typ = it.get("type", "其它")
     tag = status_lozenge(typ, TYPE_COLOUR.get(typ))
+    prio = _prio_lozenge(it.get("priority"))
+    comp = f'<strong>{esc(it.get("_canon") or it.get("competitor", ""))}</strong> &nbsp; ' if show_comp else ""
     title = esc(it.get("title", ""))
     summary = esc(it.get("summary", ""))
-    date = esc(it.get("date", ""))
     src = _src_link(it)
     if typ in IMPORTANT:
-        # 重点：绿色卡片
-        inner = (f'<p>{tag} &nbsp;<sub>{date}</sub></p>'
+        inner = (f'<p>{comp}{tag}{prio}</p>'
                  f'<p><strong>{title}</strong></p>'
                  f'<p>{summary}{src}</p>')
         return panel("tip", inner)
-    # 次要：朴素文字，弱化
-    return (f'<p>{tag} &nbsp;<strong>{title}</strong> &nbsp;<sub>{date}</sub></p>'
+    return (f'<p>{comp}{tag}{prio} &nbsp; <strong>{title}</strong></p>'
             f'<p>{summary}{src}</p>')
 
 
@@ -54,24 +89,19 @@ def _is_webjs(it):
     return u.endswith(".js") or "/assets/" in u
 
 
-def _webjs_block(comp, wj_items):
-    """把 web_js 来源的公告打包成：概述 panel + 折叠详情（简洁、无链接）。"""
+def _webjs_collapse(comp, wj_items):
+    """某竞品 web_js 官网弹窗（当前状态、无逐条日期）→ 概述 + 折叠详情。"""
     n = len(wj_items)
-    # 概述：取前几条标题里的关键词做一句话概括
-    kw = "、".join(
-        _short_kw(it.get("title", "")) for it in wj_items[:4] if it.get("title"))
-    overview = (f'<p>🆕 <strong>{esc(comp)} 官网弹窗共 {n} 项功能更新</strong></p>'
-                f'<p>涵盖 {esc(kw)} 等，点击下方展开查看全部详情 👇</p>')
-    # 折叠里的详情：每条 标题 + 一句摘要，无原文链接
+    kw = "、".join(_short_kw(it.get("title", "")) for it in wj_items[:4] if it.get("title"))
+    overview = (f'<p><strong>{esc(comp)} · 官网弹窗当前 {n} 项功能</strong>'
+                f' &nbsp;<sub>涵盖 {esc(kw)} 等</sub></p>')
     rows = []
     for it in wj_items:
         typ = it.get("type", "其它")
         tag = status_lozenge(typ, TYPE_COLOUR.get(typ))
-        title = esc(it.get("title", ""))
-        summary = esc(it.get("summary", ""))
-        rows.append(f'<p>{tag} <strong>{title}</strong></p><p>{summary}</p>')
-    detail = "".join(rows)
-    return panel("tip", overview) + expand(f"📋 展开查看全部 {n} 项更新详情", detail)
+        rows.append(f'<p>{tag} <strong>{esc(it.get("title",""))}</strong></p>'
+                    f'<p>{esc(it.get("summary",""))}</p>')
+    return panel("tip", overview) + expand(f"展开 {esc(comp)} 全部 {n} 项弹窗更新", "".join(rows))
 
 
 def _short_kw(title):
@@ -125,56 +155,62 @@ def render_directory(directory):
     return "".join(out)
 
 
-def render_page(store, directory=None):
+def render_page(store, directory=None, show_directory=False):
     now = now_cst_str()
+    today = now[:10]
     total = len(store)
+    tier_map = _build_tier_map(directory)
 
-    # 按竞品分组
-    comps = {}
-    for it in store:
-        comps.setdefault(it.get("competitor", "?"), []).append(it)
-
-    def recent(items):
-        return max((i.get("date", "") for i in items), default="")
-
-    ordered = sorted(comps.items(), key=lambda kv: recent(kv[1]), reverse=True)
-
-    # 顶部概览条
-    if ordered:
-        counts = " &nbsp;·&nbsp; ".join(f"<strong>{esc(c)}</strong> {len(items)}"
-                                        for c, items in ordered)
-    else:
-        counts = "暂无"
+    dates_all = sorted({it.get("date", "") for it in store if it.get("date")}, reverse=True)
+    comp_set = {_canon_tier(it.get("competitor", ""), tier_map)[0] for it in store}
     parts = [panel("info",
-                   f"<p>📊 竞品功能更新监控 · 共 <strong>{total}</strong> 条 &nbsp;｜&nbsp; {counts}</p>"
-                   f"<p><sub>本页由脚本自动更新，更新于 {esc(now)}（UTC+8）· 请勿手动编辑（每次整页重写）</sub></p>")]
+                   f"<p>竞品功能更新看板 · 共 <strong>{total}</strong> 条 &nbsp;·&nbsp; "
+                   f"覆盖 <strong>{len(comp_set)}</strong> 家竞品 &nbsp;·&nbsp; "
+                   f"最近更新 {esc(dates_all[0]) if dates_all else '—'}</p>"
+                   f"<p><sub>三源汇总（官网弹窗 · 官方 X · 社群页）· 自动更新于 {esc(now)}（UTC+8）· 请勿手动编辑</sub></p>")]
 
     if not store:
         parts.append(panel("note", "<p>暂无功能更新（等首次抓取写入）。</p>"))
-        if directory:
+        if show_directory and directory:
             parts.append(render_directory(directory))
         return "".join(parts)
 
-    # 每家一个区块
-    for comp, items in ordered:
-        items = sorted(items, key=lambda x: x.get("date", ""), reverse=True)[:MAX_ITEMS_PER_COMP]
-        # 分离 web_js 公告（打包折叠）和其它来源（逐条展示）
-        wj_items = [x for x in items if _is_webjs(x)]
-        other_items = [x for x in items if not _is_webjs(x)]
+    # canonical 名 + tier（把三源竞品名统一、判核心/次要）
+    for it in store:
+        it["_canon"], it["_tier"] = _canon_tier(it.get("competitor", ""), tier_map)
 
-        n_imp = sum(1 for x in other_items if x.get("type") in IMPORTANT)
-        total_comp = len(items)
-        badge = f'　<sub>{total_comp} 条' + (f'，{n_imp} 条功能更新' if n_imp else '') + '</sub>'
-        parts.append(f'<h2>🔹 {esc(comp)}{badge}</h2>')
+    # 按日期分组（新→旧）；无日期归到末尾
+    from collections import defaultdict, OrderedDict
+    by_date = defaultdict(list)
+    for it in store:
+        by_date[it.get("date", "") or "未标注日期"].append(it)
+    ordered_dates = sorted(by_date.keys(), key=lambda d: (d != "未标注日期", d), reverse=True)
 
-        # 先放 web_js 打包块（概述+折叠）
-        if wj_items:
-            parts.append(_webjs_block(comp, wj_items))
-        # 再逐条放其它来源
-        for it in other_items:
-            parts.append(render_item(it))
+    for d in ordered_dates:
+        items = by_date[d]
+        rel = _rel_label(d, today)
+        rel_html = f'　<sub>{rel}</sub>' if rel else ""
+        parts.append(f'<h2>{esc(d)}{rel_html}　<sub>{len(items)} 条</sub></h2>')
 
-    if directory:
+        for tier_key, tier_label in (("core", "核心竞品"), ("minor", "次要竞品")):
+            titems = [x for x in items if x["_tier"] == tier_key]
+            if not titems:
+                continue
+            parts.append(f'<p><strong>{tier_label}</strong></p>')
+            wj = [x for x in titems if _is_webjs(x)]
+            others = [x for x in titems if not _is_webjs(x)]
+            # 卡片：同竞品聚一起、竞品内「功能更新/集成」在前
+            others.sort(key=lambda x: (x["_canon"], x.get("type") not in IMPORTANT))
+            for it in others:
+                parts.append(_item_card(it))
+            # web_js 官网弹窗按竞品折叠（放在当天该档位卡片之后）
+            wjc = OrderedDict()
+            for x in wj:
+                wjc.setdefault(x["_canon"], []).append(x)
+            for comp, cit in wjc.items():
+                parts.append(_webjs_collapse(comp, cit))
+
+    if show_directory and directory:
         parts.append(render_directory(directory))
     return "".join(parts)
 
@@ -189,11 +225,11 @@ def main():
         return
     store = load_store(DATA_FILE)
     fu = load_config().get("feature_updates", {}) or {}
-    # 集合页是否显示「核心/次要总表」：config 里 show_directory=true 才显示（数据始终保留在 directory）
-    directory = (fu.get("directory", []) or []) if fu.get("show_directory", False) else None
-    Confluence().update_body(pid, render_page(store, directory),
+    directory = fu.get("directory", []) or []          # 始终用于判核心/次要（即使不在页面显示表）
+    show_dir = fu.get("show_directory", False)
+    Confluence().update_body(pid, render_page(store, directory, show_dir),
                              msg="自动更新 竞品功能更新", keep_title=True)
-    print(f"✓ 已写入 Confluence 页 {pid}（{len(store)} 条，按竞品分组）")
+    print(f"✓ 已写入 Confluence 页 {pid}（{len(store)} 条，按日期分组）")
 
 
 if __name__ == "__main__":
