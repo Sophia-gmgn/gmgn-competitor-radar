@@ -29,7 +29,7 @@ jobs:
       - name: Fetch topics
         env:
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
-          GROK_MODEL: "grok-4.3"
+          GROK_MODEL: "grok-4.5"
         run: python -m x_topics.fetch
 
       # 2) 写 Confluence「X 话题日报」页（未配 X_TOPICS_PAGE_ID 会自动跳过）

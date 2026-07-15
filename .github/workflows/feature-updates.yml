@@ -22,7 +22,7 @@ jobs:
         env:
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
-          GROK_MODEL: "grok-4.3"
+          GROK_MODEL: "grok-4.5"
         run: python -m feature_updates.fetch
       - name: Write Confluence
         if: ${{ !cancelled() }}
