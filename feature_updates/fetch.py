@@ -234,8 +234,14 @@ def _guess_type(t):
 
 def read_community_page(pid):
     """读同事的社群监控页（一张已判级的表）→ 直接产出 items（不再过 Grok）。"""
+    if not (os.environ.get("ATLASSIAN_EMAIL", "").strip() and os.environ.get("ATLASSIAN_API_TOKEN", "").strip()):
+        print("  [社群页] 缺 ATLASSIAN 凭证，跳过第三源（不影响其它源）", file=sys.stderr)
+        return []
     try:
         data = Confluence().get_page(pid)
+    except SystemExit:
+        print("  [社群页] Confluence 初始化失败，跳过第三源", file=sys.stderr)
+        return []
     except Exception as e:
         print(f"  [社群页 {pid}] 读取失败：{e}", file=sys.stderr)
         return []
