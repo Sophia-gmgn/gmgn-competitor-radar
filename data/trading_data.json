@@ -1,6 +1,6 @@
 {
   "date": "2026-07-15",
-  "updated_at": "2026-07-15T06:09:45.782607+00:00",
+  "updated_at": "2026-07-15T08:28:43.958260+00:00",
   "items": [
     {
       "label": "GMGN",
@@ -26,7 +26,7 @@
         "via": "dexs"
       },
       "vol_d1_prev": 7969938,
-      "vol_d1_chg": 0.0
+      "vol_d1_chg": null
     },
     {
       "label": "Axiom",
@@ -48,7 +48,7 @@
         "via": "dexs"
       },
       "vol_d1_prev": 28340063,
-      "vol_d1_chg": 0.0
+      "vol_d1_chg": null
     },
     {
       "label": "Terminal",
@@ -72,7 +72,7 @@
         "via": "dexs"
       },
       "vol_d1_prev": 5169978,
-      "vol_d1_chg": 0.0
+      "vol_d1_chg": null
     },
     {
       "label": "Pump.fun",
@@ -92,8 +92,8 @@
         ],
         "via": "dexs"
       },
-      "vol_d1_prev": 41826857,
-      "vol_d1_chg": -0.4401783045759331
+      "vol_d1_prev": 23415582,
+      "vol_d1_chg": null
     },
     {
       "label": "Trojan",
@@ -114,7 +114,7 @@
         "via": "dexs"
       },
       "vol_d1_prev": 2390435,
-      "vol_d1_chg": 0.0
+      "vol_d1_chg": null
     },
     {
       "label": "Photon",
@@ -135,7 +135,7 @@
         "via": "dexs"
       },
       "vol_d1_prev": 661425,
-      "vol_d1_chg": 0.0
+      "vol_d1_chg": null
     },
     {
       "label": "FOMO",
@@ -156,7 +156,7 @@
         "via": "dexs"
       },
       "vol_d1_prev": 10772049,
-      "vol_d1_chg": 0.0
+      "vol_d1_chg": null
     },
     {
       "label": "Banana Gun",
@@ -183,7 +183,7 @@
         "via": "dexs"
       },
       "vol_d1_prev": 109440,
-      "vol_d1_chg": 0.0
+      "vol_d1_chg": null
     },
     {
       "label": "BONKbot",
@@ -204,7 +204,7 @@
         "via": "dexs"
       },
       "vol_d1_prev": 371475,
-      "vol_d1_chg": 0.0
+      "vol_d1_chg": null
     },
     {
       "label": "Maestro",
@@ -231,8 +231,8 @@
         ],
         "via": "fees"
       },
-      "vol_d1_prev": 708000.0,
-      "vol_d1_chg": 0.6135593220338983
+      "vol_d1_prev": 1142400.0,
+      "vol_d1_chg": null
     },
     {
       "label": "Bloom",
@@ -255,7 +255,7 @@
         "via": "dexs"
       },
       "vol_d1_prev": 267243,
-      "vol_d1_chg": 0.0
+      "vol_d1_chg": null
     },
     {
       "label": "Jupiter",
@@ -275,23 +275,23 @@
         ],
         "via": "dexs"
       },
-      "vol_d1_prev": 37437943,
-      "vol_d1_chg": -0.9892652488946841
+      "vol_d1_prev": 401887,
+      "vol_d1_chg": null
     }
   ],
   "users": [
     {
       "label": "Axiom",
       "tier": "core",
-      "users_today": 26316,
-      "users_7d": 93143,
-      "users_14d": 158422,
-      "users_30d": 259047,
+      "users_today": 30721,
+      "users_7d": 95353,
+      "users_14d": 160268,
+      "users_30d": 260613,
       "sol": {
-        "users_today": 26316,
-        "users_7d": 93143,
-        "users_14d": 158422,
-        "users_30d": 259047
+        "users_today": 30721,
+        "users_7d": 95353,
+        "users_14d": 160268,
+        "users_30d": 260613
       },
       "evm": null,
       "chain_note": "Solana"
@@ -299,79 +299,15 @@
     {
       "label": "Terminal",
       "tier": "core",
-      "users_today": 5712,
-      "users_7d": 22998,
-      "users_14d": 42714,
-      "users_30d": 72314,
+      "users_today": 7206,
+      "users_7d": 23932,
+      "users_14d": 43605,
+      "users_30d": 73204,
       "sol": {
-        "users_today": 5712,
-        "users_7d": 22998,
-        "users_14d": 42714,
-        "users_30d": 72314
-      },
-      "evm": null,
-      "chain_note": "Solana"
-    },
-    {
-      "label": "Trojan",
-      "tier": "core",
-      "users_today": 4107,
-      "users_7d": 14157,
-      "users_14d": 22429,
-      "users_30d": 34729,
-      "sol": {
-        "users_today": 4107,
-        "users_7d": 14157,
-        "users_14d": 22429,
-        "users_30d": 34729
-      },
-      "evm": null,
-      "chain_note": "Solana"
-    },
-    {
-      "label": "Photon",
-      "tier": "core",
-      "users_today": 1122,
-      "users_7d": 3575,
-      "users_14d": 7224,
-      "users_30d": 13856,
-      "sol": {
-        "users_today": 1122,
-        "users_7d": 3575,
-        "users_14d": 7224,
-        "users_30d": 13856
-      },
-      "evm": null,
-      "chain_note": "Solana"
-    },
-    {
-      "label": "Bloom",
-      "tier": "minor",
-      "users_today": 601,
-      "users_7d": 1950,
-      "users_14d": 3589,
-      "users_30d": 6887,
-      "sol": {
-        "users_today": 601,
-        "users_7d": 1950,
-        "users_14d": 3589,
-        "users_30d": 6887
-      },
-      "evm": null,
-      "chain_note": "Solana"
-    },
-    {
-      "label": "Maestro",
-      "tier": "minor",
-      "users_today": 594,
-      "users_7d": 2207,
-      "users_14d": 3833,
-      "users_30d": 6595,
-      "sol": {
-        "users_today": 594,
-        "users_7d": 2207,
-        "users_14d": 3833,
-        "users_30d": 6595
+        "users_today": 7206,
+        "users_7d": 23932,
+        "users_14d": 43605,
+        "users_30d": 73204
       },
       "evm": null,
       "chain_note": "Solana"
@@ -379,15 +315,89 @@
     {
       "label": "Banana Gun",
       "tier": "minor",
-      "users_today": 29,
-      "users_7d": 236,
-      "users_14d": 401,
-      "users_30d": 706,
+      "users_today": 331,
+      "users_7d": 4774,
+      "users_14d": 24617,
+      "users_30d": 47267,
       "sol": {
-        "users_today": 29,
-        "users_7d": 236,
-        "users_14d": 401,
-        "users_30d": 706
+        "users_today": 38,
+        "users_7d": 234,
+        "users_14d": 405,
+        "users_30d": 709
+      },
+      "evm": {
+        "users_today": 293,
+        "users_7d": 4540,
+        "users_14d": 24212,
+        "users_30d": 46558
+      },
+      "chain_note": "Sol+EVM"
+    },
+    {
+      "label": "Trojan",
+      "tier": "core",
+      "users_today": 5010,
+      "users_7d": 14422,
+      "users_14d": 22697,
+      "users_30d": 34970,
+      "sol": {
+        "users_today": 5010,
+        "users_7d": 14422,
+        "users_14d": 22697,
+        "users_30d": 34970
+      },
+      "evm": null,
+      "chain_note": "Solana"
+    },
+    {
+      "label": "Photon",
+      "tier": "core",
+      "users_today": 1294,
+      "users_7d": 3587,
+      "users_14d": 7190,
+      "users_30d": 13888,
+      "sol": {
+        "users_today": 1294,
+        "users_7d": 3587,
+        "users_14d": 7190,
+        "users_30d": 13888
+      },
+      "evm": null,
+      "chain_note": "Solana"
+    },
+    {
+      "label": "Maestro",
+      "tier": "minor",
+      "users_today": 782,
+      "users_7d": 2917,
+      "users_14d": 5619,
+      "users_30d": 9362,
+      "sol": {
+        "users_today": 669,
+        "users_7d": 2225,
+        "users_14d": 3848,
+        "users_30d": 6609
+      },
+      "evm": {
+        "users_today": 113,
+        "users_7d": 692,
+        "users_14d": 1771,
+        "users_30d": 2753
+      },
+      "chain_note": "Sol+EVM"
+    },
+    {
+      "label": "Bloom",
+      "tier": "minor",
+      "users_today": 666,
+      "users_7d": 1967,
+      "users_14d": 3610,
+      "users_30d": 6895,
+      "sol": {
+        "users_today": 666,
+        "users_7d": 1967,
+        "users_14d": 3610,
+        "users_30d": 6895
       },
       "evm": null,
       "chain_note": "Solana"
@@ -395,15 +405,15 @@
   ],
   "user_tier_totals": {
     "core": {
-      "users_today": 35966,
-      "users_7d": 124964,
-      "users_14d": 210280,
-      "users_30d": 340348,
+      "users_today": 42381,
+      "users_7d": 127900,
+      "users_14d": 212792,
+      "users_30d": 342571,
       "sol_dedup": {
-        "users_today": 35966,
-        "users_7d": 124964,
-        "users_14d": 210280,
-        "users_30d": 340348
+        "users_today": 42381,
+        "users_7d": 127900,
+        "users_14d": 212792,
+        "users_30d": 342571
       },
       "evm_added": {
         "users_today": 0,
@@ -413,21 +423,21 @@
       }
     },
     "minor": {
-      "users_today": 1222,
-      "users_7d": 4275,
-      "users_14d": 7679,
-      "users_30d": 13869,
+      "users_today": 1777,
+      "users_7d": 9544,
+      "users_14d": 33702,
+      "users_30d": 63204,
       "sol_dedup": {
-        "users_today": 1222,
-        "users_7d": 4275,
-        "users_14d": 7679,
-        "users_30d": 13869
+        "users_today": 1371,
+        "users_7d": 4312,
+        "users_14d": 7719,
+        "users_30d": 13893
       },
       "evm_added": {
-        "users_today": 0,
-        "users_7d": 0,
-        "users_14d": 0,
-        "users_30d": 0
+        "users_today": 406,
+        "users_7d": 5232,
+        "users_14d": 25983,
+        "users_30d": 49311
       }
     }
   }
