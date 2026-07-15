@@ -76,6 +76,7 @@ def _rows_for_tier(roster, tier, items_by_label, users_by_label):
             "v1": v.get("d1"), "v7": v.get("d7"), "v14": v.get("d14"), "v30": v.get("d30"),
             "ut": u.get("users_today"), "u7": u.get("users_7d"),
             "u14": u.get("users_14d"), "u30": u.get("users_30d"),
+            "chain_note": u.get("chain_note"),
             "has_vol": has_vol, "has_user": bool(u),
         })
     real = sorted([x for x in out if x["has_vol"] and not x.get("not_bot")], key=lambda x: x["v30"] or 0, reverse=True)
@@ -107,14 +108,30 @@ def _vol_table(rows):
     return table(headers, body)
 
 
-def _users_table(rows):
+def _user_scope_badge(x):
+    """用户口径徽章：全都是全链，仅区分是否含 EVM。"""
+    if x.get("chain_note") == "Sol+EVM":
+        return status_lozenge("全链 Sol+EVM", "Green")
+    return status_lozenge("全链 ≈Sol", "Green")
+
+
+def _users_tier_table(rows, tier_total):
+    """单个层级的活跃用户表：各家全链数 + 末行「层级·全链去重合计」。"""
     urows = [x for x in rows if x["has_user"]]
-    if not urows:
+    if not urows and not tier_total:
         return ""
     urows.sort(key=lambda x: x["u30"] or 0, reverse=True)
-    headers = ["竞品", "活跃用户 当天", "7d", "14d", "30d"]
-    body = [[f"<strong>{esc(x['label'])}</strong>", num(x["ut"]), num(x["u7"]),
-             num(x["u14"]), num(x["u30"])] for x in urows]
+    headers = ["竞品", "口径", "活跃用户 当天", "7d", "14d", "30d"]
+    body = [[f"<strong>{esc(x['label'])}</strong>", _user_scope_badge(x),
+             num(x["ut"]), num(x["u7"]), num(x["u14"]), num(x["u30"])] for x in urows]
+    if tier_total:
+        body.append([
+            "<strong>去重合计</strong>", status_lozenge("全链·跨 bot 去重", "Purple"),
+            f'<strong>{num(tier_total.get("users_today"))}</strong>',
+            f'<strong>{num(tier_total.get("users_7d"))}</strong>',
+            f'<strong>{num(tier_total.get("users_14d"))}</strong>',
+            f'<strong>{num(tier_total.get("users_30d"))}</strong>',
+        ])
     return table(headers, body)
 
 
@@ -151,10 +168,18 @@ def render_page(snap):
     parts.append(f"<h2>📎 次要竞品 · 交易量（泛关注 · {len(minor_rows)} 家）</h2>")
     parts.append(_vol_table(minor_rows))
 
-    utab = _users_table(core_rows + minor_rows)
-    if utab:
-        parts.append("<h2>👥 活跃用户数（Dune · 仅 Solana 口径）</h2>")
-        parts.append(utab)
+    tier_totals = snap.get("user_tier_totals", {}) or {}
+    core_ut = _users_tier_table(core_rows, tier_totals.get("core"))
+    minor_ut = _users_tier_table(minor_rows, tier_totals.get("minor"))
+    if core_ut or minor_ut:
+        parts.append("<h2>👥 活跃用户数（Dune · 全链口径 · 按独立钱包去重）</h2>")
+        parts.append("<p><sub>Solana 部分每日刷新 · EVM 部分每周一刷新 · 「去重合计」为该层竞品钱包合并去重</sub></p>")
+        if core_ut:
+            parts.append("<h3>🥇 核心竞品</h3>")
+            parts.append(core_ut)
+        if minor_ut:
+            parts.append("<h3>📎 次要竞品</h3>")
+            parts.append(minor_ut)
 
     parts.append(
         "<p><sub><strong>数据说明</strong><br/>"
@@ -163,7 +188,10 @@ def render_page(snap):
         "<strong>仅 Solana</strong>（带 *）= 该竞品为多链产品但 DefiLlama 仅覆盖其 Solana、数值偏低（如 FOMO）；"
         "<strong>全链·估算</strong> = DefiLlama 无交易量，改用手续费 ÷ 费率估算（如 Maestro，按 1%）；"
         "<strong>暂无数据</strong> = 公开数据源尚未收录，待实际下单反查（Based Bot / DeBot）。<br/>"
-        "· <strong>活跃用户</strong>：Dune，仅 Solana 链、按独立钱包地址去重；多链竞品的非 Solana 用户未计入，故偏低。<br/>"
+        "· <strong>活跃用户</strong>：Dune 链上口径，按独立钱包地址去重。核心竞品（Axiom / Terminal / Trojan / Photon）与 Bloom 的非 Solana 交易占比极低，Solana 数即 ≈ 全链；"
+        "<strong>Banana Gun / Maestro</strong> 为 Solana + EVM 合并（Banana Gun 绝大多数用户在 EVM）。"
+        "<strong>去重合计</strong> = 该层所有竞品钱包合并去重（同一人用多个 bot 只算一次），故小于各家相加。"
+        "Solana 部分每日刷新、EVM 部分每周一刷新；BonkBot / FOMO 暂未纳入用户口径。<br/>"
         "· Pump.fun（发币平台）、Jupiter（DEX 聚合器）口径与交易 bot 不同，仅列数值、不参与排名与占比。<br/>"
         "· Moby、BullX 已移出监控。</sub></p>")
     return "".join(parts)

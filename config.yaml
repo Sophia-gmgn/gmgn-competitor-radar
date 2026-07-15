@@ -96,8 +96,11 @@ feature_updates:
   hours: 168
 
 trading_data:
-  # 用户数（Dune；仅 Solana，按独立钱包去重）
+  # 用户数（Dune；全链口径，按独立钱包去重）
+  #   dune_users_query_id     = Solana 主查询（每家 + 核心/次要去重合计，含 tier 列；层级合计行 bot 以「【」开头）—— 每日刷新
+  #   dune_evm_users_query_id = EVM 合并查询（Banana Gun + Maestro 的 EVM 活跃）—— 每周一刷新；填 0 = 暂不启用 EVM
   dune_users_query_id: 7954296
+  dune_evm_users_query_id: 7985479
   dune_bot_map:
     Trojan: Trojan
     BonkBot: BONKbot

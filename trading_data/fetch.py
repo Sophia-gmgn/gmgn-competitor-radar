@@ -111,6 +111,89 @@ def _load_prev(path):
         return {}
 
 
+WINDOWS = ("users_today", "users_7d", "users_14d", "users_30d")
+
+
+def _fetch_users(cfg):
+    """Dune 活跃用户（全链口径）。
+
+    Solana 主查询（每天强制刷新）：每家 Solana 活跃 + 核心/次要 Solana 去重合计（层级行 bot 以「【」开头）。
+    EVM 合并查询（每周一强制刷新，其余取缓存不花额度）：Banana Gun / Maestro 的 EVM 活跃。
+    合成：每家 全链 = Solana + EVM；层级全链合计 = 该层 Solana 去重合计 + 该层各家 EVM 相加。
+    返回 (users_list, tier_totals_dict)。
+    """
+    sol_qid = cfg.get("dune_users_query_id")
+    evm_qid = cfg.get("dune_evm_users_query_id")
+    bot_map = cfg.get("dune_bot_map") or {}
+    if not (sol_qid and os.environ.get("DUNE_API_KEY", "").strip()):
+        print("\n（未配置 DUNE_API_KEY 或 query id，跳过用户数）")
+        return [], {}
+
+    from common.dune import get_query_result
+
+    # ---- Solana（每天强制刷新，拿当天最新）----
+    per_bot, sol_tier = {}, {}
+    try:
+        sol_rows = get_query_result(int(sol_qid), refresh=True)
+    except Exception as e:
+        print(f"\n Dune Solana 用户数抓取失败（不影响交易量）：{e}")
+        return [], {}
+    for r in sol_rows:
+        raw = str(r.get("bot", "")).strip()
+        tier = (str(r.get("tier", "")).strip() or "minor")
+        counts = {w: r.get(w) for w in WINDOWS}
+        if raw.startswith("【"):                 # 层级去重合计行
+            sol_tier[tier] = counts
+        else:
+            per_bot[bot_map.get(raw, raw)] = {"tier": tier, "sol": counts}
+
+    # ---- EVM（每周一强制刷新，其余取缓存）----
+    evm_per_bot = {}
+    if evm_qid and int(evm_qid) > 0:
+        is_monday = datetime.now(timezone.utc).weekday() == 0
+        try:
+            for r in get_query_result(int(evm_qid), refresh=is_monday):
+                label = bot_map.get(str(r.get("bot", "")).strip(), str(r.get("bot", "")).strip())
+                evm_per_bot[label] = {w: r.get(w) for w in WINDOWS}
+            print(f"\nEVM 用户数（Dune · {'本周已刷新' if is_monday else '取缓存'}）：{len(evm_per_bot)} 家")
+        except Exception as e:
+            print(f"\n EVM 用户数抓取失败（用 Solana 口径继续）：{e}")
+
+    # ---- 合成每家全链 ----
+    users = []
+    for label, d in per_bot.items():
+        sol, evm = d["sol"], evm_per_bot.get(label)
+        combined = {}
+        for w in WINDOWS:
+            s, e = sol.get(w), (evm or {}).get(w)
+            combined[w] = ((s or 0) + (e or 0)) if (s is not None or e is not None) else None
+        users.append({"label": label, "tier": d["tier"], **combined,
+                      "sol": sol, "evm": evm,
+                      "chain_note": ("Sol+EVM" if evm else "Solana")})
+    users.sort(key=lambda x: x.get("users_30d") or 0, reverse=True)
+
+    # ---- 层级全链合计 ----
+    tier_totals = {}
+    for tier in ("core", "minor"):
+        base = sol_tier.get(tier)
+        if not base:
+            continue
+        evm_add = {w: 0 for w in WINDOWS}
+        for label, d in per_bot.items():
+            if d["tier"] == tier and evm_per_bot.get(label):
+                for w in WINDOWS:
+                    evm_add[w] += (evm_per_bot[label].get(w) or 0)
+        tot = {w: (base.get(w) or 0) + evm_add[w] for w in WINDOWS}
+        tier_totals[tier] = {**tot, "sol_dedup": base, "evm_added": evm_add}
+
+    print(f"\n用户数（全链）：{len(users)} 家")
+    for u in users:
+        print(f"  [{u['label']}] 30d全链={u.get('users_30d')}  ({u['chain_note']})")
+    for tier, t in tier_totals.items():
+        print(f"  【{tier}·全链去重合计】30d={t.get('users_30d')}")
+    return users, tier_totals
+
+
 def main():
     load_dotenv()
     enable_truststore()
@@ -141,32 +224,9 @@ def main():
 
     snap = {"date": today, "updated_at": datetime.now(timezone.utc).isoformat(), "items": items}
 
-    qid = cfg.get("dune_users_query_id")
-    bot_map = cfg.get("dune_bot_map") or {}
-    users = []
-    if qid and os.environ.get("DUNE_API_KEY", "").strip():
-        try:
-            from common.dune import get_query_result
-            rows = get_query_result(int(qid))
-            for r in rows:
-                raw = str(r.get("bot", "")).strip()
-                label = bot_map.get(raw, raw)
-                users.append({
-                    "label": label,
-                    "users_today": r.get("users_today"), "users_7d": r.get("users_7d"),
-                    "users_14d": r.get("users_14d"), "users_30d": r.get("users_30d"),
-                    "dvol_1d": r.get("vol_1d"), "dvol_7d": r.get("vol_7d"),
-                    "dvol_14d": r.get("vol_14d"), "dvol_30d": r.get("vol_30d"),
-                })
-            users.sort(key=lambda x: x.get("users_7d") or 0, reverse=True)
-            print(f"\n用户数（Dune）：{len(users)} 家")
-            for u in users:
-                print(f"  [{u['label']}] 7d活跃={u.get('users_7d')}  30d活跃={u.get('users_30d')}")
-        except Exception as e:
-            print(f"\n Dune 用户数抓取失败（不影响交易量）：{e}")
-    else:
-        print("\n（未配置 DUNE_API_KEY 或 query id，跳过用户数）")
+    users, tier_totals = _fetch_users(cfg)
     snap["users"] = users
+    snap["user_tier_totals"] = tier_totals
 
     pathlib.Path("data").mkdir(exist_ok=True)
     json.dump(snap, open(DATA_FILE, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
