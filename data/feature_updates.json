@@ -28,156 +28,12 @@
   },
   {
     "competitor": "DeBot",
-    "title": "DeBot 合约交易正式上线",
-    "summary": "提供一站式链上合约交易入口，支持 BTC、ETH 及美股、黄金、石油等资产。该功能扩展了交易品种范围，为用户开辟更多交易选择。",
-    "date": "2026-07-14",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
-    "_id": "f:db6c4b9e1449ef9c"
-  },
-  {
-    "competitor": "DeBot",
     "title": "DeBot 支持自定义头像与 Flap 分红领取",
     "summary": "新增自定义头像功能，便于盯盘识别；同时上线 Flap 分红一键领取入口，简化用户资产领取流程。",
     "date": "2026-07-14",
     "type": "功能更新",
     "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
     "_id": "f:e2951f1cfe5237dd"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "DeBot 全新布局与视窗管理系统上线",
-    "summary": "引入吸附模式和多视窗自由悬浮功能，构建链上交易工作台。该更新允许用户根据需求灵活组织界面，提升多任务处理能力。",
-    "date": "2026-07-14",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
-    "_id": "f:556f0ec49da9c376"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "DeBot 接入 HyperEVM 生态并支持 Alt.fun 协议",
-    "summary": "正式集成 HyperEVM 链及 Alt.fun 协议，为用户提供探索新资产与新叙事的入口，属于生态集成类更新。",
-    "date": "2026-07-14",
-    "type": "集成",
-    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
-    "_id": "f:0a9ba5e899c641a0"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "DeBot 账户安全升级新增 Passkey 验证",
-    "summary": "引入基于设备认证的 Passkey 验证，支持指纹或面容一键操作登录与提现。提升账户安全性的同时简化关键流程验证步骤。",
-    "date": "2026-07-14",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
-    "_id": "f:66fcd1cd3874a848"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "DeBot 自定义通知声音功能上线",
-    "summary": "支持为买卖成交、推特监控、钱包动态设置专属提示音。用户可通过声音提示及时捕捉交易信号，增强操作响应速度。",
-    "date": "2026-07-14",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
-    "_id": "f:632f02c30487f7bd"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "DeBot 新增 Pump 返现与租赁回收功能",
-    "summary": "支持一键领取 Pump 返现及回收租赁资产，帮助用户找回被遗忘的链上资产，提高资金利用率。",
-    "date": "2026-07-14",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
-    "_id": "f:0c9f0a48497d83ad"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "DeBot 扫链背景色支持自定义",
-    "summary": "用户可自定义代币协议及推特作者的扫链背景色，打造个性化扫链界面，提升使用体验。",
-    "date": "2026-07-14",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
-    "_id": "f:c9ad0f482a9af137"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "DeBot 自动交易正式上线",
-    "summary": "DeBot 自动交易功能正式上线，支持迁移自动买入、自动卖出以及跟单钱包卖出操作。该功能提升了交易自动化程度，用户可更便捷地管理交易流程。",
-    "date": "2026-07-14",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
-    "_id": "f:55314fd2b0012f08"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "DeBot 正式接入 HyperEVM 生态及 Alt.fun 协议",
-    "summary": "平台现已支持 HyperEVM 生态探索及 Alt.fun 协议交易。这为用户提供了更多新资产和新叙事机会，属于生态集成类更新。",
-    "date": "2026-07-14",
-    "type": "集成",
-    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
-    "_id": "f:57b2a48fb9261f5b"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "DeBot 正式接入 HyperEVM 生态",
-    "summary": "平台已接入 HyperEVM 并支持 Alt.fun 协议。用户可通过 DeBot 更便捷地探索该生态内的新资产和叙事机会。",
-    "date": "2026-07-14",
-    "type": "集成",
-    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
-    "_id": "f:623f1fc61e02c57b"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "DeBot 新增自定义通知声音功能",
-    "summary": "用户可为买卖成交、推特监控、钱包动态设置专属提示音。该功能帮助用户通过声音提示及时捕捉交易信号。",
-    "date": "2026-07-14",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
-    "_id": "f:dd26021a1bae31ad"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "DeBot 自动交易功能正式上线",
-    "summary": "支持迁移自动买入、自动卖出和跟单钱包卖出三项功能。用户可将原有自动交易设置迁移至新系统，实现更便捷的自动化交易操作。",
-    "date": "2026-07-14",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
-    "_id": "f:30926d46ba3cbeca"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "DeBot 正式接入 HyperEVM 生态并支持 Alt.fun 协议",
-    "summary": "DeBot 接入 HyperEVM 生态，支持 Alt.fun 协议。用户可更高效地探索该生态上的新资产和新机会。",
-    "date": "2026-07-14",
-    "type": "集成",
-    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
-    "_id": "f:af3f31f907a4e512"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "DeBot 合约交易功能正式上线",
-    "summary": "提供一站式链上合约交易入口，支持 BTC、ETH 及美股、黄金、石油等多类资产。帮助用户开启更多交易机会。",
-    "date": "2026-07-14",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
-    "_id": "f:6476bb01a609ffbe"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "DeBot自动交易功能正式上线",
-    "summary": "DeBot宣布自动交易正式上线，涵盖迁移自动买入、迁移自动卖出以及跟单钱包卖出。用户可更自动化地执行买卖与跟单策略，减少手动盯盘与下单操作。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.615/index-C89aQUod.js",
-    "_id": "f:b00060c4acfdee9e"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "支持自定义头像及Flap变异一键领取",
-    "summary": "DeBot功能更新：支持自定义头像，便于更直观地盯盘识别；同时上线Flap变异领取，可一键完成领取。整体提升界面个性化与资产领取效率。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.615/index-C89aQUod.js",
-    "_id": "f:dec5f6e0ca163058"
   },
   {
     "competitor": "DeBot",
@@ -190,15 +46,6 @@
   },
   {
     "competitor": "DeBot",
-    "title": "正式接入HyperEVM生态并支持Alt.fun协议",
-    "summary": "DeBot已正式接入HyperEVM生态，并支持Alt.fun协议。用户可在DeBot上更高效地发现与交易HyperEVM上的新资产与相关机会。",
-    "date": "2026-07-15",
-    "type": "集成",
-    "url": "https://debot.ai/assets/2.1.615/index-C89aQUod.js",
-    "_id": "f:b636462789c81150"
-  },
-  {
-    "competitor": "DeBot",
     "title": "合约交易正式上线",
     "summary": "DeBot推出一站式链上合约交易入口，支持BTC、ETH以及美股、黄金、石油等多类资产。在现货之外扩展了合约交易场景，增加可参与的标的范围。",
     "date": "2026-07-15",
@@ -208,30 +55,12 @@
   },
   {
     "competitor": "DeBot",
-    "title": "账户安全升级新增Passkey验证",
-    "summary": "DeBot账户安全升级，新增基于设备认证的Passkey验证，支持指纹或面容一键确认。可用于登录与提现等关键操作，兼顾安全性与使用便捷性。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.615/index-C89aQUod.js",
-    "_id": "f:6f756e94bddb43c6"
-  },
-  {
-    "competitor": "DeBot",
     "title": "自定义通知声音功能上线",
     "summary": "DeBot上线自定义通知声音，买卖成交、推特监控、钱包动态均可设置专属提示音。用户可通过差异化声音更快识别关键交易与监控事件。",
     "date": "2026-07-15",
     "type": "功能更新",
     "url": "https://debot.ai/assets/2.1.615/index-C89aQUod.js",
     "_id": "f:7d68396a14ff1c73"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "新增Pump返现与租赁回收功能",
-    "summary": "DeBot新增Pump返现与租赁回收功能，支持一键领取此前容易被忽略的相关资产。有助于回收沉睡资金，提高资产利用效率。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.615/index-C89aQUod.js",
-    "_id": "f:430b5ffb443e03f7"
   },
   {
     "competitor": "DeBot",
@@ -304,5 +133,158 @@
     "type": "功能更新",
     "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
     "_id": "f:985d1de28f208ff9"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "账户安全升级并新增 Passkey 验证",
+    "summary": "账户体系新增基于设备认证的 Passkey，支持指纹或面容一键验证，并可用于登录、提现等关键操作。目的是在不增加过多操作负担的前提下提高账户安全等级。",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.618/index-CNh-gV3T.js",
+    "_id": "f:741a835d3bd4508e"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "Robinhood AI Signals 正式上线",
+    "summary": "DeBot 宣布 Robinhood 链上的 AI Signals 功能现已上线。用户可借助该信号进行 meme 交易并获得更全面覆盖。此举增强了平台在 Robinhood 链上的交易辅助能力。",
+    "date": "2026-07-08",
+    "type": "功能更新",
+    "url": "https://x.com/Debot_Official/status/2074877525311021329",
+    "_id": "f:0d6b7940483c91b2"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "新功能更新：自定义头像与 Flap Dividend Claim",
+    "summary": "DeBot 推出自定义头像功能，便于个性化仪表盘监控；同时上线 Flap Dividend Claim 一键领取。集成了相关 Flap 项目支持。提升了界面使用体验和特定资产收益操作效率。",
+    "date": "2026-07-09",
+    "type": "功能更新",
+    "url": "https://x.com/Debot_Official/status/2075124590553239801",
+    "_id": "f:6a79a977e32111f7"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "Auto Trading 自动交易功能正式上线",
+    "summary": "DeBot 现已支持 Auto Trading，包含 Migration Auto Buy、Migration Auto Sell 和 Follow Wallet Sell 三种模式，覆盖所有链。用户可实现迁移自动买卖及跟单卖出。减少手动干预，降低错过时机或清零风险。",
+    "date": "2026-07-10",
+    "type": "功能更新",
+    "url": "https://x.com/Debot_Official/status/2075478616331448693",
+    "_id": "f:f4e6a54ee12cb696"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "高级监控功能简化更新",
+    "summary": "DeBot 调整 Advanced Monitoring：Token Alerts 仅保留在代币详情页，Twitter Monitoring 迁至 Social Monitoring；高级监控专注钱包及组行为；停用 DingTalk 通知仅保留 Telegram；新警报默认使用移动端和网页通知。现有配置不受影响，用户需检查并调整设置。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://x.com/Debot_Official/status/2076919499933286422",
+    "_id": "f:4e483c4677499dcf"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "推出 Unified Pulse 与 Wallet Tracker 功能并提供 2 万美元奖励",
+    "summary": "Axiom 宣布上线 Unified Pulse 和 Wallet Tracker 功能，仅限本平台可用。同时设置 2 万美元奖励供用户争夺。这新增了脉冲与钱包追踪工具，可能提升交易监控体验并带动平台活跃度。",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "url": "https://x.com/AxiomExchange/status/2077208668672565379",
+    "_id": "f:3f9bdd1c024454af"
+  },
+  {
+    "competitor": "FOMO",
+    "title": "Robinhood Chain 现已在 FOMO 上线",
+    "summary": "FOMO 宣布 Robinhood Chain 现已正式上线。用户现在可以在该平台交易 Robinhood Chain 资产。此举扩展了 FOMO 的多链支持范围。",
+    "date": "2026-07-09",
+    "type": "集成",
+    "url": "https://x.com/fomo/status/2075294725528035631",
+    "_id": "f:1d66e7aeb2c36e1a"
+  },
+  {
+    "competitor": "FOMO",
+    "title": "FOMO 添加 Robinhood Chain 并支持无需桥接交易",
+    "summary": "FOMO 将 Robinhood Chain 加入支持列表，强调无需手动桥接。新增查看热门代币、顶级交易者实时购买动态以及从单一余额滑动购买等功能。这些改进简化了跨链交易流程。",
+    "date": "2026-07-11",
+    "type": "集成",
+    "url": "https://x.com/fomo/status/2075947816065581246",
+    "_id": "f:f075e22ee9b88b3b"
+  },
+  {
+    "competitor": "FOMO",
+    "title": "FOMO 首页进行小幅刷新更新",
+    "summary": "FOMO 对应用首页进行了小幅界面刷新。用户可直接查看更新后的首页设计。此优化提升了应用的视觉和导航体验。",
+    "date": "2026-07-13",
+    "type": "功能更新",
+    "url": "https://x.com/fomo/status/2076741621148762284",
+    "_id": "f:216ac33f201c2478"
+  },
+  {
+    "competitor": "FOMO",
+    "title": "FOMO 新增交易 Robinhood Chain 及多项界面功能",
+    "summary": "FOMO 上线上周未有的功能，包括交易 Robinhood Chain、自定义首页视图、搜索中显示粉丝数、信息流可点击 ticker，以及整体速度提升。这些更新增强了交易便利性和应用响应速度。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://x.com/fomo/status/2077074087151653109",
+    "_id": "f:4a368d5869f86c0f"
+  },
+  {
+    "competitor": "FOMO",
+    "title": "FOMO 发布 v1.77.0 版本并大幅提升性能",
+    "summary": "FOMO 新版本 v1.77.0 现已上线，带来应用整体性能大幅改进。用户需更新至该版本以获得优化体验。此更新聚焦于提升稳定性和运行效率。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://x.com/fomo/status/2077171500738552027",
+    "_id": "f:040b40618d11be62"
+  },
+  {
+    "competitor": "Jupiter",
+    "title": "Q2 Active Staking Rewards (ASR) 现已上线可领取",
+    "summary": "Jupiter 宣布 Q2 Active Staking Rewards 已正式上线。用户可在 jup.ag/rewards/asr-2026-q2 领取奖励，领取期限至 10 月 8 日。这为相关质押用户提供了季度奖励分发渠道。",
+    "date": "2026-07-09",
+    "type": "活动",
+    "url": "https://x.com/JupiterExchange/status/2075138957348675981",
+    "_id": "f:40ab832a4b87a10e"
+  },
+  {
+    "competitor": "Jupiter",
+    "title": "集成 Sunrise 支持交易 $MORPHO",
+    "summary": "Jupiter 宣布现已支持通过 Sunrise 交易 $MORPHO 代币。用户可直接在 Jupiter 平台进行该资产交易。这新增了可交易对并扩展了资产覆盖。",
+    "date": "2026-07-09",
+    "type": "集成",
+    "url": "https://x.com/JupiterExchange/status/2075221671296856194",
+    "_id": "f:ea488f91553f4935"
+  },
+  {
+    "competitor": "Jupiter",
+    "title": "新版 Spot 早期预览征集反馈并设 USDC 奖励",
+    "summary": "Jupiter 针对重建中的 Spot（一页式交易界面）早期预览收集用户反馈。最有用的前 10 条反馈可获 USDC 奖励，第一轮反馈周日截止。这是产品全面上线前的反馈优化窗口。",
+    "date": "2026-07-09",
+    "type": "活动",
+    "url": "https://x.com/JupiterExchange/status/2075274464200396947",
+    "_id": "f:0550d0db7969aa3e"
+  },
+  {
+    "competitor": "Jupiter",
+    "title": "推出 DCA 循环订单的 Earn 收益功能",
+    "summary": "Jupiter 上线 Earn on Recurring，DCA 订单中的资金在等待成交时可自动存入 Jupiter Lend 赚取收益。目前支持 USDC，开启后全自动且不影响原有 DCA 执行。用户可获得额外收益（示例：2.5 万美元 DCA 每年最多约 1162 美元）。",
+    "date": "2026-07-11",
+    "type": "功能更新",
+    "url": "https://x.com/JupiterExchange/status/2076025979492028858",
+    "_id": "f:40e55848cd0f8b4a"
+  },
+  {
+    "competitor": "Jupiter",
+    "title": "Spot 早期预览第一轮反馈已关闭 第二轮即将开放",
+    "summary": "Jupiter 表示已阅读所有 Spot 早期预览反馈，第一轮现已关闭。团队正将反馈纳入开发改进，改进上线后将开启第二轮反馈。这是产品迭代进度的重要通知。",
+    "date": "2026-07-13",
+    "type": "公告",
+    "url": "https://x.com/JupiterExchange/status/2076600154384138733",
+    "_id": "f:f6c0b46f25b6bfae"
+  },
+  {
+    "competitor": "Jupiter",
+    "title": "正式推出 Jupiter Gacha 链上真实卡牌抽卡功能",
+    "summary": "Jupiter 推出 Gacha 产品，用户可抽取真实评级的 Pokémon 与 One Piece 卡牌，卡牌完全链上认证并可交易。抽卡过程中可赚取最高 10 万美元奖励，目前为 BETA 阶段。用户可立即体验开包。",
+    "date": "2026-07-13",
+    "type": "功能更新",
+    "url": "https://x.com/JupiterExchange/status/2076654397237445092",
+    "_id": "f:d89a8205a33f3f06"
   }
 ]
