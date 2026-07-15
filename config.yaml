@@ -95,6 +95,26 @@ feature_updates:
       telegram_channel: bananagunannouncements
   hours: 168
 
+  # ——— 集合页顶部「竞品监控清单」渲染用（核心/次要总表）———
+  # 纯展示数据：官方X / 官网 / 社群入口 + ②接入状态。✅已核 ⚠️待确认 空=待补。
+  # monitor 非「待接入」的值＝已接入②，渲染成绿色标签。改 X 账号时顺带同步上面 competitors。
+  directory:
+    # —— 核心竞品（重点监控）——
+    - { label: Axiom,                 tier: core,  x: "@AxiomExchange ✅ / @AxiomUpdate ✅", site: "axiom.trade",             tg: "无",                          discord: "discord.gg/axiomtrade",       monitor: "Discord" }
+    - { label: "Terminal（原 Padre）", tier: core,  x: "@tradingterminal ⚠️",                site: "padre.gg",                tg: "无",                          discord: "discord.gg/padreapp",         monitor: "待接入" }
+    - { label: Pump.fun,              tier: core,  x: "@pumpdotfun ✅",                      site: "pump.fun",                tg: "",                            discord: "",                            monitor: "待接入" }
+    - { label: "Based Bot",           tier: core,  x: "⚠️ 待核",                            site: "basedbot.app",            tg: "t.me/BasedBotVerify",         discord: "discord.com/invite/basedbot", monitor: "Discord + 官网弹窗" }
+    - { label: DeBot,                 tier: core,  x: "@Debot_Official ✅ / @Debot_AI ✅",   site: "debot.ai",                tg: "",                            discord: "已接（自服务器 Follow）",     monitor: "Discord + 官网弹窗" }
+    - { label: Trojan,                tier: core,  x: "@TrojanOnSolana ✅",                  site: "trojan.com",              tg: "t.me/trojantrading",          discord: "discord.gg/trojan",           monitor: "待接入" }
+    - { label: Photon,                tier: core,  x: "@tradewithPhoton ⚠️ 待核",           site: "photon-sol.tinyastro.io", tg: "⚠️ t.co 短链待核",            discord: "无?",                         monitor: "待接入" }
+    - { label: FOMO,                  tier: core,  x: "@fomo ✅（原 @tryfomo）",             site: "fomo.family",             tg: "",                            discord: "",                            monitor: "待接入" }
+    # —— 次要竞品（泛关注）——
+    - { label: "Banana Gun",          tier: minor, x: "@BananaGun ⚠️ 待核",                 site: "bananagun.io ⚠️",         tg: "t.me/bananagunannouncements", discord: "",                            monitor: "Telegram" }
+    - { label: BONKbot,               tier: minor, x: "@bonkbot_io ⚠️ 待核",                site: "bonkbot.io ⚠️",           tg: "",                            discord: "",                            monitor: "待接入" }
+    - { label: Maestro,               tier: minor, x: "@MaestroBots ⚠️ 待核",               site: "maestrobots.com ⚠️",      tg: "",                            discord: "",                            monitor: "待接入" }
+    - { label: Bloom,                 tier: minor, x: "@BloomTrading ⚠️ 待核",              site: "bloombot.app ⚠️",         tg: "",                            discord: "",                            monitor: "待接入" }
+    - { label: Jupiter,               tier: minor, x: "@JupiterExchange ✅",                site: "jup.ag",                  tg: "",                            discord: "discord.gg/jup",              monitor: "待接入" }
+
 trading_data:
   # 用户数（Dune；全链口径，按独立钱包去重）
   #   dune_users_query_id     = Solana 主查询（每家 + 核心/次要去重合计，含 tier 列；层级合计行 bot 以「【」开头）—— 每日刷新

@@ -16,8 +16,8 @@ import pathlib
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 
-from common.util import load_dotenv, enable_truststore, load_store, now_cst_str
-from common.confluence import Confluence, esc, panel, status_lozenge, expand
+from common.util import load_dotenv, enable_truststore, load_store, now_cst_str, load_config
+from common.confluence import Confluence, esc, panel, status_lozenge, expand, table
 
 DATA_FILE = os.environ.get("FEATURE_UPDATES_DATA", "data/feature_updates.json")
 MAX_ITEMS_PER_COMP = int(os.environ.get("FEATURE_UPDATES_MAX_PER_COMP", "40"))
@@ -83,7 +83,50 @@ def _short_kw(title):
     return t[:12] if t else title[:12]
 
 
-def render_page(store):
+def _mon_lozenge(mon):
+    """② 接入状态：非「待接入」＝已接，绿色标签；否则默认灰。"""
+    m = (mon or "").strip()
+    if not m or m in ("待接入", "未接入", "-"):
+        return status_lozenge("待接入")
+    return status_lozenge(m, "Green")
+
+
+def _directory_table(rows):
+    headers = ["竞品", "官方 X", "官网", "Telegram", "Discord", "② 接入状态"]
+    trows = []
+    for d in rows:
+        trows.append([
+            f'<strong>{esc(d.get("label", ""))}</strong>',
+            esc(d.get("x", "") or "—"),
+            esc(d.get("site", "") or "—"),
+            esc(d.get("tg", "") or "—"),
+            esc(d.get("discord", "") or "—"),
+            _mon_lozenge(d.get("monitor", "")),
+        ])
+    return table(headers, trows)
+
+
+def render_directory(directory):
+    """页面顶部：核心 / 次要竞品监控清单（从 config 的 feature_updates.directory 渲染）。"""
+    core = [d for d in directory if d.get("tier") == "core"]
+    minor = [d for d in directory if d.get("tier") == "minor"]
+    out = ["<h2>📇 竞品监控清单 · 核心 / 次要</h2>",
+           panel("info",
+                 "<p>核心 8 + 次要 5 监控清单。✅ 已核实 · ⚠️ 待确认（入库前从官网核）· 空＝待补。<br/>"
+                 "本清单由 <code>config.yaml</code> 的 <code>feature_updates.directory</code> 维护——"
+                 "改这里请改 config（本页每次整页重写）。</p>")]
+    if core:
+        out.append("<h3>🔴 核心竞品（重点监控）</h3>")
+        out.append(_directory_table(core))
+    if minor:
+        out.append("<h3>🟡 次要竞品（泛关注）</h3>")
+        out.append(_directory_table(minor))
+    out.append("<hr/>")
+    out.append("<h2>🆕 竞品功能更新（实时）</h2>")
+    return "".join(out)
+
+
+def render_page(store, directory=None):
     now = now_cst_str()
     total = len(store)
 
@@ -106,6 +149,9 @@ def render_page(store):
     parts = [panel("info",
                    f"<p>📊 竞品功能更新监控 · 共 <strong>{total}</strong> 条 &nbsp;｜&nbsp; {counts}</p>"
                    f"<p><sub>本页由脚本自动更新，更新于 {esc(now)}（UTC+8）· 请勿手动编辑（每次整页重写）</sub></p>")]
+
+    if directory:
+        parts.append(render_directory(directory))
 
     if not store:
         parts.append(panel("note", "<p>暂无功能更新（等首次抓取写入）。</p>"))
@@ -141,7 +187,8 @@ def main():
               "（把「竞品功能更新」页的 pageId 填进来即可）。")
         return
     store = load_store(DATA_FILE)
-    Confluence().update_body(pid, render_page(store),
+    directory = (load_config().get("feature_updates", {}) or {}).get("directory", []) or []
+    Confluence().update_body(pid, render_page(store, directory),
                              msg="自动更新 竞品功能更新", keep_title=True)
     print(f"✓ 已写入 Confluence 页 {pid}（{len(store)} 条，按竞品分组）")
 
