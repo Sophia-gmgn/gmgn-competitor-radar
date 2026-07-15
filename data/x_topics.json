@@ -1526,5 +1526,141 @@
       "https://x.com/quiver_fi/status/2076754267839279361"
     ],
     "_id": "t:9fbbd10821c00599"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "BasedBot",
+    "topic": "用户询问 BasedBot 是否支持导入 Twitter 列表进行交易跟踪",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/WarriGenes/status/2077092579795931598"
+    ],
+    "_id": "t:7bcc71e110c84cb6"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "BasedBot",
+    "topic": "用户反馈 BasedBot 客服快速解决入口问题",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/0xgameboi/status/2077120545053680062"
+    ],
+    "_id": "t:60a0d2a13c473579"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "BasedBot",
+    "topic": "用户抱怨 Robinhood 链上 BasedBot 交易速度慢",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/obitot0bI/status/2077063728659410987"
+    ],
+    "_id": "t:0e0e4ea5689d5867"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "BasedBot",
+    "topic": "用户比较 BasedBot 与 Axiom 等交易终端的优劣",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/RookTribee/status/2077218125188051376"
+    ],
+    "_id": "t:85a7218717344eb6"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "BasedBot",
+    "topic": "项目方请求 BasedBot 上线特定 launchpad 以便交易",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/vladdotfun/status/2077081218391183626"
+    ],
+    "_id": "t:3a91814c35eade66"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "BasedBot",
+    "topic": "用户分享 BasedBot 用于 Robinhood meme 交易的 portfolio 功能",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Gnomie_SG/status/2076990667134218708"
+    ],
+    "_id": "t:d0aa579435151358"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "FOMO",
+    "topic": "FOMO app 隐私模式功能建议",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/on3boi_1/status/2077220870137819419"
+    ],
+    "_id": "t:25d5b1373ab5fd70"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "FOMO",
+    "topic": "FOMO app 界面和交易体验好评",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/qap1talist/status/2077074499481022568"
+    ],
+    "_id": "t:2e6068afc5523723"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "Banana Gun",
+    "topic": "Banana Gun 用于发现和追踪 Robinhood meme 币的活动、交易量和走势",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/XeonThri/status/2077158490733531208",
+      "https://x.com/Reinzxc01/status/2077153556881379684",
+      "https://x.com/bananaintern/status/2077149538910155010"
+    ],
+    "_id": "t:1cf518009929b88b"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "Banana Gun",
+    "topic": "Banana Gun 在 Polymarket 上的复制交易功能、速度优势及收益表现",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/stillrichierich/status/2076986799994417536",
+      "https://x.com/Atenov_D/status/2077042006568640932"
+    ],
+    "_id": "t:3011e9fdfa943cda"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "Jupiter",
+    "topic": "Jupiter在链上扩展业务并表现强劲",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/thebrandtp/status/2077225512540520473",
+      "https://x.com/Btcniumowang/status/2077224534675976686"
+    ],
+    "_id": "t:b3e343ceaec81ef1"
+  },
+  {
+    "date": "2026-07-15",
+    "subject": "Jupiter",
+    "topic": "JUP在DEX市场排名和代币表现",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/WhisprNews/status/2077221945334956204"
+    ],
+    "_id": "t:dcc0ed06217bc143"
   }
 ]
