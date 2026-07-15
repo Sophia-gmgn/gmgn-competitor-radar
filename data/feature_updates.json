@@ -46,15 +46,6 @@
   },
   {
     "competitor": "DeBot",
-    "title": "合约交易正式上线",
-    "summary": "DeBot推出一站式链上合约交易入口，支持BTC、ETH以及美股、黄金、石油等多类资产。在现货之外扩展了合约交易场景，增加可参与的标的范围。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.615/index-C89aQUod.js",
-    "_id": "f:cad8a466433c47e0"
-  },
-  {
-    "competitor": "DeBot",
     "title": "自定义通知声音功能上线",
     "summary": "DeBot上线自定义通知声音，买卖成交、推特监控、钱包动态均可设置专属提示音。用户可通过差异化声音更快识别关键交易与监控事件。",
     "date": "2026-07-15",
@@ -87,7 +78,8 @@
     "date": "2026-07-15",
     "type": "功能更新",
     "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
-    "_id": "f:9377c493f5a0c71f"
+    "_id": "f:9377c493f5a0c71f",
+    "priority": ""
   },
   {
     "competitor": "DeBot",
@@ -96,7 +88,8 @@
     "date": "2026-07-15",
     "type": "集成",
     "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
-    "_id": "f:545f37b3930917cb"
+    "_id": "f:545f37b3930917cb",
+    "priority": ""
   },
   {
     "competitor": "DeBot",
@@ -123,7 +116,8 @@
     "date": "2026-07-15",
     "type": "功能更新",
     "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
-    "_id": "f:253e7e21fa85db52"
+    "_id": "f:253e7e21fa85db52",
+    "priority": ""
   },
   {
     "competitor": "DeBot",
@@ -133,15 +127,6 @@
     "type": "功能更新",
     "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
     "_id": "f:985d1de28f208ff9"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "账户安全升级并新增 Passkey 验证",
-    "summary": "账户体系新增基于设备认证的 Passkey，支持指纹或面容一键验证，并可用于登录、提现等关键操作。目的是在不增加过多操作负担的前提下提高账户安全等级。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.618/index-CNh-gV3T.js",
-    "_id": "f:741a835d3bd4508e"
   },
   {
     "competitor": "DeBot",
@@ -186,7 +171,8 @@
     "date": "2026-07-15",
     "type": "功能更新",
     "url": "https://x.com/AxiomExchange/status/2077208668672565379",
-    "_id": "f:3f9bdd1c024454af"
+    "_id": "f:3f9bdd1c024454af",
+    "priority": "高"
   },
   {
     "competitor": "FOMO",
@@ -286,5 +272,254 @@
     "type": "功能更新",
     "url": "https://x.com/JupiterExchange/status/2076654397237445092",
     "_id": "f:d89a8205a33f3f06"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "合约交易功能正式上线",
+    "summary": "DeBot上线一站式链上合约交易入口，支持BTC、ETH以及美股、黄金、石油等多类资产。平台交易品类从常规链上资产扩展到更广的合约标的。用户可在同一入口参与更多类型交易机会。",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.621/index-K7tW9-tR.js",
+    "_id": "f:33170c80b0830d31",
+    "priority": ""
+  },
+  {
+    "competitor": "DeBot",
+    "title": "账户安全升级新增Passkey验证",
+    "summary": "账户安全能力升级，新增基于设备认证的Passkey验证，支持指纹或面容等一键验证，覆盖登录与提现等关键操作。可降低传统密码泄露风险，提升账户与资金安全。",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.621/index-K7tW9-tR.js",
+    "_id": "f:6f756e94bddb43c6",
+    "priority": ""
+  },
+  {
+    "competitor": "Based Bot",
+    "title": "BasedBot 在 RobinhoodApp Chain 上推出完整协议集成，支持从 Day 0 交易和桥接",
+    "summary": "BasedBot 宣布已在 RobinhoodApp Chain 上线完整协议集成，用户可从 Day 0 开始通过该 bot 进行交易和桥接。完整列表将陆续展示支持的协议。这新增了对 RobinhoodApp Chain 的支持，使用户无需切换平台即可覆盖该链交易。",
+    "date": "2026-07-08",
+    "type": "集成",
+    "url": "https://x.com/BasedBot/status/2074919213551047145",
+    "_id": "f:0f0dacd51559a9a9"
+  },
+  {
+    "competitor": "Based Bot",
+    "title": "BasedBot 支持在 RobinhoodApp Chain 上直接交易 DYORSWAPDEX 代币（含 pre-bond 和 post-bond）",
+    "summary": "BasedBot 现已支持直接在 RobinhoodApp Chain 上交易 @DYORSWAPDEX 代币，覆盖 pre-bond 和 post-bond 阶段。用户可通过 BasedBot 交易这些代币。这新增了特定 DEX 相关代币的集成。",
+    "date": "2026-07-08",
+    "type": "集成",
+    "url": "https://x.com/BasedBot/status/2074919258690093151",
+    "_id": "f:c7203f572c19c1d3",
+    "priority": ""
+  },
+  {
+    "competitor": "Based Bot",
+    "title": "BasedBot 支持在 RobinhoodApp Chain 上直接交易 Uniswap V2/V3/V4 代币",
+    "summary": "BasedBot 现已支持直接在 RobinhoodApp Chain 上交易 @Uniswap V2/V3/V4 代币。用户可在 BasedBot 中完成相关交易。这集成了主流 Uniswap 协议版本，提升了交易覆盖。",
+    "date": "2026-07-08",
+    "type": "集成",
+    "url": "https://x.com/BasedBot/status/2074919267263189037",
+    "_id": "f:fd96963c3da080e6"
+  },
+  {
+    "competitor": "Based Bot",
+    "title": "BasedBot 实现 RobinhoodApp Chain 从创世到后续的全覆盖交易支持",
+    "summary": "BasedBot 表示已实现从第一个区块到后续发射的完整覆盖，只要代币在 RobinhoodApp Chain 交易即可在 BasedBot 上交易，无需切换。提供零切换的统一体验。这总结并强调了新链全协议支持的完整性。",
+    "date": "2026-07-08",
+    "type": "集成",
+    "url": "https://x.com/BasedBot/status/2074919269670818011",
+    "_id": "f:737bac6121540ba0"
+  },
+  {
+    "competitor": "Banana Gun",
+    "title": "BAGS 在 Robinhood 的代币现已支持 Banana Gun 交易",
+    "summary": "Banana Gun 现已上线支持交易 @BagsApp 在 Robinhood 启动的代币，用户可使用市价买入、限价单、复制交易和快速执行。这帮助用户及时捕捉新 meta 机会。",
+    "date": "2026-07-13",
+    "type": "集成",
+    "url": "https://x.com/BananaGun/status/2076723043947446285",
+    "_id": "f:2e22c96b7951654f"
+  },
+  {
+    "competitor": "Banana Gun",
+    "title": "Flap 支持现已上线 Banana Gun",
+    "summary": "Banana Gun 现支持交易 @flapdotsh 在 Robinhood 上发射的代币，包括可编程 RWA 收益代币。功能涵盖市价买、限价单、复制交易和快速执行。扩展了新 meta 的覆盖。",
+    "date": "2026-07-09",
+    "type": "集成",
+    "url": "https://x.com/BananaGun/status/2075354511603036622",
+    "_id": "f:865af25ec9f4be05"
+  },
+  {
+    "competitor": "Banana Gun",
+    "title": "推出 7 月 2.5 万美元 Polymarket 交易奖励活动",
+    "summary": "Banana Gun 启动通过其最快 Polymarket 终端的 7 月交易奖励，总池 2.5 万美元，分配为顶级交易者 1.5 万、世界杯市场 5 千和老用户 5 千。基于合格交易量按规则发放，活动至 7 月 31 日。",
+    "date": "2026-07-09",
+    "type": "活动",
+    "url": "https://x.com/BananaGun/status/2075226053849837801",
+    "_id": "f:c9a395b7770ce325"
+  },
+  {
+    "competitor": "Banana Gun",
+    "title": "新增 RobinhoodCrypto 桥接功能",
+    "summary": "Banana Gun 在 Telegram 机器人上线 @RobinhoodCrypto 桥接，可在支持链与 Robinhood 间实现秒级低费资金转移。方便用户快速将资金移至交易活跃区。",
+    "date": "2026-07-08",
+    "type": "功能更新",
+    "url": "https://x.com/BananaGun/status/2074937719596421140",
+    "_id": "f:342e20206f455203"
+  },
+  {
+    "competitor": "FOMO",
+    "title": "FOMO 永久合约不对美国用户开放通知",
+    "summary": "FOMO 声明永久合约（Perps）由第三方协议提供，不对美国人士（公民、居民或位于美国境内者）开放。禁止从美国境内访问该功能。这是合规规则说明，限制了相关用户的使用范围。",
+    "date": "2026-07-15",
+    "type": "公告",
+    "url": "https://x.com/fomo/status/2077222336562893271",
+    "_id": "f:873afc481b5e82dc"
+  },
+  {
+    "competitor": "Jupiter",
+    "title": "Jupiter Gacha 现已上线",
+    "summary": "Jupiter 宣布 Gacha 功能正式直播上线。用户可通过相关广播和链接立即参与卡片抽取。",
+    "date": "2026-07-13",
+    "type": "公告",
+    "url": "https://x.com/JupiterExchange/status/2076653239093940428",
+    "_id": "f:9add69c4bb5c198b"
+  },
+  {
+    "competitor": "Photon",
+    "title": "Photon 发布多项新功能，包括 DexScreener 链接替换、KOL 交易显示与多钱包分配模式等",
+    "summary": "Photon 宣布上线多项交易员请求的新功能。具体包括可在设置中启用将代币元数据链接替换为 DexScreener 链接；在 Charts 页面显示 KOL Trades；新增 Multi Wallet Distribution 的“Total Across Wallets”模式自动按配置分配买入总额；Wallet Tracking 简化视图添加 Quick Buy 按钮；以及 Memescope 中显示追踪的创建者钱包。这些更新增强了界面自定义、多钱包操作和交易分析效率。",
+    "date": "2026-07-09",
+    "type": "功能更新",
+    "url": "https://x.com/tradewithPhoton/status/2075267270667022378",
+    "_id": "f:92d609de2e9c6cb2"
+  },
+  {
+    "competitor": "Maestro",
+    "title": "Maestro在Robinhood Chain上线Uniswap V4和Bankr支持",
+    "summary": "Maestro宣布Uniswap V4和Bankr支持已在Robinhood Chain上线。这扩展了其生态系统覆盖范围，让用户能在更多DEX上进行交易。提升了在该链上的交易灵活性和先发优势。",
+    "date": "2026-07-08",
+    "type": "集成",
+    "url": "https://x.com/MaestroBots/status/2074934514761990294",
+    "_id": "f:868d6f2a4e61165a"
+  },
+  {
+    "competitor": "Maestro",
+    "title": "Maestro支持Robinhood上的Flap代币交易",
+    "summary": "Maestro现已支持在Robinhood上从第一天起交易@flapdotsh新代币。提供快速执行、高级交易工具及最高30% cashback。用户可更早参与相关代币交易并享受返现。",
+    "date": "2026-07-09",
+    "type": "集成",
+    "url": "https://x.com/MaestroBots/status/2075282995372536277",
+    "_id": "f:14202506eb851697"
+  },
+  {
+    "competitor": "Maestro",
+    "title": "Maestro发布Robinhood Chain功能更新汇总",
+    "summary": "针对Robinhood Chain近期活动激增，Maestro汇总发布了速度、安全和alpha相关的一系列更新。用户可通过线程了解完整shipped内容。这集中展示了近期产品改进。",
+    "date": "2026-07-14",
+    "type": "公告",
+    "url": "https://x.com/MaestroBots/status/2077068274496385032",
+    "_id": "f:d147ba30a5f00730"
+  },
+  {
+    "competitor": "Maestro",
+    "title": "Maestro在Robinhood上添加多个launchpad和DEX支持",
+    "summary": "Maestro已添加Uniswap v2/3/4、@virtuals_io、@bankrbot、@flapdotsh、@TrenchToday01、@BagsApp、@robinfunxyz、@leavehood_、@hooddotfun、@apedotstore及@Noxa_Fi等支持。用户可第一时间访问链上所有主要launchpad和DEX。扩展了交易覆盖面。",
+    "date": "2026-07-14",
+    "type": "集成",
+    "url": "https://x.com/MaestroBots/status/2077068276580913623",
+    "_id": "f:4783f987af06681d"
+  },
+  {
+    "competitor": "Maestro",
+    "title": "Maestro为Token Reports添加factory/launchpad并优化性能",
+    "summary": "因Robinhood trenches信息混杂，Maestro在Token Reports中新增factory/launchpad检查，并优化速度与一致性。用户可获得更可靠、更快的代币报告。提升了交易决策的安全性和效率。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://x.com/MaestroBots/status/2077068279684776169",
+    "_id": "f:92b12488482100c4"
+  },
+  {
+    "competitor": "Maestro",
+    "title": "Maestro新增自动检测并警告siphon tokens功能",
+    "summary": "Maestro现在会自动警告检测到的siphon tokens。该功能仍在完善中，建议结合factory/launchpad检查使用。帮助用户规避潜在风险代币，提高交易安全性。",
+    "date": "2026-07-14",
+    "type": "功能更新",
+    "url": "https://x.com/MaestroBots/status/2077068282452914484",
+    "_id": "f:b8a12b7a9451a85d"
+  },
+  {
+    "competitor": "Bloom",
+    "title": "Bloom 现已支持 Robinhood Chain 交易",
+    "summary": "Bloom 宣布用户可在平台上交易 Robinhood Chain 的 meme 币，支持现货交易、跟单、Twitter Tracker 和内置跨链桥接。提供了直接链接开始交易该链资产。此举扩展了 Bloom 的多链支持范围，让用户能一站式处理该链上的自动化交易。",
+    "date": "2026-07-13",
+    "type": "集成",
+    "url": "https://x.com/BloomTrading/status/2076740498681913508",
+    "_id": "f:b9ded85a1a49f329"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "对 bankr 费用相关逻辑做了改进",
+    "summary": "费用侧改动有竞争含义，但未说明大幅降费或免费，达不到高优先级费率冲击标准",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "priority": "中",
+    "url": "",
+    "source": "community",
+    "_id": "f:b6051a286f14b04a"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "robinhood 继续加协议、气泡等功能，并预告即将促销",
+    "summary": "持续迭代 robinhood 产品能力是新进展；促销仅为预告、未给规模，整体按产品更新定中",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "priority": "中",
+    "url": "",
+    "source": "community",
+    "_id": "f:90784287bafa0803"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "剪贴板快速买入/导航已支持全链，复制 SOL 地址可在 Robinhood trenching 中使用",
+    "summary": "多链快捷买入/导航是 meme 终端核心体验增强，与 GMGN 交易路径重叠但属已有能力扩展而非颠覆性上线",
+    "date": "2026-07-15",
+    "type": "集成",
+    "priority": "中",
+    "url": "",
+    "source": "community",
+    "_id": "f:68cccc3ece7315b4"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "新增 flap PVE、全支持协议 2% 买入上限、ape.store 等多项协议/功能",
+    "summary": "接入新 launchpad/协议并加买入上限等交易风控能力，是 meme 终端有实质的新集成与功能，但非核心能力首发或费率/激励级冲击",
+    "date": "2026-07-15",
+    "type": "集成",
+    "priority": "中",
+    "url": "",
+    "source": "community",
+    "_id": "f:d627fe6d52a8633a"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "为 robinhood 新增多个协议并改进执行",
+    "summary": "交易终端侧新协议接入与执行优化，属于 meme 交易相关的实质产品进展",
+    "date": "2026-07-14",
+    "type": "集成",
+    "priority": "中",
+    "url": "",
+    "source": "community",
+    "_id": "f:f5f8b3674451781a"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "noxa 修复仅在 Axiom 上生效（独家）",
+    "summary": "竞品以独家修复做差异化，属产品侧进展与排他信号，但未说明 noxa 是否为与 GMGN 核心重叠的新能力，故不达高",
+    "date": "2026-07-13",
+    "type": "功能更新",
+    "priority": "中",
+    "url": "",
+    "source": "community",
+    "_id": "f:f527b2057223f328"
   }
 ]
