@@ -10,7 +10,7 @@ import json
 import httpx
 
 XAI_URL = "https://api.x.ai/v1/responses"
-DEFAULT_MODEL = os.environ.get("GROK_MODEL", "grok-4.3").strip()
+DEFAULT_MODEL = os.environ.get("GROK_MODEL", "grok-4.5").strip()
 
 
 def extract_output_text(data):

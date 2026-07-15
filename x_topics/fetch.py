@@ -11,7 +11,7 @@ X 话题日报（#1 · Haze）—— 抓取 + 归纳
     python x_topics/fetch.py         （或 python -m x_topics.fetch）
 
 需要：XAI_API_KEY
-可选：GROK_MODEL(默认 grok-4.3)、X_TOPICS_HOURS(默认取 config.yaml)
+可选：GROK_MODEL(默认 grok-4.5)、X_TOPICS_HOURS(默认取 config.yaml)
 """
 import os
 import sys
