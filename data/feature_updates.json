@@ -241,5 +241,68 @@
     "type": "功能更新",
     "url": "https://debot.ai/assets/2.1.615/index-C89aQUod.js",
     "_id": "f:6837516114a86839"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "自动交易功能正式上线",
+    "summary": "DeBot 上线自动交易，涵盖迁移自动买入、迁移自动卖出以及跟单钱包卖出等能力。用户可按规则自动执行买卖与跟单卖出，减少人工盯盘与操作成本。此举强化了平台的自动化交易工具属性。",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
+    "_id": "f:36b789d714d41834"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "支持自定义头像与 Flap 变异一键领取",
+    "summary": "平台新增自定义头像，方便用户在盯盘场景中更快识别账户或界面。同时上线 Flap 变异领取，支持一键领取相关资产。两项改动分别提升使用辨识度与资产领取效率。",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
+    "_id": "f:9377c493f5a0c71f"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "正式接入 HyperEVM 并支持 Alt.fun 协议",
+    "summary": "DeBot 已接入 HyperEVM 生态，并支持 Alt.fun 协议。用户可在平台内更直接地浏览和交易该链上的新资产。这属于链与协议层面的扩展，扩大可覆盖的资产与叙事范围。",
+    "date": "2026-07-15",
+    "type": "集成",
+    "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
+    "_id": "f:545f37b3930917cb"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "链上合约交易正式上线",
+    "summary": "DeBot 上线一站式链上合约交易入口，覆盖 BTC、ETH 以及美股、黄金、石油等多类资产。用户可在同一平台交易加密与部分传统/大宗相关合约标的。功能扩展了交易品类，不仅限于现货代币。",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
+    "_id": "f:3ee276fd5c6ae0dd"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "新增 Passkey 验证强化账户安全",
+    "summary": "账户安全升级，新增基于设备认证的 Passkey，支持指纹或面容完成验证。该能力可用于登录、提现等关键操作。目的是降低密码依赖，提升账户访问与资金操作的安全性。",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
+    "_id": "f:1df1465974beb76f"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "新增 Pump 返现与租赁回收功能",
+    "summary": "平台新增 Pump 返现和租赁回收，支持一键领取此前可能被遗漏或闲置的相关资产。用户可更方便地回收沉睡资金并重新投入使用。功能侧重资产回收与资金利用率提升。",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
+    "_id": "f:253e7e21fa85db52"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "扫链界面支持自定义背景色",
+    "summary": "扫链功能现支持为代币协议和推特作者自定义背景色。用户可按自己的习惯区分不同协议或作者信息。这属于界面个性化优化，提升扫链时的辨识与阅读效率。",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
+    "_id": "f:985d1de28f208ff9"
   }
 ]
