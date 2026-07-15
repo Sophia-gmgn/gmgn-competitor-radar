@@ -107,22 +107,21 @@ def _directory_table(rows):
 
 
 def render_directory(directory):
-    """页面顶部：核心 / 次要竞品监控清单（从 config 的 feature_updates.directory 渲染）。"""
+    """页面底部：核心 / 次要竞品监控清单（从 config 的 feature_updates.directory 渲染，供参考）。"""
     core = [d for d in directory if d.get("tier") == "core"]
     minor = [d for d in directory if d.get("tier") == "minor"]
-    out = ["<h2>📇 竞品监控清单 · 核心 / 次要</h2>",
+    out = ["<hr/>",
+           "<h2>竞品监控清单（核心 / 次要）</h2>",
            panel("info",
-                 "<p>核心 8 + 次要 5 监控清单。✅ 已核实 · ⚠️ 待确认（入库前从官网核）· 空＝待补。<br/>"
-                 "本清单由 <code>config.yaml</code> 的 <code>feature_updates.directory</code> 维护——"
-                 "改这里请改 config（本页每次整页重写）。</p>")]
+                 "<p>监控对象与入口速查。「待核 / 待查」= 待从官网核实，空＝待补。"
+                 "本清单由 <code>config.yaml</code> 的 <code>feature_updates.directory</code> 维护"
+                 "（本页每次整页重写，改这里请改 config）。</p>")]
     if core:
-        out.append("<h3>🔴 核心竞品（重点监控）</h3>")
+        out.append("<h3>核心竞品（重点监控）</h3>")
         out.append(_directory_table(core))
     if minor:
-        out.append("<h3>🟡 次要竞品（泛关注）</h3>")
+        out.append("<h3>次要竞品（泛关注）</h3>")
         out.append(_directory_table(minor))
-    out.append("<hr/>")
-    out.append("<h2>🆕 竞品功能更新（实时）</h2>")
     return "".join(out)
 
 
@@ -150,11 +149,10 @@ def render_page(store, directory=None):
                    f"<p>📊 竞品功能更新监控 · 共 <strong>{total}</strong> 条 &nbsp;｜&nbsp; {counts}</p>"
                    f"<p><sub>本页由脚本自动更新，更新于 {esc(now)}（UTC+8）· 请勿手动编辑（每次整页重写）</sub></p>")]
 
-    if directory:
-        parts.append(render_directory(directory))
-
     if not store:
         parts.append(panel("note", "<p>暂无功能更新（等首次抓取写入）。</p>"))
+        if directory:
+            parts.append(render_directory(directory))
         return "".join(parts)
 
     # 每家一个区块
@@ -175,6 +173,9 @@ def render_page(store, directory=None):
         # 再逐条放其它来源
         for it in other_items:
             parts.append(render_item(it))
+
+    if directory:
+        parts.append(render_directory(directory))
     return "".join(parts)
 
 
