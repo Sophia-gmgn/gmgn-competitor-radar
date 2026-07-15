@@ -188,7 +188,9 @@ def main():
               "（把「竞品功能更新」页的 pageId 填进来即可）。")
         return
     store = load_store(DATA_FILE)
-    directory = (load_config().get("feature_updates", {}) or {}).get("directory", []) or []
+    fu = load_config().get("feature_updates", {}) or {}
+    # 集合页是否显示「核心/次要总表」：config 里 show_directory=true 才显示（数据始终保留在 directory）
+    directory = (fu.get("directory", []) or []) if fu.get("show_directory", False) else None
     Confluence().update_body(pid, render_page(store, directory),
                              msg="自动更新 竞品功能更新", keep_title=True)
     print(f"✓ 已写入 Confluence 页 {pid}（{len(store)} 条，按竞品分组）")

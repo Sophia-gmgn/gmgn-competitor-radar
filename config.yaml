@@ -79,21 +79,57 @@ x_topics:
 # 加竞品 = 加一条。找不到可读源的竞品（Photon/Trojan/Moby 等）先不放。
 feature_updates:
   competitors:
+    # —— 原有：有 Discord / TG / 官网JS 源，保留；顺带加官方 X ——
     - key: debot
       label: DeBot
+      x_account: Debot_Official          # 已核实
       discord_channel_id: "1525442051876061295"
       web_js: debot
     - key: axiom
       label: Axiom
+      x_account: AxiomExchange           # 已核实（另有产品更新号 @AxiomUpdate，可换）
       discord_channel_id: "1525481473120010300"
     - key: basedbot
-      label: BasedBot
+      label: Based Bot
+      # x_account:                       # 待核：从官网确认真号后填，勿填 scam 号
       discord_channel_id: "1525484620983046215"
       web_js: basedbot
     - key: bananagun
       label: Banana Gun
+      # x_account:                       # 待核
       telegram_channel: bananagunannouncements
+    # —— 新增：仅监控官方 X ——
+    - key: pumpfun
+      label: Pump.fun
+      x_account: pumpdotfun              # 已核实
+    - key: terminal
+      label: Terminal
+      x_account: tradingterminal         # 待核：Pump.fun 收购的账号，改名后用户名可能变
+    - key: trojan
+      label: Trojan
+      x_account: TrojanOnSolana          # 已核实
+    - key: fomo
+      label: FOMO
+      x_account: fomo                    # 已核实（原 @tryfomo）
+    - key: jupiter
+      label: Jupiter
+      x_account: JupiterExchange         # 已核实
+    - key: photon
+      label: Photon
+      # x_account:                       # 待核
+    - key: bonkbot
+      label: BONKbot
+      # x_account:                       # 待核
+    - key: maestro
+      label: Maestro
+      # x_account:                       # 待核
+    - key: bloom
+      label: Bloom
+      # x_account:                       # 待核
   hours: 168
+
+  # 集合页是否显示「核心/次要总表」：false=不显示（数据仍保留在下方 directory，需要时改 true 即可）
+  show_directory: false
 
   # ——— 集合页底部「竞品监控清单」渲染用（核心/次要总表）———
   # 纯展示数据：官方X / 官网 / 社群入口 + ②接入状态。（待核）= 待从官网核实，空=待补。
