@@ -401,87 +401,6 @@
     "_id": "f:f527b2057223f328"
   },
   {
-    "competitor": "DeBot",
-    "title": "自动交易功能正式上线",
-    "summary": "DeBot 上线自动交易，覆盖迁移自动买入、迁移自动卖出以及跟单钱包卖出三类能力。用户可按预设规则自动执行买卖，减少手动操作。这对跟单与迁移场景的交易效率提升较明显。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.622/index-ClJVCLS8.js",
-    "_id": "f:36b789d714d41834"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "支持自定义头像与 Flap 变异一键领取",
-    "summary": "本次更新支持自定义头像，方便用户在盯盘时更快识别账户或对象。同时上线 Flap 变异领取，可一键领取相关奖励，减少手动操作。整体偏向提升日常使用便捷性。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.622/index-ClJVCLS8.js",
-    "_id": "f:9377c493f5a0c71f"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "全新布局与视窗管理系统上线",
-    "summary": "DeBot 推出新布局和视窗管理，支持吸附模式与多视窗自由悬浮。用户可按交易习惯自由排布多个窗口，把界面打造成更像专业工作台的形态。这有助于同时盯多盘口、多信息源时提高效率。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.622/index-ClJVCLS8.js",
-    "_id": "f:4a2bf358552daf2f"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "正式接入 HyperEVM 并支持 Alt.fun 协议",
-    "summary": "DeBot 已接入 HyperEVM 生态，并支持 Alt.fun 协议。用户可在平台上更直接地发现和交易 HyperEVM 上的新资产与相关机会。这属于新增链与协议层面的扩展。",
-    "date": "2026-07-15",
-    "type": "集成",
-    "url": "https://debot.ai/assets/2.1.622/index-ClJVCLS8.js",
-    "_id": "f:545f37b3930917cb"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "合约交易正式上线",
-    "summary": "DeBot 上线一站式链上合约交易入口，支持 BTC、ETH，以及美股、黄金、石油等多类资产。用户可在同一平台参与更多品种的合约交易。这扩展了平台从现货/链上资产到衍生品的覆盖范围。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.622/index-ClJVCLS8.js",
-    "_id": "f:cad8a466433c47e0"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "账户安全升级：新增 Passkey 验证",
-    "summary": "DeBot 新增基于设备的 Passkey 验证，支持指纹、面容等方式完成登录与提现等关键操作。相比传统密码或二次验证，操作更快捷，也降低部分账号被盗风险。属于账户安全与登录体验的双重升级。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.622/index-ClJVCLS8.js",
-    "_id": "f:c3ad384a6edbb891"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "自定义通知声音功能上线",
-    "summary": "用户可为买卖成交、推特监控、钱包动态等事件设置专属提示音。通过声音区分不同提醒类型，减少漏看重要信号的可能。适合高频盯盘和多任务并行的交易场景。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.622/index-ClJVCLS8.js",
-    "_id": "f:7d68396a14ff1c73"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "新增 Pump 返现与租赁回收功能",
-    "summary": "DeBot 上线 Pump 返现和租赁回收，支持一键领取此前被遗忘或闲置的相关资产。用户可更方便地把沉睡资金重新提出或利用起来。主要价值在于降低资产遗漏和回收成本。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.622/index-ClJVCLS8.js",
-    "_id": "f:253e7e21fa85db52"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "扫链背景色支持自定义",
-    "summary": "扫链界面现支持为代币协议和推特作者自定义背景色。用户可按个人偏好区分不同来源或协议，界面识别度更高。属于可视化与个性化层面的小优化。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.622/index-ClJVCLS8.js",
-    "_id": "f:6837516114a86839"
-  },
-  {
     "competitor": "Based Bot",
     "title": "BasedBot 支持在 RobinhoodApp Chain 上交易 Noxa_Fi 代币",
     "summary": "BasedBot 现已支持直接交易 Noxa_Fi 在 RobinhoodApp Chain 上的代币，覆盖 pre-bond 和 post-bond 阶段。用户可在 BasedBot 内完成操作。这扩大了该链上的具体协议交易支持。",
@@ -516,5 +435,172 @@
     "type": "集成",
     "url": "https://x.com/BasedBot/status/2074919249827492126",
     "_id": "f:06065a170f302d98"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "自动交易功能正式上线",
+    "summary": "DeBot正式推出自动交易，覆盖迁移自动买入、迁移自动卖出和跟单钱包卖出。用户可在代币迁移与跟单场景自动执行买卖，减少手动操作并提升响应速度。",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.622/index-ClJVCLS8.js",
+    "_id": "f:36b789d714d41834"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "支持自定义头像与Flap变异一键领取",
+    "summary": "DeBot更新自定义头像，方便盯盘时更快识别账户；同时上线Flap变异领取，可一键领取相关资产。整体减少操作步骤，提升日常使用效率。",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.622/index-ClJVCLS8.js",
+    "_id": "f:427c240417d9cd8e"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "全新布局与视窗管理系统上线",
+    "summary": "DeBot推出新布局与视窗管理，支持吸附模式和多视窗自由悬浮。便于同时监控多信息源，打造更适合链上交易的工作台。",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.622/index-ClJVCLS8.js",
+    "_id": "f:4a2bf358552daf2f"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "正式接入HyperEVM生态并支持Alt.fun协议",
+    "summary": "DeBot已接入HyperEVM，并支持Alt.fun协议。用户可在平台上更直接地发现和交易该生态的新资产与机会。",
+    "date": "2026-07-15",
+    "type": "集成",
+    "url": "https://debot.ai/assets/2.1.622/index-ClJVCLS8.js",
+    "_id": "f:b636462789c81150"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "合约交易功能正式上线",
+    "summary": "DeBot上线一站式链上合约交易入口，支持BTC、ETH以及美股、黄金、石油等多类资产。交易范围从加密货币扩展到更多标的，增加新的交易场景。",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.622/index-ClJVCLS8.js",
+    "_id": "f:33170c80b0830d31"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "账户安全升级新增Passkey验证",
+    "summary": "DeBot新增基于设备的Passkey验证，支持指纹或面容一键确认，可用于登录与提现等关键操作。在加强账户安全的同时简化验证流程。",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.622/index-ClJVCLS8.js",
+    "_id": "f:6f756e94bddb43c6"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "自定义通知声音功能上线",
+    "summary": "用户可为买卖成交、推特监控、钱包动态等事件设置专属提示音。通过差异化声音提醒，便于及时捕捉交易信号与监控变化。",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.622/index-ClJVCLS8.js",
+    "_id": "f:7d68396a14ff1c73"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "新增Pump返现与租赁回收功能",
+    "summary": "DeBot上线Pump返现和租赁回收，支持一键领取闲置或被遗忘的相关资产。帮助用户回收沉睡资产与相关收益，减少资金沉淀。",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.622/index-ClJVCLS8.js",
+    "_id": "f:430b5ffb443e03f7"
+  },
+  {
+    "competitor": "DeBot",
+    "title": "扫链背景色支持自定义",
+    "summary": "扫链界面现支持为代币协议和推特作者自定义背景色。用户可打造更易辨识的专属扫链界面，提升信息筛选效率。",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "url": "https://debot.ai/assets/2.1.622/index-ClJVCLS8.js",
+    "_id": "f:6837516114a86839"
+  },
+  {
+    "competitor": "Banana Gun",
+    "title": "提醒 7 月奖励活动仍在进行并支持世界杯半决赛交易",
+    "summary": "继续推广 2.5 万美元 7 月奖励，聚焦法国 vs 西班牙世界杯半决赛，鼓励使用平台跟踪、交易和跟单。这维持活动热度并推动预测市场交易量。",
+    "date": "2026-07-14",
+    "type": "活动",
+    "url": "https://x.com/BananaGun/status/2077110068538204544",
+    "_id": "f:821f8d150c5f2ae1"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "费用侧改动有竞争含义，但未说明大幅降费或免费，达不到高优先级费率冲击标准",
+    "summary": "Yellow 中",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "priority": "",
+    "url": "",
+    "source": "community",
+    "_id": "f:f29ef62224e2af6f"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "Wallet Tracker 直接对标 GMGN 核心智能钱包追踪能力，属直接功能重叠，构成高优先级竞争威胁",
+    "summary": "Red 高",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "priority": "",
+    "url": "",
+    "source": "community",
+    "_id": "f:11cebdad2def9b7b"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "持续迭代 robinhood 产品能力是新进展；促销仅为预告、未给规模，整体按产品更新定中",
+    "summary": "Yellow 中",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "priority": "",
+    "url": "",
+    "source": "community",
+    "_id": "f:e2f1a6d0d69ea2d3"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "多链快捷买入/导航是 meme 终端核心体验增强，与 GMGN 交易路径重叠但属已有能力扩展而非颠覆性上线",
+    "summary": "Yellow 中",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "priority": "",
+    "url": "",
+    "source": "community",
+    "_id": "f:f0f3b818708b3845"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "接入新 launchpad/协议并加买入上限等交易风控能力，是 meme 终端有实质的新集成与功能，但非核心能力首发或费率/激励级冲击",
+    "summary": "Yellow 中",
+    "date": "2026-07-15",
+    "type": "集成",
+    "priority": "",
+    "url": "",
+    "source": "community",
+    "_id": "f:77cc652d2c38c87d"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "交易终端侧新协议接入与执行优化，属于 meme 交易相关的实质产品进展",
+    "summary": "Yellow 中",
+    "date": "2026-07-14",
+    "type": "集成",
+    "priority": "",
+    "url": "",
+    "source": "community",
+    "_id": "f:fc37cd6713b93c34"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "竞品以独家修复做差异化，属产品侧进展与排他信号，但未说明 noxa 是否为与 GMGN 核心重叠的新能力，故不达高",
+    "summary": "Yellow 中",
+    "date": "2026-07-13",
+    "type": "功能更新",
+    "priority": "",
+    "url": "",
+    "source": "community",
+    "_id": "f:66afa2fde4ff36f1"
   }
 ]
