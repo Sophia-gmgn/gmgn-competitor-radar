@@ -189,6 +189,11 @@ def canonicalize(store, directory):
             it["competitor"] = c
 
 
+def _is_webjs_url(url):
+    u = str(url or "")
+    return u.endswith(".js") or "/assets/" in u
+
+
 # ---------------- ③ 同事社群页（已判级的表）解析 ----------------
 def _strip_tags(s):
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", s or ""))).strip()
@@ -368,12 +373,21 @@ def main():
 
     store = load_store(DATA_FILE)
     before = len(store)
+    directory = cfg.get("directory", []) or []
+    canonicalize(store, directory)                    # 先统一竞品名（旧数据也归一）
+    # ① 官网弹窗是「当前状态」：每次全量替换——删掉库里 有 web_js 源竞品 的旧弹窗，只留本次抓取
+    cmap = {_norm_name(d.get("label", "")): str(d.get("label", "")).strip() for d in directory}
+    webjs_comps = {cmap.get(_norm_name(c.get("label", "")), str(c.get("label", "")).strip())
+                   for c in competitors if str(c.get("web_js") or "").strip()}
+    n_old_wj = sum(1 for it in store if _is_webjs_url(it.get("url", "")) and it.get("competitor") in webjs_comps)
+    store[:] = [it for it in store
+                if not (_is_webjs_url(it.get("url", "")) and it.get("competitor") in webjs_comps)]
     added = merge_by_id(store, items)
-    canonicalize(store, cfg.get("directory", []))     # 统一竞品名（axiom→Axiom），跨源去重前
+    canonicalize(store, directory)                    # 新并入的（如社群页 axiom）也归一
     removed = dedup_similar(store)
     save_store(DATA_FILE, store)
     print("\n=== 汇总 ===")
-    print(f"本次功能更新 {len(items)} 条；底稿 {before} → {len(store)}（新增 {added}，相似去重合并 {removed}）")
+    print(f"本次功能更新 {len(items)} 条；底稿 {before} → {len(store)}（新增 {added}，替换旧弹窗 {n_old_wj}，相似去重合并 {removed}）")
     if failed:
         print(f"⚠️ 失败：{failed}")
 

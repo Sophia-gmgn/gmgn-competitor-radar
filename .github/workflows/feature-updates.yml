@@ -2,8 +2,9 @@ name: feature-updates
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "0 2 * * *"
-    - cron: "0 10 * * *"
+    - cron: "0 2 * * *"     # 北京 10:00
+    - cron: "0 7 * * *"     # 北京 15:00
+    - cron: "0 13 * * *"    # 北京 21:00
 permissions:
   contents: write
 concurrency:
