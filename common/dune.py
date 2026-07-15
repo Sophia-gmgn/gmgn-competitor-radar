@@ -41,15 +41,20 @@ def _execute_and_wait(client, query_id, max_wait):
     ex = _req(client, "POST", f"{BASE}/query/{query_id}/execute")
     eid = ex.json()["execution_id"]
     waited = 0
+    cost = None
     while waited < max_wait:
         st = _req(client, "GET", f"{BASE}/execution/{eid}/status")
-        state = st.json().get("state")
+        j = st.json()
+        state = j.get("state")
         if state == "QUERY_STATE_COMPLETED":
+            cost = j.get("execution_cost_credits")
             break
         if state in ("QUERY_STATE_FAILED", "QUERY_STATE_CANCELLED"):
             raise RuntimeError(f"Dune 执行失败：{state}")
         time.sleep(5)
         waited += 5
+    if cost is not None:
+        print(f"    Dune query {query_id} 本次消耗 {cost} credits")
     res = _req(client, "GET", f"{BASE}/execution/{eid}/results", params={"limit": 200})
     return (res.json().get("result") or {}).get("rows") or []
 
