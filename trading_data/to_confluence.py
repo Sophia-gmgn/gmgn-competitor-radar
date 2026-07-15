@@ -121,13 +121,12 @@ def _users_tier_table(rows, tier_total):
     if not urows and not tier_total:
         return ""
     urows.sort(key=lambda x: x["u30"] or 0, reverse=True)
-    headers = ["竞品", "口径", "活跃用户 当天", "7d", "14d", "30d"]
+    headers = ["竞品", "口径", "近7天活跃", "近14天活跃", "近30天活跃"]
     body = [[f"<strong>{esc(x['label'])}</strong>", _user_scope_badge(x),
-             num(x["ut"]), num(x["u7"]), num(x["u14"]), num(x["u30"])] for x in urows]
+             num(x["u7"]), num(x["u14"]), num(x["u30"])] for x in urows]
     if tier_total:
         body.append([
             "<strong>去重合计</strong>", status_lozenge("全链·跨 bot 去重", "Purple"),
-            f'<strong>{num(tier_total.get("users_today"))}</strong>',
             f'<strong>{num(tier_total.get("users_7d"))}</strong>',
             f'<strong>{num(tier_total.get("users_14d"))}</strong>',
             f'<strong>{num(tier_total.get("users_30d"))}</strong>',
