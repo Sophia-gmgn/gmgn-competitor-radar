@@ -3,10 +3,8 @@ name: x-topics
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "0 21 * * *"    # 北京 05:00
-    - cron: "0 3 * * *"     # 北京 11:00
-    - cron: "0 9 * * *"     # 北京 17:00
-    - cron: "0 15 * * *"    # 北京 23:00
+    - cron: "20 0 * * *"     # 北京 08:20
+    - cron: "20 10 * * *"    # 北京 18:20
 
 permissions:
   contents: write             # 提交 data/x_topics.json 与 state/

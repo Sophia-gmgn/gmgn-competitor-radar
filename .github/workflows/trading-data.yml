@@ -2,7 +2,7 @@ name: trading-data
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "0 10 * * *"
+    - cron: "30 13 * * *"    # 北京 21:30
 permissions:
   contents: write
 concurrency:
