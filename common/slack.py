@@ -87,7 +87,7 @@ def post_blocks(slack, blocks, fallback):
                 SLACK_API,
                 headers={"Authorization": f"Bearer {slack['token']}",
                          "Content-Type": "application/json; charset=utf-8"},
-                json={"channel": slack["channel"], "text": fallback, "blocks": blocks},
+                json={"channel": slack["channel"], "text": fallback, "blocks": blocks, "unfurl_links": False, "unfurl_media": False},
                 timeout=30,
             )
             ok = r.status_code == 200 and r.json().get("ok")
@@ -95,7 +95,7 @@ def post_blocks(slack, blocks, fallback):
                 print(f"[slack] 发送失败：{r.status_code} {r.text[:200]}", file=sys.stderr)
             return bool(ok)
         else:
-            r = httpx.post(slack["webhook"], json={"text": fallback, "blocks": blocks}, timeout=30)
+            r = httpx.post(slack["webhook"], json={"text": fallback, "blocks": blocks, "unfurl_links": False, "unfurl_media": False}, timeout=30)
             ok = r.status_code == 200
             if not ok:
                 print(f"[slack] webhook 失败：{r.status_code} {r.text[:200]}", file=sys.stderr)
