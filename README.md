@@ -41,7 +41,7 @@ config.yaml  .env.example  requirements.txt
 | `DISCORD_BOT_TOKEN` | 读 Discord 公告频道 | 2 |
 
 非密钥的固定值（频道 ID、页面网址）已写在 workflow 里，可直接改：
-- `SLACK_CHANNEL`：`C0BFFKSLC5D`（和 Cynthia 同一个竞品监控频道）
+- `SLACK_CHANNEL`：`C0BGRHXM133`（和 Cynthia 同一个竞品监控频道）
 - `X_TOPICS_PAGE_URL`：建好页后填页面网址（日报末尾跳转，可选）
 
 **本地跑**：把 `.env.example` 复制成 `.env` 填真实值即可（`.env` 不进仓库）。

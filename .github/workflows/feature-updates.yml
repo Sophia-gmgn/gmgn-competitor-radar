@@ -38,7 +38,7 @@ jobs:
         if: ${{ !cancelled() }}
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-          SLACK_CHANNEL: "C0BFFKSLC5D"
+          SLACK_CHANNEL: "C0BGRHXM133"
           FEATURE_UPDATES_PAGE_URL: ""
         run: python -m feature_updates.to_slack
       - name: Commit data & state

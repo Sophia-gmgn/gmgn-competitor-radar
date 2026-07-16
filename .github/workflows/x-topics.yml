@@ -46,7 +46,7 @@ jobs:
         if: ${{ !cancelled() }}
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-          SLACK_CHANNEL: "C0BFFKSLC5D"
+          SLACK_CHANNEL: "C0BGRHXM133"
           X_TOPICS_PAGE_URL: ""      # 建好页后填页面网址，日报末尾会带跳转链接
         run: python -m x_topics.to_slack
 

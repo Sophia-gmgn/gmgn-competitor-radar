@@ -18,7 +18,7 @@ OFFICIAL_PID = "2298085418"
 SPACE = "~712020158205a1add2439fae73253b196308bc"
 def _wiki(pid): return f"https://{CLOUD}/wiki/spaces/{SPACE}/pages/{pid}"
 FEATURE_URL, XTOPICS_URL, OFFICIAL_URL, TRADING_URL = _wiki("2303656153"), _wiki("2303656137"), _wiki(OFFICIAL_PID), _wiki("2303721623")
-SENT_EMOJI = {"正面": "🔥", "负面": "💢", "中性": "💬"}
+SENT_EMOJI = {"正面": "•", "负面": "•", "中性": "•"}
 HI_MAX, FOUNDER_MAX, TOPIC_MAX, SIM_TH = 5, 2, 5, 0.55
 
 def _load_json(p, d):

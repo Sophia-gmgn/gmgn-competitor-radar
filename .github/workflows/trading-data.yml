@@ -32,7 +32,7 @@ jobs:
         if: ${{ !cancelled() }}
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-          SLACK_CHANNEL: "C0BFFKSLC5D"
+          SLACK_CHANNEL: "C0BGRHXM133"
         run: python -m trading_data.to_slack
       - name: Commit snapshot
         if: ${{ !cancelled() }}

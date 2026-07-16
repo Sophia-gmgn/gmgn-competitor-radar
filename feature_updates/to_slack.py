@@ -46,17 +46,19 @@ def _prune_ledger(led):
     return led
 
 def _comp_block(comp, items):
-    """一家竞品 = 一个层级：竞品名做标题，下面把该竞品所有更新全列出（不折叠）。"""
-    parts = [f"*{mrkdwn_escape(comp)}*"]      # 竞品层级标题（只出现一次）
-    for it in items:
-        typ = it.get("type", "其它")
-        seg = f"`{mrkdwn_escape(typ)}`　{mrkdwn_escape(it.get('title',''))}"
+    """一个竞品 = 一个层级：竞品名做带项目符号的标题，下面每条编号(每家从1数)。"""
+    parts = [f"*\u2022 {mrkdwn_escape(comp)}*"]      # • 竞品层级标题（每家只出现一次）
+    for i, it in enumerate(items, 1):
+        typ = it.get("type", "\u5176\u5b83")
+        seg = f"{i}\u3001{mrkdwn_escape(it.get('title',''))}　`{mrkdwn_escape(typ)}`"   # 序号 + 标题 + 末尾类型标签
         if it.get("summary"):
-            seg += f"\n{mrkdwn_escape(it.get('summary'))}"
+            seg += f"\n\u258e{mrkdwn_escape(it.get('summary'))}"                        # ▎研判
         if it.get("url"):
-            seg += f"　{link(it['url'], '原文')}"
+            url = it["url"]
+            seg += "　" + link(url, "原文")
         parts.append(seg)
     return "\n\n".join(parts)
+
 
 def build_blocks(day, comp_items):
     total = sum(len(v) for v in comp_items.values())

@@ -18,7 +18,7 @@ PAGE_URL    = os.environ.get("X_TOPICS_PAGE_URL",
 LEDGER_KEEP_DAYS = 3
 TOP_N = 10
 SIM_TH = 0.55
-SENT_EMOJI = {"正面": "🔥", "负面": "💢", "中性": "💬"}
+SENT_EMOJI = {"正面": "•", "负面": "•", "中性": "•"}
 
 def _norm_name(s):
     s = (s or "").lower().strip()
