@@ -14,7 +14,7 @@ LEDGER_FILE = os.environ.get("PUSH_LEDGER", "state/push_ledger.json")
 PAGE_URL    = os.environ.get("FEATURE_UPDATES_PAGE_URL",
     "https://pionex.atlassian.net/wiki/spaces/~712020158205a1add2439fae73253b196308bc/pages/2303656153")
 LEDGER_KEEP_DAYS = 3
-MAX_PER_COMP = 3
+MAX_PER_COMP = 999
 
 def _norm_name(s):
     s = (s or "").lower().strip()
@@ -46,22 +46,17 @@ def _prune_ledger(led):
     return led
 
 def _comp_block(comp, items):
-    """一家竞品 = 一个 section block（标题+类型标签，正文=每条：标题/研判）。"""
-    lines = []
-    for it in items[:MAX_PER_COMP]:
+    """一家竞品 = 一个层级：竞品名做标题，下面把该竞品所有更新全列出（不折叠）。"""
+    parts = [f"*{mrkdwn_escape(comp)}*"]      # 竞品层级标题（只出现一次）
+    for it in items:
         typ = it.get("type", "其它")
-        head = f"*{mrkdwn_escape(comp)}*　`{mrkdwn_escape(typ)}`"
-        title = f"{mrkdwn_escape(it.get('title',''))}"
-        body = mrkdwn_escape(it.get("summary", "")) if it.get("summary") else ""
-        piece = f"{head}\n{title}"
-        if body:
-            piece += f"\n{body}"
+        seg = f"`{mrkdwn_escape(typ)}`　{mrkdwn_escape(it.get('title',''))}"
+        if it.get("summary"):
+            seg += f"\n{mrkdwn_escape(it.get('summary'))}"
         if it.get("url"):
-            piece += f"　{link(it['url'], '原文')}"
-        lines.append(piece)
-    if len(items) > MAX_PER_COMP:
-        lines.append(f"_↳ {mrkdwn_escape(comp)} 还有 {len(items) - MAX_PER_COMP} 条 → {link(PAGE_URL, '看板')}_")
-    return "\n\n".join(lines)
+            seg += f"　{link(it['url'], '原文')}"
+        parts.append(seg)
+    return "\n\n".join(parts)
 
 def build_blocks(day, comp_items):
     total = sum(len(v) for v in comp_items.values())
