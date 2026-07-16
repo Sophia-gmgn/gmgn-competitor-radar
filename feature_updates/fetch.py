@@ -262,8 +262,8 @@ def read_community_page(pid):
             if len(cells) < 5:
                 continue
             comp = _strip_tags(cells[1])
-            dyn = _strip_tags(cells[3]) if len(cells) > 3 else ""
-            judge = _strip_tags(cells[4]) if len(cells) > 4 else ""
+            dyn = _strip_tags(cells[2]) if len(cells) > 2 else ""
+            judge = _strip_tags(cells[3]) if len(cells) > 3 else ""
             if not comp or not dyn:
                 continue
             title = re.sub(r"^〔[^〕]*〕", "", dyn).strip()[:90] or dyn[:90]
@@ -273,8 +273,8 @@ def read_community_page(pid):
                 "summary": judge or dyn,
                 "date": _row_date(cells[0]),
                 "type": _guess_type(dyn + " " + judge),
-                "priority": _row_status(cells[5]) if len(cells) > 5 else "",
-                "url": _first_url(cells[6]) if len(cells) > 6 else "",
+                "priority": _row_status(cells[4]) if len(cells) > 4 else "",
+                "url": "",
                 "source": "community",
             })
     print(f"  [社群页 {pid}] 解析出 {len(items)} 条")
