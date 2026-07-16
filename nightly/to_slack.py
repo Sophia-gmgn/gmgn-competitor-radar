@@ -146,7 +146,7 @@ def block_official(target):
         line = f"• *{mrkdwn_escape(_acc(r['account']))}* {mrkdwn_escape(_clip(_clean(r['dyn']),54))}"
         if r["url"]: line += f"　{link(r['url'],'原文')}"
         units.append(line)
-    return "🐦 *官方推特高优 / 创始人*", units
+    return "🐦 *官方推特高优*", units
 
 def block_topic(target, core):
     hi = [it for it in _load_json(XTOPICS_FILE, []) if it.get("date")==target and it.get("heat")=="高"]
@@ -154,7 +154,7 @@ def block_topic(target, core):
     merged.sort(key=lambda x: (_norm(x.get("subject"))!="gmgn", _norm(x.get("subject")) not in core, -x.get("_merged",1)))
     units = []
     for it in merged[:TOPIC_MAX]:
-        emo = SENT_EMOJI.get(it.get("sentiment"),"💬")
+        emo = SENT_EMOJI.get(it.get("sentiment"),"•")
         line = f"{emo} *{mrkdwn_escape(it.get('subject') or '—')}* {mrkdwn_escape(_clip(it.get('topic'),48))}"
         exs = it.get("examples",[]) or []
         if exs: line += f"　{link(exs[0],'原推')}"
