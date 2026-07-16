@@ -3869,5 +3869,2272 @@
       "https://x.com/ahmads_x/status/2077278269800579436"
     ],
     "_id": "t:b20000477b5fc8d2"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "GMGN",
+    "topic": "用户推荐在Robinhood链交易中使用GMGN以规避高滑点问题",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/DecryptoPioneer/status/2077413001834242513",
+      "https://x.com/TheMemesFi/status/2077411673078415510",
+      "https://x.com/MichaelBeeNFree/status/2077426839648370766"
+    ],
+    "_id": "t:e8499ae5dcfae465"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "GMGN",
+    "topic": "用户指控GMGN与Pons发射台存在骗局合谋操控",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/biiiiymeister/status/2077419007913660476",
+      "https://x.com/biiiiymeister/status/2077345675465904507",
+      "https://x.com/OrraCooks/status/2077382741797073136"
+    ],
+    "_id": "t:bb8213e855b45f18"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "GMGN",
+    "topic": "讨论GMGN跟单功能延迟问题及自动化机器人使用",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/xinlengdouyue/status/2077400521301004521",
+      "https://x.com/Nikgmgncryp/status/2077425080414429543"
+    ],
+    "_id": "t:b85a0c64e597b23c"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "GMGN",
+    "topic": "用户通过GMGN筛选趋势代币但抱怨搜索结果被假币和蜜罐刷屏",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/bazzymate/status/2077346067222515839",
+      "https://x.com/miggl_sol/status/2077318311084519812",
+      "https://x.com/denzyybo2/status/2077420916418470229"
+    ],
+    "_id": "t:c1ec7132a613e72c"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "GMGN",
+    "topic": "对比GMGN与其他工具的客服响应和交易执行，提及近期故障",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Devante_TOP_/status/2077410210646569379",
+      "https://x.com/leys_baby/status/2077320212391563408"
+    ],
+    "_id": "t:f47f1398b3be2399"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "DeBot",
+    "topic": "官方商务人员分享险些被假冒账号诈骗三万美元的经历并提醒用户官方不会要求转账",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Debot_Number1/status/2077424091066458257",
+      "https://x.com/btc710718/status/2077424982318346615"
+    ],
+    "_id": "t:9c222224c7391c4d"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "DeBot",
+    "topic": "用户讨论并演示使用淘金场人工智能信号功能筛选罗宾汉链迷因币机会的方法和优势",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/OrdzWorld/status/2077408285360370090",
+      "https://x.com/ZhangZToooooo/status/2077393083705278670"
+    ],
+    "_id": "t:13557dd356191639"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "DeBot",
+    "topic": "用户反馈商务团队沟通和响应比竞品更好且问题反馈迅速",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Devante_TOP_/status/2077410210646569379"
+    ],
+    "_id": "t:780847e14f018b84"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "DeBot",
+    "topic": "用户分享实际使用体验称上链速度快应用与网页搭配流畅且人工智能热度信号有助于捕捉迷因币",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/PumpBluee/status/2077418135607734685"
+    ],
+    "_id": "t:c95ec2df20371bb6"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Axiom",
+    "topic": "官方发布统一脉搏与钱包追踪功能并举办两万美元奖金活动",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/AxiomExchange/status/2077208668672565379",
+      "https://x.com/Dominionxq/status/2077384135333597200",
+      "https://x.com/AdderleyCo14671/status/2077248851799404693"
+    ],
+    "_id": "t:681dee9fcabc0ae0"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Axiom",
+    "topic": "平台新增罗宾汉链支持并在界面与索拉纳币安链并列显示",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/RoninUltra/status/2077418368705962141",
+      "https://x.com/miggl_sol/status/2077318311084519812"
+    ],
+    "_id": "t:dbd7b9e5f011f2ff"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Axiom",
+    "topic": "用户讨论百分之一手续费与竞品相同但返现奖励让高交易量者优先用其执行交易",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/OnchainMonarchs/status/2077383839203381748",
+      "https://x.com/richieeecooks/status/2077422823409381644"
+    ],
+    "_id": "t:c65a65d76bfbe0e6"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Axiom",
+    "topic": "用户请求尽快集成pons发射台并修复脉搏功能中部分代币不显示问题",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Cp0Reign/status/2077411793081618479",
+      "https://x.com/zenincrypto/status/2077377998638993548",
+      "https://x.com/mrkidcodes/status/2077372334193901652"
+    ],
+    "_id": "t:0d7b71c018dd068b"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Axiom",
+    "topic": "有人警告部分山寨币骗局使用Axiom钱包进行阴谋团操作",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/CryptoScamHuntO/status/2077412400228192352"
+    ],
+    "_id": "t:325a8c2a73a32cf9"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BasedBot",
+    "topic": "BasedBot集成Leavehood和Coinbarrel等发射台支持其代币直接交易",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/UseCoinbarrel/status/2077407914185126368",
+      "https://x.com/leavedahood/status/2077420888044028088"
+    ],
+    "_id": "t:54775939f594ee46"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BasedBot",
+    "topic": "用户投诉BasedBot连续两天服务不可用导致无法交易并转向其他终端",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/ohFrostyyy/status/2077406760386560365",
+      "https://x.com/torga_eth/status/2077412797047361938",
+      "https://x.com/Roxx_Sol/status/2077407289003147359"
+    ],
+    "_id": "t:99556e4a08521dfb"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BasedBot",
+    "topic": "用户分享在BasedBot上过滤Virtuals和BNKR代币并隐藏骗局的交易设置",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/3DMax_Virtuals/status/2077426609171132467"
+    ],
+    "_id": "t:1a443155c4e0c6fb"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BasedBot",
+    "topic": "用户称赞BasedBot易于上手桥接快速适合从电报直接交易",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/bimex_777/status/2077340509056430390"
+    ],
+    "_id": "t:694208a551f22a33"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BasedBot",
+    "topic": "BasedBot等终端被指错误报告发射台流动性数据未正确索引池子",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/unbanksyETH/status/2077094661618057529"
+    ],
+    "_id": "t:964da3fd9732f1d4"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Photon",
+    "topic": "用户批评Photon等Solana项目收集积分却未发放空投，表达失望并指责内幕与社区冷漠",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/TraderRob10/status/2077363606941745156"
+    ],
+    "_id": "t:3c5e058da0583e6f"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Photon",
+    "topic": "Photon被讨论为Solana主要meme交易终端，涉及上架集成、与其他终端比较及速度优势",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/gafarWeb3/status/2077179636446839033",
+      "https://x.com/vitotrox/status/2077056246054535325",
+      "https://x.com/BtradeMM/status/2077094097798471730"
+    ],
+    "_id": "t:52fa8263f5e71ade"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Photon",
+    "topic": "用户在分享早期meme币交易故事时提及Photon的出现并对比Bonkbot",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Greattwhitee/status/2076975453059883237"
+    ],
+    "_id": "t:5626138550d2f07a"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Photon",
+    "topic": "用户注意到Photon官方账号最近较少出现",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/NyxstX/status/2076970769322799550"
+    ],
+    "_id": "t:9bdbe9c7497d5a05"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Trojan",
+    "topic": "竞品将Trojan视为Solana上最大的电报交易机器人标杆，因其累计交易量超过250亿美元",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/TheSolAgent/status/2077235499752739241",
+      "https://x.com/TheSolAgent/status/2077244203478688032"
+    ],
+    "_id": "t:55f6f925a14418bf"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Trojan",
+    "topic": "讨论交易终端如Trojan为何在meme币热度下持续受欢迎",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/rslashnev/status/2077313728249254025"
+    ],
+    "_id": "t:c90482ec9ae2738c"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Trojan",
+    "topic": "合作伙伴在社区活动中庆祝胜利并称赞Trojan表现出色",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Ponyin/status/2077258049392373841"
+    ],
+    "_id": "t:66b43179a6ebd14d"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Trojan",
+    "topic": "团队实习生主动联系用户洽谈合作",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Bogeyoshi/status/2077377605083218150"
+    ],
+    "_id": "t:141440e0ff7d9e94"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Trojan",
+    "topic": "用户羡慕Trojan机器人的成功并表示希望自己打造类似产品赚取巨额利润",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/belizardd/status/2077409268928499835"
+    ],
+    "_id": "t:e123d71d51e4a3b9"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Trojan",
+    "topic": "交易者在讨论中提及使用Trojan机器人作为常规交易工具",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/SolanaMufasa/status/2077069666116141179"
+    ],
+    "_id": "t:4aaf51f8194cf3a5"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Terminal",
+    "topic": "持有者数量全部显示为0的故障，呼吁修复服务器",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/SweatyInvestor/status/2077188306224234929"
+    ],
+    "_id": "t:27cc656291334cb2"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Terminal",
+    "topic": "用户账户被锁定无法访问，社区呼吁解除标记",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/west_defi/status/2077163864806858771",
+      "https://x.com/edmundSmon/status/2077166645403902025"
+    ],
+    "_id": "t:96d2e45fb7840db0"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Terminal",
+    "topic": "讨论付费使用交易终端还是选择开源软件直接链上交易",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/ScoobyCarolan/status/2077244094858850763"
+    ],
+    "_id": "t:f56fcaab423a27c1"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Terminal",
+    "topic": "用户建议修改界面标签名称将soon改为bundles将recent改为trash",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/alsheikh87/status/2077192672570429783"
+    ],
+    "_id": "t:c42279ef372e75fc"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Pump.fun",
+    "topic": "用户热议新界面更新和预买入功能，称可无需高级工具轻松抓住趋势币收益",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/ieatjeets/status/2077410321007055118",
+      "https://x.com/Gc_Promise/status/2077425845384200703",
+      "https://x.com/paranrml_trader/status/2077410555871035571"
+    ],
+    "_id": "t:aa588e8532fb361a"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Pump.fun",
+    "topic": "讨论即将上线的新闻功能，将整合Grok故事、主流媒体RSS与实时交易数据",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/0xVidocq/status/2077080523399205291",
+      "https://x.com/terryXXc_/status/2077225696540188833",
+      "https://x.com/JohnyObrien/status/2077379860658540791"
+    ],
+    "_id": "t:e8b304d314cc60b8"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Pump.fun",
+    "topic": "用户提出多项改进建议，包括调整创作者费用、移除现金返还、增加创作者验证徽章和限制重复内容",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Punk_Weight420/status/2077282019076440325",
+      "https://x.com/iconXBT/status/2077387367514566738",
+      "https://x.com/Stefan_3S/status/2077385545559285776"
+    ],
+    "_id": "t:62db43e0625c755b"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Pump.fun",
+    "topic": "赞扬创作者费用支持的慈善计划在77天内已捐赠超过317万美元",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Phineas_Sol/status/2077413355640271175"
+    ],
+    "_id": "t:e2db1bba5bb93aa2"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Pump.fun",
+    "topic": "批评平台近期充斥低质垃圾内容和缺乏创意的部署，新币失败率高",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/FvctCrvpto/status/2077259184891199994",
+      "https://x.com/CinderSecurity/status/2077422357216453098"
+    ],
+    "_id": "t:876555f5ed9f03bd"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Pump.fun",
+    "topic": "讨论潜在代币空投可能成为刺激链上交易量的催化剂",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/CryptoMikli/status/2077420935108272195",
+      "https://x.com/SebMontgomery/status/2077400490044752379"
+    ],
+    "_id": "t:0db4c0b1fc8a5d93"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "FOMO",
+    "topic": "用户称赞其社交功能、透明度、多链支持和易用性让交易更有趣，并建议添加限价单以应对迷因币快速波动",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/EB7/status/2077334697269485797",
+      "https://x.com/molusol/status/2077227017557221791",
+      "https://x.com/coinflicted/status/2077404607894950187"
+    ],
+    "_id": "t:d954791a89d074df"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "FOMO",
+    "topic": "用户批评实际交易费用因最低费用门槛对小额交易过高，卖出常失败，并质疑存在机器人推广和操控嫌疑",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/davidflanks/status/2077394084138795350",
+      "https://x.com/TMtheOG/status/2077281896950603931"
+    ],
+    "_id": "t:20685a5ad82e502c"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "FOMO",
+    "topic": "用户反馈交易执行差包括填充延迟、滑点高、盈亏显示错误、图表卡顿以及近期更新后应用不稳定",
+    "heat": "高",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/TeshuOG/status/2077254445004370358",
+      "https://x.com/Freddy6_figures/status/2077252882718462103",
+      "https://x.com/asymmupside/status/2077412354619474145"
+    ],
+    "_id": "t:5a5def643350a8ba"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "FOMO",
+    "topic": "应用新增支持交易Robinhood链，被讨论为方便买卖该链迷因币的途径",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/fomo/status/2077074087151653109",
+      "https://x.com/TrenchNews_rh/status/2077409250498756788"
+    ],
+    "_id": "t:ce30fae3b935b445"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "FOMO",
+    "topic": "部分用户报告在应用中无法买入代币或购买按钮不可用",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/array_map/status/2077427002471059921",
+      "https://x.com/Gio97806668/status/2077185144742437303"
+    ],
+    "_id": "t:bb2b24bf93d49af6"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "FOMO",
+    "topic": "用户将其与其他跨链交易工具比较，指出多链无桥接购买便利但钱包可见导致隐私较差",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/cryptokans/status/2077346228719800499"
+    ],
+    "_id": "t:8db09bab62c965eb"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BONKbot",
+    "topic": "分析中以BONKbot从电报交易机器人扩展并累计手续费达一点六五七亿美元作为成功扩展开的案例",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/magonia_B/status/2077097531578925359"
+    ],
+    "_id": "t:63edaa2f11ac1cd7"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BONKbot",
+    "topic": "用户分享使用其Telemetry工具提前发现并捕捉meme币交易机会",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Awwaluuuu/status/2077288299866038500",
+      "https://x.com/Kinguchee_e/status/2077306876614590966",
+      "https://x.com/BonkzBridgedGod/status/2077421313413566784"
+    ],
+    "_id": "t:21f74f5f741778a5"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BONKbot",
+    "topic": "用户回忆BONKbot出现前手动交易Solana meme币的不便或表示会像过去一样长期依赖类似工具",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/KamakuraCrypto/status/2077080685039300920",
+      "https://x.com/criiispyyyyy/status/2077159421478916206"
+    ],
+    "_id": "t:92d3b880458f8ce4"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Banana Gun",
+    "topic": "用户通过Banana Gun钱包追踪器发现鲸鱼用十七个仓位在预测市场赚取千万美元利润并讨论其精准操作",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Kropanchik/status/2077427437776802163",
+      "https://x.com/klimonchain/status/2077428135339954382",
+      "https://x.com/vijn_crypto/status/2077428515159282156"
+    ],
+    "_id": "t:8477aeb7206cc219"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Banana Gun",
+    "topic": "用户在Banana Gun上发现并讨论Robinhood链meme币如猫币狐狸币等的成交量与价格持续上涨",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/XeonThri/status/2077158490733531208",
+      "https://x.com/Reinzxc01/status/2077153556881379684",
+      "https://x.com/bananaintern/status/2077149538910155010"
+    ],
+    "_id": "t:8e03c12627f9b940"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Banana Gun",
+    "topic": "官方和用户讨论七月二点五万美元奖励池用于激励通过Banana Gun交易预测市场和世界杯市场",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/bananagun/status/2077110068538204544",
+      "https://x.com/WhiteWhiteEth/status/2077121914410057789"
+    ],
+    "_id": "t:977cd317b9586938"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Banana Gun",
+    "topic": "讨论世界杯金靴竞争者赔率在Banana Gun预测终端上的变化及交易情景分析",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/polyfactual/status/2077394508526891353",
+      "https://x.com/KnightPredict/status/2077397098228556098"
+    ],
+    "_id": "t:56deb50a01eea154"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Banana Gun",
+    "topic": "官方检测忠诚持有者，社区用户回应Banana Gun团队活跃支持",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/bananagun/status/2077404544489914618",
+      "https://x.com/Xfinancebull/status/2077413304889454718"
+    ],
+    "_id": "t:8840fa1f00b5ac73"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Banana Gun",
+    "topic": "用户使用Banana Gun追踪专业鲸鱼在预测市场的重仓操作并分析实时优势",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/shemetilya/status/2077341741699703131",
+      "https://x.com/KairoPredicts/status/2077099006321467636",
+      "https://x.com/fort1kkk/status/2077402044730679745"
+    ],
+    "_id": "t:f3b7a6378dc0f004"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Maestro",
+    "topic": "Maestro针对Robinhood链发布更新，新增多个启动平台与去中心化交易所支持、token报告中的工厂检查以及siphon代币自动警告功能",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/MaestroBots/status/2077068274496385032",
+      "https://x.com/RobinHub_xyz/status/2077306949440532898",
+      "https://x.com/RHChainNews/status/2077314327959294386"
+    ],
+    "_id": "t:68fa247b6784442c"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Maestro",
+    "topic": "多个Robinhood链项目宣布兼容或请求与Maestro集成以便用户交易其代币",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/basedbidx/status/2077180443279974430",
+      "https://x.com/GenesisPad_/status/2077070420889526745",
+      "https://x.com/HDGercek/status/2077133864812650913"
+    ],
+    "_id": "t:26bc058b10ac2f61"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Maestro",
+    "topic": "用户询问如何在Maestro机器人中进行质押操作",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/captainhookv4/status/2077217018210623808"
+    ],
+    "_id": "t:6c1908879ed30195"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Bloom",
+    "topic": "用户称赞Bloom在Robinhood代币复制交易中的速度表现",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/PinkyEth/status/2077365246574964953"
+    ],
+    "_id": "t:d43a8675964a2e7e"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Bloom",
+    "topic": "用户欢迎Bloom支持Robinhood链meme交易并肯定其降低交易摩擦",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/pirishxxx/status/2077363643256058096",
+      "https://x.com/borsch737/status/2077354336934342841",
+      "https://x.com/0xLexWell/status/2077359300830196035"
+    ],
+    "_id": "t:895c98278ec732f5"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Bloom",
+    "topic": "用户表示即使从Solana转向其他链仍继续使用Bloom作为跨链统一工具",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Miwko6/status/2077095095447204191",
+      "https://x.com/flovezenx/status/2077022612845121895",
+      "https://x.com/pirishxxx/status/2077038163684450447"
+    ],
+    "_id": "t:3dfbbe445f53241a"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Jupiter",
+    "topic": "讨论 Jupiter 在 Solana DeFi 协议中的费用收入排名，上周约三百万美元接近第一",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/LinceFinance/status/2077066657634074789"
+    ],
+    "_id": "t:bec9d80c8ad543e4"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Jupiter",
+    "topic": "用户称赞 Jupiter 占据 Solana 大部分去中心化交易量且波动期间失败率低路由高效",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/c0rtex1100X/status/2077408844381130854",
+      "https://x.com/SergioTheNomad/status/2077113317760348431"
+    ],
+    "_id": "t:6386d810fc29d118"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Jupiter",
+    "topic": "Jupiter 移动端推出优步和 Grab 消费返现活动并被列为受信任钱包",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/jup_mobile/status/2077407851962675304",
+      "https://x.com/ZacharyAtkins77/status/2077420881807126720",
+      "https://x.com/BitBull8501/status/2077370493103968425"
+    ],
+    "_id": "t:bdd87d339399d6a2"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Jupiter",
+    "topic": "讨论 Jupiter 钱包和现货交易新增追踪止损及定投订单收益等功能",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/jup_wallet/status/2077424161463603245",
+      "https://x.com/molusol/status/2077347525250699498",
+      "https://x.com/jup_spot/status/2077369294011437145"
+    ],
+    "_id": "t:435bb55758f9297d"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Jupiter",
+    "topic": "用户在 Jupiter 预测市场参与和讨论各类事件结果预测",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/jup_predict/status/2077417907148017944",
+      "https://x.com/jup_predict/status/2077420374443053195"
+    ],
+    "_id": "t:45eec417ce54a521"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Jupiter",
+    "topic": "用户抱怨在 Jupiter 上支付大量费用后积分消失且未获得空投",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/Gipe_Commerce/status/2077065765769945220"
+    ],
+    "_id": "t:f8c3430d698222a7"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "GMGN",
+    "topic": "宣布支持Robinhood链上的多个发射台，用户使用其进行代币筛选、查看标签和交易",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/gmgnai/status/2077448177352143301",
+      "https://x.com/michyexe/status/2077480414428414151",
+      "https://x.com/DexterRekted/status/2077507473825800655"
+    ],
+    "_id": "t:ffdb0f6cef13e5d7"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "GMGN",
+    "topic": "在Pons平台Multicall3漏洞讨论中，用户确认通过GMGN交易可规避被盗风险",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/secrettrader87/status/2077481511960637686",
+      "https://x.com/Stephen62413733/status/2077486665568846144",
+      "https://x.com/0xReggieLedoux/status/2077508950811881645"
+    ],
+    "_id": "t:b8f1432771d2c055"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "GMGN",
+    "topic": "用户连接钱包学习操作界面并探索功能",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/wh7nft/status/2077495694336593972",
+      "https://x.com/MichaelBeeNFree/status/2077426839648370766"
+    ],
+    "_id": "t:4983c49b855b6329"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "GMGN",
+    "topic": "新项目等待在GMGN上架并有用户提及团队动向",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/mavrikfun/status/2077507870229217735",
+      "https://x.com/WassieBrah/status/2077509710287458622"
+    ],
+    "_id": "t:10adc26281c6e1f7"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "GMGN",
+    "topic": "用户发现官方文档品牌视频中的彩蛋内容",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/jab_sol/status/2077508412166778902"
+    ],
+    "_id": "t:173836ac96ddf178"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "DeBot",
+    "topic": "用户因GMGN态度和积分问题转用DeBot，称赞商务与客服响应更快更敬业",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Deibajie/status/2077373675410706555",
+      "https://x.com/Doggo1114/status/2077477556706840797",
+      "https://x.com/PumpBluee/status/2077418135607734685"
+    ],
+    "_id": "t:bd4ee4ca5ffe57b7"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "DeBot",
+    "topic": "用户表扬买卖税显示准确、问题及时赔付、黑客事件全额赔偿以及低手续费，认为链上打狗更放心",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/web3YLF/status/2077431853267710454",
+      "https://x.com/web3YLF/status/2077432083908264314"
+    ],
+    "_id": "t:2991a0155987deb9"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "DeBot",
+    "topic": "用户对比DeBot与GMGN界面，部分称赞简洁核心功能全，部分批评排版杂乱缺乏统一规范",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/0x_josef/status/2077209033103282460",
+      "https://x.com/chiplin21/status/2077431316031967265"
+    ],
+    "_id": "t:a9c5772ca2ffde05"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "DeBot",
+    "topic": "用户分享在Robinhood链玩meme时使用DeBot的体验，认为可靠好用",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/web3YLF/status/2077432083908264314",
+      "https://x.com/zhuilong888/status/2077424707398422993"
+    ],
+    "_id": "t:4d8c01adc68f3e87"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "DeBot",
+    "topic": "官方商务分享险些被冒充员工诈骗经历，提醒用户官方不会要求转账",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Debot_Number1/status/2077424091066458257",
+      "https://x.com/btc710718/status/2077424982318346615"
+    ],
+    "_id": "t:51af662579350364"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Axiom",
+    "topic": "官方推出统一脉冲和钱包追踪功能并配套两万美元奖励活动",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/AxiomExchange/status/2077208668672565379",
+      "https://x.com/0xRiver8/status/2077213123195580438"
+    ],
+    "_id": "t:24df1b73f4e9ccaa"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Axiom",
+    "topic": "Axiom在Solana二十四小时手续费生成中排名靠前达三十八万七千美元",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/bielzinn/status/2077478409920479610"
+    ],
+    "_id": "t:bbdf8edc0a02b5e3"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Axiom",
+    "topic": "用户称赞交易奖励和返现机制认为是最佳奖励交易应用并因此优先用其执行交易",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Manicdyor/status/2077460545456775193",
+      "https://x.com/OnchainMonarchs/status/2077383839203381748"
+    ],
+    "_id": "t:f1db675ec283a9c9"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Axiom",
+    "topic": "Axiom新增对Robinhood链等多链meme交易支持用户讨论其作为快速终端的优势",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Afocus_/status/2077437955593920623",
+      "https://x.com/Celesweb3/status/2077032051123933519"
+    ],
+    "_id": "t:ece7388d0016e59a"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Axiom",
+    "topic": "社区用户请求Axiom添加特定发射平台和代币支持如Pons和Robin_Pad",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/CryptoJonkie/status/2077503493875601822",
+      "https://x.com/zenincrypto/status/2077377998638993548",
+      "https://x.com/laboomemes/status/2077335007052411343"
+    ],
+    "_id": "t:489042f609d6147f"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Axiom",
+    "topic": "用户比较Axiom与其他交易终端表示更喜欢使用但提及MacBook过热等性能问题",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/SgtChartman/status/2077508517544489372"
+    ],
+    "_id": "t:b31d53787a85a33d"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BasedBot",
+    "topic": "用户抱怨BasedBot终端连续出现宕机无法正常使用",
+    "heat": "高",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/ohFrostyyy/status/2077406760386560365",
+      "https://x.com/torga_eth/status/2077412797047361938",
+      "https://x.com/Roxx_Sol/status/2077407289003147359"
+    ],
+    "_id": "t:800e9a69af46f063"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BasedBot",
+    "topic": "Leavehood发射平台已成功集成到BasedBot应用，相关代币可直接交易",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/leavedahood/status/2077420888044028088"
+    ],
+    "_id": "t:c53bde5dc0df1f4d"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BasedBot",
+    "topic": "社区请求BasedBot支持并上线新的Robinhood链发射板和代币",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/CryptoJonkie/status/2077503493875601822",
+      "https://x.com/mavrikfun/status/2077507870229217735",
+      "https://x.com/hoodpump_fun/status/2077154641616203794"
+    ],
+    "_id": "t:006d43bd16cac39e"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BasedBot",
+    "topic": "用户分享BasedBot终端诈骗过滤、代币筛选和按交易量排序的使用技巧",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/3DMax_Virtuals/status/2077426609171132467",
+      "https://x.com/qmatrix_ai/status/2077503361864081897"
+    ],
+    "_id": "t:e9fb4e99ce9821d6"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BasedBot",
+    "topic": "用户反馈BasedBot上手简单、资金桥接快速且适合新手在Telegram交易",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/bimex_777/status/2077340509056430390",
+      "https://x.com/0xgameboi/status/2077120545053680062"
+    ],
+    "_id": "t:09dea0ebfbff2447"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BasedBot",
+    "topic": "用户通过重复发布合约地址让代币出现在BasedBot终端气泡中表达看好",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/bambinho00/status/2077448842706862439"
+    ],
+    "_id": "t:eb8437071a775599"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Photon",
+    "topic": "用户询问是否还有人在使用光子和布尔克斯进行交易，并讨论它们的当前氛围",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/fukitweball123/status/2077470875536797780",
+      "https://x.com/iamjoshbuchholz/status/2077475676295221662",
+      "https://x.com/garnerflow/status/2077252639717269628"
+    ],
+    "_id": "t:565a190e3d332723"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Photon",
+    "topic": "用户对光子等索拉纳项目收集空投积分却未兑现表示失望，社区兴趣下降并转向其他平台",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/TraderRob10/status/2077363606941745156"
+    ],
+    "_id": "t:571bb9be2a08f7a3"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Photon",
+    "topic": "光子等平台交易者桥接到罗宾汉后导致索拉纳新交易对表现不佳",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/lilmuf_/status/2077486882368217385"
+    ],
+    "_id": "t:277334b4840b729c"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Photon",
+    "topic": "用户分享在光子上的交易历史初期盈利但最终亏损并反思策略",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/YaIsSaBeLle/status/2077430488940384705"
+    ],
+    "_id": "t:1be33613c1a565f1"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Photon",
+    "topic": "用户询问如何从光子过渡到其他工具以交易以太坊或包装以太币上的代币",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/it0pblast/status/2077438772166226074"
+    ],
+    "_id": "t:a4259ab9e0d3220a"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Trojan",
+    "topic": "新竞品称特洛伊是索拉纳最大电报交易机器人终身交易量超二百五十亿美元并公开挑战",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/TheSolAgent/status/2077235499752739241",
+      "https://x.com/TheSolAgent/status/2077244203478688032",
+      "https://x.com/TheSolAgent/status/2076868485875929322"
+    ],
+    "_id": "t:2441169c51a897ef"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Trojan",
+    "topic": "用户讨论包括特洛伊在内的交易终端为何在迷因币热潮后仍受欢迎",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/rslashnev/status/2077313728249254025"
+    ],
+    "_id": "t:260f446067a9c23d"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Trojan",
+    "topic": "特洛伊合作社区用户交易幸运获利并获合作伙伴祝贺",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Ponyin/status/2077258049392373841"
+    ],
+    "_id": "t:e10f263f903cac09"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Trojan",
+    "topic": "用户反馈用索拉纳买入美元稳定币配对代币不顺畅并请求添加快速兑换支持",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/execalls/status/2076918889674363071",
+      "https://x.com/cbCalicio/status/2076934266563551484"
+    ],
+    "_id": "t:4e17c62d1c31bf5d"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Trojan",
+    "topic": "用户将特洛伊列为日常钱包跟踪与交易工具组合的一部分",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/SassyOnchain/status/2076971815180660994"
+    ],
+    "_id": "t:36daecab20431aa9"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Trojan",
+    "topic": "特洛伊团队联系用户洽谈合作",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Bogeyoshi/status/2077377605083218150"
+    ],
+    "_id": "t:ea88ad4f0d364ef1"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Terminal",
+    "topic": "用户讨论平台已集成罗宾汉支持相关资产交易",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/swaginawagon/status/2077496528281665705",
+      "https://x.com/GoldRoger0eth/status/2077484296541966753",
+      "https://x.com/MemeseusMaximus/status/2077465935632646489"
+    ],
+    "_id": "t:2feb1a07ff440d2a"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Terminal",
+    "topic": "新项目代币在平台上线并可交易",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/ponsdotfamily/status/2077476990009917481",
+      "https://x.com/Drallio/status/2077477113746133213"
+    ],
+    "_id": "t:286bb49c3035170d"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Terminal",
+    "topic": "用户反馈盈亏日历受稳定币对交易影响的问题",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/lufthanzaa/status/2077493801149489568"
+    ],
+    "_id": "t:6645efd2a2dd9dc7"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Terminal",
+    "topic": "用户报告账户被锁定无法访问并请求官方解锁",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/west_defi/status/2077163864806858771",
+      "https://x.com/edmundSmon/status/2077166645403902025"
+    ],
+    "_id": "t:7b1b770923eeeb48"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Terminal",
+    "topic": "用户询问提现操作方法",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/fansofdavido35/status/2077508321754632374"
+    ],
+    "_id": "t:0bb2e8922bb50a09"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Terminal",
+    "topic": "用户讨论空投领取情况并与其他交易终端比较",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/slippagemaxi/status/2077424958737678571"
+    ],
+    "_id": "t:49edb3a07e131ef3"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Pump.fun",
+    "topic": "用户反馈代理模式故障导致创建者费用被平台全部收取，需联系支持修复，并批评平台移除该模式是为了自身做市利益",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/allhaildonkey/status/2077504720260768114",
+      "https://x.com/allhaildonkey/status/2077502503953076717",
+      "https://x.com/allhaildonkey/status/2077500106270515239"
+    ],
+    "_id": "t:22ee20b0ccf88ab3"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Pump.fun",
+    "topic": "讨论平台自上线以来收取超过10亿美元交易费用却未兑现空投承诺，资金主要用于回购销毁自身代币",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/LauraLlasat/status/2077511361832026223"
+    ],
+    "_id": "t:b4006ec7a5e2bcb1"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Pump.fun",
+    "topic": "用户批评平台设计故意制造混乱，导致无尽新币涌现和复制币问题，引发原创争议",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/Shed_thread/status/2077318243971162396",
+      "https://x.com/Defilab1/status/2077506189747736609"
+    ],
+    "_id": "t:b06090f6957598da"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Pump.fun",
+    "topic": "用户表达对平台整体氛围差和新meme币质量低的负面评价，认为缺乏正面元素",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/I4NFTS/status/2077375216146067770",
+      "https://x.com/iam_metamike/status/2077281020559126572"
+    ],
+    "_id": "t:3ab011c3c45d2842"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Pump.fun",
+    "topic": "用户讨论并期待平台可能提供刺激措施以吸引用户回归meme交易",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/AusCryptoTradez/status/2077511285093388466"
+    ],
+    "_id": "t:8e286913cd391b75"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Pump.fun",
+    "topic": "讨论新兴竞争对手如Robinhood链启动板正在侵蚀平台在meme币创建交易上的主导地位",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/FXTraderOliver/status/2077500681900933214"
+    ],
+    "_id": "t:423b47d0aa66e969"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "FOMO",
+    "topic": "用户抱怨应用运行缓慢、更新后交易延迟失败或错误成交",
+    "heat": "高",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/Trizanator/status/2077510615262744713",
+      "https://x.com/TeshuOG/status/2077254445004370358",
+      "https://x.com/tshelbystakzsol/status/2077463285532856705"
+    ],
+    "_id": "t:a627a83119ae4864"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "FOMO",
+    "topic": "社交交易功能受赞，实时买卖可见、透明度和排行榜让交易更有趣",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/EB7/status/2077334697269485797",
+      "https://x.com/molusol/status/2077227017557221791",
+      "https://x.com/MalcolmCrypto/status/2077462286315258241"
+    ],
+    "_id": "t:a97e35324ed728b0"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "FOMO",
+    "topic": "与Robinhood对比讨论低费率优势及主流币几乎免费交易",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/clipsofcrypto/status/2077509217842602115",
+      "https://x.com/CryptoMikli/status/2077459539100827990"
+    ],
+    "_id": "t:f187872f2f2cff75"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "FOMO",
+    "topic": "用户请求添加限价单并优化排行榜显示已实现盈亏",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Moezmic/status/2077476698749087944",
+      "https://x.com/leys_baby/status/2077320212391563408",
+      "https://x.com/Mxngoo__/status/2077500046501662829"
+    ],
+    "_id": "t:a6beea73c13cb842"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "FOMO",
+    "topic": "批评最低交易费用过高导致小额交易成本接近百分之十",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/davidflanks/status/2077394084138795350"
+    ],
+    "_id": "t:4048d1029404e4a2"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "FOMO",
+    "topic": "仓位关闭显示不完整可能误导他人以为首次买入",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/slingoorio/status/2077511451107791136"
+    ],
+    "_id": "t:9b7321afd724a91b"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BONKbot",
+    "topic": "用户分享使用Telemetry提前捕捉meme币交易机会并得到社区认同",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Awwaluuuu/status/2077288299866038500",
+      "https://x.com/Kinguchee_e/status/2077306876614590966",
+      "https://x.com/heisJhark/status/2077291790239949104"
+    ],
+    "_id": "t:e16fbc8febc8c707"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BONKbot",
+    "topic": "讨论BONK通过构建BONKbot等产品引导零售用户进入加密领域",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/ika_xbt/status/2077471196640120855"
+    ],
+    "_id": "t:64706077825b3288"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BONKbot",
+    "topic": "用户提及对BONKbot的长期使用忠诚并类比其他交易机器人",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/criiispyyyyy/status/2077159421478916206"
+    ],
+    "_id": "t:b077268b5e87939b"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Banana Gun",
+    "topic": "用户使用Banana Gun预测终端交易英格兰对阵阿根廷比赛的结果选项及跟踪聪明钱仓位",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/fort1kkk/status/2077465543540453695",
+      "https://x.com/vijn_crypto/status/2077428033447768370",
+      "https://x.com/YuriOnchain/status/2077467887581999182"
+    ],
+    "_id": "t:7416d670a9d79c36"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Banana Gun",
+    "topic": "用户分享用Banana Gun复制Polymarket顶级交易者仓位的秒级速度及高收益案例",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/RetroValix/status/2077148825379099071",
+      "https://x.com/banan_crypto/status/2076986799994417536",
+      "https://x.com/ridark_eth/status/2077433526295658880"
+    ],
+    "_id": "t:d7b9950d933a52c5"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Banana Gun",
+    "topic": "社区讨论Banana Gun为Polymarket和世界杯市场推出的2.5万美元七月交易奖励池",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/bananagun/status/2077110068538204544",
+      "https://x.com/saurav_tweets/status/2077019553482297854",
+      "https://x.com/WhiteWhiteEth/status/2077121914410057789"
+    ],
+    "_id": "t:d900daf4f616dee8"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Maestro",
+    "topic": "社区和项目方讨论Maestro在Robinhood链上的功能更新以及支持更多启动平台",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/RobinHub_xyz/status/2077306949440532898",
+      "https://x.com/hoodlabapp/status/2077461320740253783",
+      "https://x.com/RHChainNews/status/2077314327959294386"
+    ],
+    "_id": "t:3798b65781de1440"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Maestro",
+    "topic": "用户推荐使用Maestro机器人买卖Robinhood链新代币，认为比传统钱包更稳定可靠",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Cryptoking/status/2077434898575417825",
+      "https://x.com/InspectorSlurp/status/2077449214812958792",
+      "https://x.com/MR_KLAUS007/status/2077481909404553639"
+    ],
+    "_id": "t:8b83a7f84a5ec9ad"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Maestro",
+    "topic": "有人提及Telegram交易机器人包括Maestro的交易量创纪录",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Cristin65172402/status/2077474910016835955",
+      "https://x.com/Cristin65172402/status/2077178837503250468"
+    ],
+    "_id": "t:0d02497a109dffc5"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Bloom",
+    "topic": "用户称赞Bloom在罗宾汉链代币交易中速度最快，复制钱包时能更快完成买入",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/PinkyEth/status/2077365246574964953",
+      "https://x.com/BloomTrading/status/2077436897937305760"
+    ],
+    "_id": "t:4c3295474f63033a"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Bloom",
+    "topic": "讨论Bloom手机端交易的便捷性，认为能随时捕捉市场机会是未来趋势",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Col_Gate_ML/status/2077474674825396497",
+      "https://x.com/ShulyGC/status/2077485437774364834"
+    ],
+    "_id": "t:a2a534bec184cae1"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Bloom",
+    "topic": "社区对Bloom支持罗宾汉链表示欢迎，认为是利好并期待新交易机会",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/pirishxxx/status/2077363643256058096",
+      "https://x.com/yourm11nd/status/2077385526575767855",
+      "https://x.com/0xLexWell/status/2077359300830196035"
+    ],
+    "_id": "t:203b528202ed19f5"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Jupiter",
+    "topic": "用户提交代币验证并讨论付费加速审核通道",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/N1KJohnG/status/2077506066523275533",
+      "https://x.com/HarvestPmp/status/2077507696514023597",
+      "https://x.com/SilverBullSOL/status/2077396667175719211"
+    ],
+    "_id": "t:c9cc9bb65eef7f40"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Jupiter",
+    "topic": "推荐交易终端可切换的显示选项",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/rumpti/status/2077511827446227054"
+    ],
+    "_id": "t:5014b1d1a4c15980"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Jupiter",
+    "topic": "讨论在索拉纳去中心化交易中的高交易量份额与低失败率路由性能",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/c0rtex1100X/status/2077408844381130854",
+      "https://x.com/loneleexl_/status/2077339797291438139"
+    ],
+    "_id": "t:fd7f2471f5e09b1f"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Jupiter",
+    "topic": "将平台比作具备高流动性、限价单、定投与永续合约的综合交易中心",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/DGNFORTHEPEOPLE/status/2077469303503274032",
+      "https://x.com/DGNFORTHEPEOPLE/status/2077470608049250771"
+    ],
+    "_id": "t:34b25774f7e9a32e"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Jupiter",
+    "topic": "对比永续合约业务费用市场份额落后于领先平台",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/JayC_hl/status/2077475788228907349"
+    ],
+    "_id": "t:2669b0e3c821d433"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "GMGN",
+    "topic": "现已支持Robinhood链上多个发射台，方便用户搜索和交易相关meme代币",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/gmgnai/status/2077448177352143301",
+      "https://x.com/gmgnai/status/2077306912019022045",
+      "https://x.com/ponsdotfamily/status/2077303604684218445"
+    ],
+    "_id": "t:9613f0e8a85a16cd"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "GMGN",
+    "topic": "用户通过平台检查新meme币的捆绑比例、顶级持有者和聪明钱包数据",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/ProExitLiq/status/2077620629650780404",
+      "https://x.com/onlyvoss/status/2077607098595369321",
+      "https://x.com/ProExitLiq/status/2077613504924971065"
+    ],
+    "_id": "t:1e1848dbeaac7fda"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "GMGN",
+    "topic": "用户称赞界面流畅便于实时跟踪资产动向并后悔之前未使用",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/ohthisis/status/2077621202118390237",
+      "https://x.com/oddface0211/status/2077624440456933629",
+      "https://x.com/DavidCataneo/status/2077626076340113699"
+    ],
+    "_id": "t:f68707818328cdbb"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "GMGN",
+    "topic": "用户反馈购买时出现蜜罐警告，项目方与团队合作修复显示问题",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/hustlerchap94/status/2077521844668973140",
+      "https://x.com/Stoxesfun/status/2077466106059718851"
+    ],
+    "_id": "t:287ce96b8495693c"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "GMGN",
+    "topic": "产品团队回应交易双边手续费1%及基础返佣10%相关问题",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/gmgncom/status/2077620787947933954",
+      "https://x.com/gmgncom/status/2077372892300587089"
+    ],
+    "_id": "t:c02cedf4099640c2"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "GMGN",
+    "topic": "用户因其他平台被骗后转而加入并使用平台进行交易",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/LadTradez308/status/2077617093839618154"
+    ],
+    "_id": "t:2549ca2b8beff9ff"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "DeBot",
+    "topic": "用户反馈交易被路由至小池子后获得全额赔付，称赞客户服务态度和格局，提升安全感",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/jain_web3/status/2077230679776203068",
+      "https://x.com/0xbe777/status/2077293885408366665",
+      "https://x.com/web3YLF/status/2077432993871008154"
+    ],
+    "_id": "t:7f3c020602217530"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "DeBot",
+    "topic": "淘金场功能被推荐用于罗宾汉链新币筛选，结合人工智能信号、过滤和叙事总结快速发现潜力meme",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/OrdzWorld/status/2077408285360370090",
+      "https://x.com/ZhangZToooooo/status/2077393083705278670",
+      "https://x.com/sol_jingou/status/2077530789508678091"
+    ],
+    "_id": "t:6a1036de43111cdb"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "DeBot",
+    "topic": "产品对新链和新功能更新效率高，常被称赞为第一时间支持并提供手续费优化技巧",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/hongxiao_sol/status/2077296653045023218",
+      "https://x.com/fgchiu/status/2077297162204143893"
+    ],
+    "_id": "t:8ac19db1f605983b"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "DeBot",
+    "topic": "用户报告部分代币突然无法购买的问题",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/msq22ka/status/2077539182814384298"
+    ],
+    "_id": "t:4f05366775a5bda5"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Axiom",
+    "topic": "Axiom更新支持多链交易并发布统一脉冲与钱包追踪功能及奖励活动",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/AxiomExchange/status/2077208668672565379",
+      "https://x.com/RoninUltra/status/2077418368705962141",
+      "https://x.com/isaakcripto/status/2077225619213996070"
+    ],
+    "_id": "t:8bf94dcc219e05b5"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Axiom",
+    "topic": "用户分享使用Axiom过滤器筛选优质索拉纳模因币的方法以降低被骗风险",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/SapieNFT/status/2077544556845822162",
+      "https://x.com/SapieNFT/status/2077559266555077118",
+      "https://x.com/SapieNFT/status/2077559341842829404"
+    ],
+    "_id": "t:218013da227a3152"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Axiom",
+    "topic": "假冒Axiom应用诈骗导致约十四万七千美元被盗",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/white_hat22198/status/2077351466982084934"
+    ],
+    "_id": "t:ecdb306fc7641c7e"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Axiom",
+    "topic": "用户反馈Axiom交易体验优于部分竞品但电脑硬件占用较高",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/SgtChartman/status/2077508517544489372",
+      "https://x.com/1xGodSpeed/status/2077514990618124520"
+    ],
+    "_id": "t:8d8a182e73611679"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Axiom",
+    "topic": "用户指出在Axiom搜索代币时结果被诈骗和蜜罐淹没",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/miggl_sol/status/2077318311084519812"
+    ],
+    "_id": "t:e28d60c63670480c"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BasedBot",
+    "topic": "多个发射台宣布成功集成到BasedBot交易终端并可直接交易其代币",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/UseCoinbarrel/status/2077407914185126368",
+      "https://x.com/leavedahood/status/2077420888044028088"
+    ],
+    "_id": "t:fd0b17ec2267a7a0"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BasedBot",
+    "topic": "用户分享BasedBot终端过滤骗局代币并按交易量排序的使用设置",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/3DMax_Virtuals/status/2077426609171132467"
+    ],
+    "_id": "t:292e5b44a912e6b5"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BasedBot",
+    "topic": "用户抱怨在BasedBot上交易连续亏损并表示暂时停用",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/ohFrostyyy/status/2077406760386560365"
+    ],
+    "_id": "t:2447e85d505d570f"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BasedBot",
+    "topic": "交易者分享使用BasedBot进行多链交易并获得利润的经历",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/xet/status/2077520542081364377"
+    ],
+    "_id": "t:58a81edc1b4ef384"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BasedBot",
+    "topic": "用户讨论BasedBot的易用性、桥接速度和电报交易等优点",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/bimex_777/status/2077340509056430390",
+      "https://x.com/spyzer/status/2077596325143609507",
+      "https://x.com/thedanman77/status/2077600154459181247"
+    ],
+    "_id": "t:20bce591f71a520b"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BasedBot",
+    "topic": "BasedBot将代币标记为不安全引发用户关注并要求核实",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/yaorichcrypto/status/2077547743678259605"
+    ],
+    "_id": "t:de8f3f2df4dab3d3"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Photon",
+    "topic": "Photon作为索拉纳交易终端实现高收入仅次于木星协议无代币无空投仅靠手续费和执行质量留存用户",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/mahogany0609/status/2077570920659718389"
+    ],
+    "_id": "t:5e306f8129c053d1"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Photon",
+    "topic": "用户批评Photon未兑现空投承诺rug了早期用户许多人仍在claim或期待空投并对比虚假承诺",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/SlamDiegoZoo/status/2077568480371458479",
+      "https://x.com/TraderRob10/status/2077363606941745156",
+      "https://x.com/slippagemaxi/status/2077424958737678571"
+    ],
+    "_id": "t:292de2c2208b660d"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Photon",
+    "topic": "Photon与同类工具被专业交易者使用作为筛选持有者分布和降低跑路风险的参考",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/SapieNFT/status/2077559266555077118",
+      "https://x.com/SapieNFT/status/2077559341842829404"
+    ],
+    "_id": "t:4fe1ed77ba6bd4ae"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Photon",
+    "topic": "社区讨论是否仍有人在Photon上交易以及交易者迁移到其他平台对币对的影响",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/fukitweball123/status/2077470875536797780",
+      "https://x.com/lilmuf_/status/2077486882368217385",
+      "https://x.com/iamjoshbuchholz/status/2077475676295221662"
+    ],
+    "_id": "t:53c589dab633b6b7"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Photon",
+    "topic": "用户分享个人使用Photon的交易记录初期表现好但最终亏损并总结不急于开仓的经验",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/YaIsSaBeLle/status/2077430488940384705"
+    ],
+    "_id": "t:f5fa762068dbe285"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Trojan",
+    "topic": "用户讨论包括Trojan在内的迷因币交易终端在热潮后依然受欢迎的原因是市场低估了迷因币需求",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/rslashnev/status/2077313728249254025",
+      "https://x.com/itruematone/status/2077435767954047168"
+    ],
+    "_id": "t:a7f8d1f282b02c63"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Trojan",
+    "topic": "用户羡慕创建类似Trojan的交易机器人可以赚取数百万甚至数十亿收益",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/belizardd/status/2077409268928499835"
+    ],
+    "_id": "t:d657245f264b187e"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Trojan",
+    "topic": "用户收到Trojan内部人员消息并表示有意开展合作",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Bogeyoshi/status/2077377605083218150"
+    ],
+    "_id": "t:a44571cd3f8ff520"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Trojan",
+    "topic": "合作社区枢纽活动中用户祝贺成员好运并询问积分奖励机制",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Ponyin/status/2077258049392373841",
+      "https://x.com/dustfinger_sol/status/2077385945150537745",
+      "https://x.com/oxsanbi_/status/2077412341411680325"
+    ],
+    "_id": "t:2ff691b1e4673306"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Terminal",
+    "topic": "新增对罗宾汉链的交易支持，用户称赞更新流畅无缝且多链一站式体验良好",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/0GAntD/status/2077589177399493039",
+      "https://x.com/swaginawagon/status/2077496528281665705",
+      "https://x.com/ZeroMazed/status/2077593327638073515"
+    ],
+    "_id": "t:0fc9f34f5c1e2f23"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Pump.fun",
+    "topic": "平台累计收取超10亿美元手续费却未兑现空投，费用主要流向自身代币回购销毁",
+    "heat": "高",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/LauraLlasat/status/2077511361832026223",
+      "https://x.com/PumpAirdrop/status/2077521653647728866",
+      "https://x.com/RugDalio/status/2077451133250158651"
+    ],
+    "_id": "t:3ac0352efae27b02"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Pump.fun",
+    "topic": "开发者频繁实施诈骗跑路，包括假装残疾或假死后进行代币跑路",
+    "heat": "高",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/nexocooker/status/2077305797722149172",
+      "https://x.com/Steezehuman/status/2077322644026749362"
+    ],
+    "_id": "t:c9c2ab3343204478"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Pump.fun",
+    "topic": "自身代币大规模解锁并向多个钱包分发，讨论对价格及市场影响",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/ByteBrainBB/status/2077627390226989389",
+      "https://x.com/GmHodler/status/2077610343442903165",
+      "https://x.com/BebeLamend42105/status/2077626836058857702"
+    ],
+    "_id": "t:a7ed53829d451223"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Pump.fun",
+    "topic": "代币毕业成功率和整体活动量显著下降，用户讨论平台衰退与贪婪问题",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/InvestorJordan/status/2077446344575254983",
+      "https://x.com/AratiUKamat/status/2077557836146479413",
+      "https://x.com/Sushigremlin/status/2077420390687604796"
+    ],
+    "_id": "t:b40479fbdb92a3b8"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Pump.fun",
+    "topic": "大量无创新克隆平台涌现，用户批评其缺乏变化并使用通用主题",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/the_cia_hacker/status/2077628511498416485"
+    ],
+    "_id": "t:28fc45042eec4cd3"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Pump.fun",
+    "topic": "讨论交易量主要由代理洗盘和农场零售用户构成",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/spliffymagoo/status/2077580589792625004"
+    ],
+    "_id": "t:e79574cb040938e5"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "FOMO",
+    "topic": "用户称赞该应用是当前交易模因币投机组合的最佳工具之一并建议增强社交功能",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/citadelwolff/status/2077621319949316573",
+      "https://x.com/EB7/status/2077334697269485797",
+      "https://x.com/RegardsCapital/status/2077598192653537399"
+    ],
+    "_id": "t:837de9c54ec0335f"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "FOMO",
+    "topic": "用户多次请求添加限价单功能",
+    "heat": "高",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/MaxMinning/status/2077620553452814572",
+      "https://x.com/GomezA1_/status/2077522326783213663",
+      "https://x.com/Mxngoo__/status/2077500046501662829"
+    ],
+    "_id": "t:ffe5869d734f59fd"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "FOMO",
+    "topic": "用户抱怨应用卖出卡顿延迟成交价格错误及交易失败导致损失",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/FYosobu/status/2077587965082304684",
+      "https://x.com/suganarium/status/2077350805141692511",
+      "https://x.com/tshelbystakzsol/status/2077463285532856705"
+    ],
+    "_id": "t:c07280dc768dd934"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "FOMO",
+    "topic": "用户批评应用最低交易费用过高导致小额交易实际成本极高并指责类似骗局",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/davidflanks/status/2077394084138795350"
+    ],
+    "_id": "t:5f5272741889aaaa"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "FOMO",
+    "topic": "用户指控应用通过假交易赞助操控分发并呼吁抵制",
+    "heat": "中",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/TMtheOG/status/2077281896950603931",
+      "https://x.com/duckskkk22/status/2077586832129159498"
+    ],
+    "_id": "t:091754b4a4c9aefd"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "FOMO",
+    "topic": "用户请求将特定代币重新添加到应用中",
+    "heat": "低",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/SitH_WinD/status/2077624073514025063"
+    ],
+    "_id": "t:73c9fb7d0589baa6"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BONKbot",
+    "topic": "讨论BONK生态时将其列为构建的产品和集成之一",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/yousafzx/status/2077535707690565799",
+      "https://x.com/ika_xbt/status/2077471196640120855"
+    ],
+    "_id": "t:4dfbaf2abfea8ee9"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "BONKbot",
+    "topic": "用户表示使用其Telemetry终端提前获取交易机会并获认同",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Awwaluuuu/status/2077288299866038500",
+      "https://x.com/Kinguchee_e/status/2077306876614590966"
+    ],
+    "_id": "t:3dcf24f21151d3d9"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Banana Gun",
+    "topic": "用户通过Banana Gun监控模因币买家和鲸鱼活动",
+    "heat": "中",
+    "sentiment": "中性",
+    "examples": [
+      "https://x.com/Reinzxc01/status/2077523019959046573",
+      "https://x.com/XeonThri/status/2077520371943870716"
+    ],
+    "_id": "t:c1d0c398d1fa52a8"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Banana Gun",
+    "topic": "用户在Banana Gun预测市场终端交易世界杯盘口并追踪大户持仓",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/fort1kkk/status/2077465543540453695",
+      "https://x.com/KairoPredicts/status/2077470462368706846",
+      "https://x.com/polyfactual/status/2077394508526891353"
+    ],
+    "_id": "t:3e1743f9cba57354"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Banana Gun",
+    "topic": "Banana Gun作为Polymarket跟单与追踪工具获得用户好评",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/vijn_crypto/status/2077428033447768370",
+      "https://x.com/ridark_eth/status/2077433526295658880",
+      "https://x.com/kiira7094/status/2077449369108844745"
+    ],
+    "_id": "t:695e3e9cadf278d8"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Maestro",
+    "topic": "讨论Maestro在Robinhood链上发布更新，新增对多个启动板和去中心化交易所的支持以及安全检测功能",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/RobinHub_xyz/status/2077306949440532898",
+      "https://x.com/RHChainNews/status/2077314327959294386",
+      "https://x.com/hoodlabapp/status/2077461320740253783"
+    ],
+    "_id": "t:85fb35118969384e"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Maestro",
+    "topic": "用户反馈误将Maestro机器人的Robinhood推荐奖励发送到错误钱包",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/iapecooks/status/2077628017837240482"
+    ],
+    "_id": "t:351436651bfa24dc"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Maestro",
+    "topic": "用户投诉Maestro机器人扣除其资金",
+    "heat": "低",
+    "sentiment": "负面",
+    "examples": [
+      "https://x.com/Malconishere/status/2077615241723076649"
+    ],
+    "_id": "t:e4bc0c65b5452b40"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Maestro",
+    "topic": "用户分享Maestro机器人使用教程视频系列",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Kriptopush01/status/2077527995783291001"
+    ],
+    "_id": "t:bcbbfdb1aa5779f1"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Bloom",
+    "topic": "用户称赞Bloom在Robinhood链代币交易中速度最快并适合钱包跟单",
+    "heat": "高",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/PinkyEth/status/2077365246574964953",
+      "https://x.com/BloomTrading/status/2077436897937305760",
+      "https://x.com/flashxbt7/status/2077402938230653218"
+    ],
+    "_id": "t:239f5a6ef1fa20b2"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Bloom",
+    "topic": "讨论Bloom手机端交易的便利性与自动化预设功能",
+    "heat": "中",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/Col_Gate_ML/status/2077474674825396497",
+      "https://x.com/ShulyGC/status/2077485437774364834",
+      "https://x.com/Oxjohnnny/status/2077516192177074207"
+    ],
+    "_id": "t:0992b9163b696106"
+  },
+  {
+    "date": "2026-07-16",
+    "subject": "Bloom",
+    "topic": "社区反馈Bloom支持Robinhood链meme交易功能是积极进展",
+    "heat": "低",
+    "sentiment": "正面",
+    "examples": [
+      "https://x.com/0xLexWell/status/2077359300830196035",
+      "https://x.com/pirishxxx/status/2077363643256058096",
+      "https://x.com/yourm11nd/status/2077385526575767855"
+    ],
+    "_id": "t:270136d75399fb40"
   }
 ]

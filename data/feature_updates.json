@@ -28,108 +28,6 @@
   },
   {
     "competitor": "DeBot",
-    "title": "DeBot 支持自定义头像与 Flap 分红领取",
-    "summary": "新增自定义头像功能，便于盯盘识别；同时上线 Flap 分红一键领取入口，简化用户资产领取流程。",
-    "date": "2026-07-14",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.611/index-BCrIZkiy.js",
-    "_id": "f:e2951f1cfe5237dd"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "全新布局与视窗管理系统上线",
-    "summary": "DeBot上线全新布局与视窗管理系统，支持吸附模式和多视窗自由悬浮。用户可据此搭建更灵活的链上交易工作台，提升多任务并行操作效率。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.615/index-C89aQUod.js",
-    "_id": "f:4a2bf358552daf2f"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "自定义通知声音功能上线",
-    "summary": "DeBot上线自定义通知声音，买卖成交、推特监控、钱包动态均可设置专属提示音。用户可通过差异化声音更快识别关键交易与监控事件。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.615/index-C89aQUod.js",
-    "_id": "f:7d68396a14ff1c73"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "扫链背景色支持自定义",
-    "summary": "扫链功能现支持为代币协议和推特作者自定义背景色。用户可打造更个性化的扫链界面，便于区分信息来源并提升浏览效率。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.615/index-C89aQUod.js",
-    "_id": "f:6837516114a86839"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "自动交易功能正式上线",
-    "summary": "DeBot 上线自动交易，涵盖迁移自动买入、迁移自动卖出以及跟单钱包卖出等能力。用户可按规则自动执行买卖与跟单卖出，减少人工盯盘与操作成本。此举强化了平台的自动化交易工具属性。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
-    "_id": "f:36b789d714d41834"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "支持自定义头像与 Flap 变异一键领取",
-    "summary": "平台新增自定义头像，方便用户在盯盘场景中更快识别账户或界面。同时上线 Flap 变异领取，支持一键领取相关资产。两项改动分别提升使用辨识度与资产领取效率。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
-    "_id": "f:9377c493f5a0c71f",
-    "priority": ""
-  },
-  {
-    "competitor": "DeBot",
-    "title": "正式接入 HyperEVM 并支持 Alt.fun 协议",
-    "summary": "DeBot 已接入 HyperEVM 生态，并支持 Alt.fun 协议。用户可在平台内更直接地浏览和交易该链上的新资产。这属于链与协议层面的扩展，扩大可覆盖的资产与叙事范围。",
-    "date": "2026-07-15",
-    "type": "集成",
-    "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
-    "_id": "f:545f37b3930917cb",
-    "priority": ""
-  },
-  {
-    "competitor": "DeBot",
-    "title": "链上合约交易正式上线",
-    "summary": "DeBot 上线一站式链上合约交易入口，覆盖 BTC、ETH 以及美股、黄金、石油等多类资产。用户可在同一平台交易加密与部分传统/大宗相关合约标的。功能扩展了交易品类，不仅限于现货代币。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
-    "_id": "f:3ee276fd5c6ae0dd"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "新增 Passkey 验证强化账户安全",
-    "summary": "账户安全升级，新增基于设备认证的 Passkey，支持指纹或面容完成验证。该能力可用于登录、提现等关键操作。目的是降低密码依赖，提升账户访问与资金操作的安全性。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
-    "_id": "f:1df1465974beb76f"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "新增 Pump 返现与租赁回收功能",
-    "summary": "平台新增 Pump 返现和租赁回收，支持一键领取此前可能被遗漏或闲置的相关资产。用户可更方便地回收沉睡资金并重新投入使用。功能侧重资产回收与资金利用率提升。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
-    "_id": "f:253e7e21fa85db52",
-    "priority": ""
-  },
-  {
-    "competitor": "DeBot",
-    "title": "扫链界面支持自定义背景色",
-    "summary": "扫链功能现支持为代币协议和推特作者自定义背景色。用户可按自己的习惯区分不同协议或作者信息。这属于界面个性化优化，提升扫链时的辨识与阅读效率。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.617/index-Co_UBw6a.js",
-    "_id": "f:985d1de28f208ff9"
-  },
-  {
-    "competitor": "DeBot",
     "title": "Robinhood AI Signals 正式上线",
     "summary": "DeBot 宣布 Robinhood 链上的 AI Signals 功能现已上线。用户可借助该信号进行 meme 交易并获得更全面覆盖。此举增强了平台在 Robinhood 链上的交易辅助能力。",
     "date": "2026-07-08",
@@ -272,26 +170,6 @@
     "type": "功能更新",
     "url": "https://x.com/JupiterExchange/status/2076654397237445092",
     "_id": "f:d89a8205a33f3f06"
-  },
-  {
-    "competitor": "DeBot",
-    "title": "合约交易功能正式上线",
-    "summary": "DeBot上线一站式链上合约交易入口，支持BTC、ETH以及美股、黄金、石油等多类资产。平台交易品类从常规链上资产扩展到更广的合约标的。用户可在同一入口参与更多类型交易机会。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.621/index-K7tW9-tR.js",
-    "_id": "f:33170c80b0830d31",
-    "priority": ""
-  },
-  {
-    "competitor": "DeBot",
-    "title": "账户安全升级新增Passkey验证",
-    "summary": "账户安全能力升级，新增基于设备认证的Passkey验证，支持指纹或面容等一键验证，覆盖登录与提现等关键操作。可降低传统密码泄露风险，提升账户与资金安全。",
-    "date": "2026-07-15",
-    "type": "功能更新",
-    "url": "https://debot.ai/assets/2.1.621/index-K7tW9-tR.js",
-    "_id": "f:6f756e94bddb43c6",
-    "priority": ""
   },
   {
     "competitor": "Based Bot",
@@ -521,5 +399,149 @@
     "url": "",
     "source": "community",
     "_id": "f:f527b2057223f328"
+  },
+  {
+    "competitor": "Based Bot",
+    "title": "BasedBot 支持在 RobinhoodApp Chain 上交易 Noxa_Fi 代币",
+    "summary": "BasedBot 现已支持直接交易 Noxa_Fi 在 RobinhoodApp Chain 上的代币，覆盖 pre-bond 和 post-bond 阶段。用户可在 BasedBot 内完成操作。这扩大了该链上的具体协议交易支持。",
+    "date": "2026-07-08",
+    "type": "集成",
+    "url": "https://x.com/BasedBot/status/2074919223432773752",
+    "_id": "f:f8793a37ffc1732d"
+  },
+  {
+    "competitor": "Based Bot",
+    "title": "BasedBot 支持在 RobinhoodApp Chain 上交易 virtuals_io 代币",
+    "summary": "BasedBot 现已支持直接交易 virtuals_io 在 RobinhoodApp Chain 上的代币，覆盖 pre-bond 和 post-bond 阶段。用户可在 BasedBot 内完成操作。这扩大了该链上的具体协议交易支持。",
+    "date": "2026-07-08",
+    "type": "集成",
+    "url": "https://x.com/BasedBot/status/2074919232085651696",
+    "_id": "f:3b316d9b2590aef7"
+  },
+  {
+    "competitor": "Based Bot",
+    "title": "BasedBot 支持在 RobinhoodApp Chain 上交易 bankrbot 代币",
+    "summary": "BasedBot 现已支持直接交易 bankrbot 在 RobinhoodApp Chain 上的代币，覆盖 pre-bond 和 post-bond 阶段。用户可在 BasedBot 内完成操作。这扩大了该链上的具体协议交易支持。",
+    "date": "2026-07-08",
+    "type": "集成",
+    "url": "https://x.com/BasedBot/status/2074919241409589385",
+    "_id": "f:b4f336f47962beb5"
+  },
+  {
+    "competitor": "Based Bot",
+    "title": "BasedBot 支持在 RobinhoodApp Chain 上交易 klik_evm 代币",
+    "summary": "BasedBot 现已支持直接交易 klik_evm 在 RobinhoodApp Chain 上的代币，覆盖 pre-bond 和 post-bond 阶段。用户可在 BasedBot 内完成操作。这扩大了该链上的具体协议交易支持。",
+    "date": "2026-07-08",
+    "type": "集成",
+    "url": "https://x.com/BasedBot/status/2074919249827492126",
+    "_id": "f:06065a170f302d98"
+  },
+  {
+    "competitor": "Banana Gun",
+    "title": "提醒 7 月奖励活动仍在进行并支持世界杯半决赛交易",
+    "summary": "继续推广 2.5 万美元 7 月奖励，聚焦法国 vs 西班牙世界杯半决赛，鼓励使用平台跟踪、交易和跟单。这维持活动热度并推动预测市场交易量。",
+    "date": "2026-07-14",
+    "type": "活动",
+    "url": "https://x.com/BananaGun/status/2077110068538204544",
+    "_id": "f:821f8d150c5f2ae1"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "费用侧改动有竞争含义，但未说明大幅降费或免费，达不到高优先级费率冲击标准",
+    "summary": "Yellow 中",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "priority": "",
+    "url": "",
+    "source": "community",
+    "_id": "f:f29ef62224e2af6f"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "Wallet Tracker 直接对标 GMGN 核心智能钱包追踪能力，属直接功能重叠，构成高优先级竞争威胁",
+    "summary": "Red 高",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "priority": "",
+    "url": "",
+    "source": "community",
+    "_id": "f:11cebdad2def9b7b"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "持续迭代 robinhood 产品能力是新进展；促销仅为预告、未给规模，整体按产品更新定中",
+    "summary": "Yellow 中",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "priority": "",
+    "url": "",
+    "source": "community",
+    "_id": "f:e2f1a6d0d69ea2d3"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "多链快捷买入/导航是 meme 终端核心体验增强，与 GMGN 交易路径重叠但属已有能力扩展而非颠覆性上线",
+    "summary": "Yellow 中",
+    "date": "2026-07-15",
+    "type": "功能更新",
+    "priority": "",
+    "url": "",
+    "source": "community",
+    "_id": "f:f0f3b818708b3845"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "接入新 launchpad/协议并加买入上限等交易风控能力，是 meme 终端有实质的新集成与功能，但非核心能力首发或费率/激励级冲击",
+    "summary": "Yellow 中",
+    "date": "2026-07-15",
+    "type": "集成",
+    "priority": "",
+    "url": "",
+    "source": "community",
+    "_id": "f:77cc652d2c38c87d"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "交易终端侧新协议接入与执行优化，属于 meme 交易相关的实质产品进展",
+    "summary": "Yellow 中",
+    "date": "2026-07-14",
+    "type": "集成",
+    "priority": "",
+    "url": "",
+    "source": "community",
+    "_id": "f:fc37cd6713b93c34"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "竞品以独家修复做差异化，属产品侧进展与排他信号，但未说明 noxa 是否为与 GMGN 核心重叠的新能力，故不达高",
+    "summary": "Yellow 中",
+    "date": "2026-07-13",
+    "type": "功能更新",
+    "priority": "",
+    "url": "",
+    "source": "community",
+    "_id": "f:66afa2fde4ff36f1"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "常规维护与个别币种上架，无核心能力或格局变化",
+    "summary": "低",
+    "date": "2026-07-16",
+    "type": "功能更新",
+    "priority": "",
+    "url": "",
+    "source": "community",
+    "_id": "f:ba35cb9eb1f005ce"
+  },
+  {
+    "competitor": "Axiom",
+    "title": "migration line 属于新的产品功能进展，对 meme 交易追踪有参考价值",
+    "summary": "Yellow 中",
+    "date": "2026-07-16",
+    "type": "功能更新",
+    "priority": "",
+    "url": "",
+    "source": "community",
+    "_id": "f:dfd678da08855ede"
   }
 ]
