@@ -33,7 +33,7 @@ def _is_bad(it):
         return True
     if re.match(r"^(Yellow|Red|Grey|Green|Blue|Purple)\s*[高中低]?$", t):
         return True
-    if len(s) < 4:  # 正文过短（如空、"中"、"高"），基本是错位残留
+    if len(s) < 2:  # 只挡空/单字残留（如 "中"、"高"）；短研判保留
         return True
     return False
 
@@ -52,7 +52,10 @@ def _comp_block(comp, items):
         typ = it.get("type", "\u5176\u5b83")
         seg = f"{i}\u3001{mrkdwn_escape(it.get('title',''))}　`{mrkdwn_escape(typ)}`"   # 序号 + 标题 + 末尾类型标签
         if it.get("summary"):
-            seg += f"\n\u258e{mrkdwn_escape(it.get('summary'))}"                        # ▎研判
+            _sm = it.get("summary") or ""
+            if len(_sm) > 240:                    # 超长研判截断，防单块超 Slack 3000 上限
+                _sm = _sm[:240].rstrip() + "…"
+            seg += f"\n\u258e{mrkdwn_escape(_sm)}"                                      # ▎研判
         if it.get("url"):
             url = it["url"]
             seg += "　" + link(url, "原文")

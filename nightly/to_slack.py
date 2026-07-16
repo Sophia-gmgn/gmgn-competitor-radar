@@ -119,7 +119,7 @@ def block_feature(target, core):
         s=(it.get("summary") or "").strip(); t=(it.get("title") or "").strip()
         if re.match(r"^(Yellow|Red|Grey|Green|Blue|Purple)\s*[高中低]?$", s): return True
         if re.match(r"^(Yellow|Red|Grey|Green|Blue|Purple)\s*[高中低]?$", t): return True
-        return len(s) < 4
+        return len(s) < 2
     todays = [it for it in store if it.get("date")==target and _norm(it.get("competitor",""))in core and not bad(it)]
     rank = {"高优":0,"高":0,"中优":1,"中":1,"低优":2,"低":2}
     by = OrderedDict()
@@ -135,7 +135,7 @@ def block_feature(target, core):
 
 def block_official(target):
     storage = _fetch_storage(OFFICIAL_PID)
-    if storage is None: return "🐦 *官方推特高优 / 创始人*", None
+    if storage is None: return "🐦 *官方推特高优*", None
     rows = parse_official(storage)
     feat_ids = {s for it in _load_json(FEATURE_FILE, []) if (s:=_sid(it.get("url","")))}
     hi = [r for r in rows if r["pr"]=="高" and r["comp"]!="gmgn" and r["date"]==target and _sid(r["url"]) not in feat_ids][:HI_MAX]

@@ -68,7 +68,7 @@ def build_blocks(day, rows):
     blocks = [section(f"📣 *竞品 X 话题* · {day} · 高热 {len(rows)} 条"), divider()]
     units = []
     for it in rows:
-        emo = SENT_EMOJI.get(it.get("sentiment"), "⚪")
+        emo = SENT_EMOJI.get(it.get("sentiment"), "•")
         head = f"{emo} *{mrkdwn_escape(it.get('subject'))}*"
         body = mrkdwn_escape(it.get("topic", ""))
         piece = f"{head}\n{body}"
@@ -106,7 +106,7 @@ def main():
     if dry:
         print("===== DRY_RUN（不发送、不写台账）=====\nfallback:", fb, "\n")
         for it in rows:
-            emo = SENT_EMOJI.get(it.get("sentiment"), "⚪")
+            emo = SENT_EMOJI.get(it.get("sentiment"), "•")
             mg = f"（合并{it['_merged']}）" if it.get("_merged", 1) > 1 else ""
             print(f"{emo} 【{it.get('subject')}】{it.get('topic')}{mg}  原推×{len(it.get('examples',[]))}")
         print(f"\n（高热合并后共 {len(merged)} 条，取前 {TOP_N}）")
