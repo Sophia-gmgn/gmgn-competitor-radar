@@ -28,12 +28,6 @@ jobs:
           ATLASSIAN_API_TOKEN: ${{ secrets.ATLASSIAN_API_TOKEN }}
           TRADING_DATA_PAGE_ID: ${{ secrets.TRADING_DATA_PAGE_ID }}
         run: python -m trading_data.to_confluence
-      - name: Post Slack
-        if: ${{ !cancelled() }}
-        env:
-          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-          SLACK_CHANNEL: "C0BGRHXM133"
-        run: python -m trading_data.to_slack
       - name: Commit snapshot
         if: ${{ !cancelled() }}
         run: |
