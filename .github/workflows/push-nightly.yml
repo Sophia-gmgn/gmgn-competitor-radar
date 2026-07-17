@@ -2,6 +2,8 @@ name: push-nightly
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "30 14 * * *"   # 北京 22:30 · 晚报自动发
 
 permissions:
   contents: write
